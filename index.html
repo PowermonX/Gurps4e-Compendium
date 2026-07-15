@@ -1,86 +1,380 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento a Colonne</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
+<div class="gurps-tierlist-container" style="font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; background-color: #1e1e24; color: #f5f5f7; padding: 25px; border-radius: 12px; max-width: 1000px; margin: 20px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #3a3a45;">
+  
+  <h2 style="text-align: center; color: #ffca28; margin-bottom: 25px; font-size: 28px; letter-spacing: 1px; border-bottom: 2px solid #3a3a45; padding-bottom: 15px;">GURPS 4e - Compendio Vantaggi</h2>
 
-        h1 {
-            text-align: center;
-            color: #111;
-            margin-bottom: 40px;
-        }
+  <!-- ================= TIER S ================= -->
+  <div class="tier-section" style="margin-bottom: 30px; border: 1px solid #ff4444; border-radius: 8px; overflow: hidden; background-color: #25252d;">
+    <div class="tier-header" style="background-color: #ff4444; color: #fff; padding: 10px 15px; font-weight: bold; font-size: 18px; display: flex; justify-content: space-between; align-items: center;">
+      <span>Tier S: Leggendari (Essenziali o Game-Breaking)</span>
+      <span style="background: rgba(0,0,0,0.2); padding: 2px 10px; border-radius: 20px; font-size: 12px;">Top Tier</span>
+    </div>
+    <div class="tier-body" style="padding: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+      
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">⚔️ Combattimento / Fisici</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=7" target="_blank" style="color: #4fc3f7; text-decoration: none;">Altered Time Rate ⚔️👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=12" target="_blank" style="color: #4fc3f7; text-decoration: none;">Combat Reflexes ⚔️🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=21" target="_blank" style="color: #4fc3f7; text-decoration: none;">Enhanced Time Sense ⚔️🧠👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=22" target="_blank" style="color: #4fc3f7; text-decoration: none;">Extra Attack ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=62" target="_blank" style="color: #4fc3f7; text-decoration: none;">Trained by a Master ⚔️</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=68" target="_blank" style="color: #4fc3f7; text-decoration: none;">Weapon Master ⚔️</a></li>
+        </ul>
+      </div>
 
-        /* Contenitore principale delle colonne */
-        .column-container {
-            display: flex;
-            gap: 24px; /* Spazio tra le colonne */
-            flex-wrap: wrap; /* Rende il layout responsive sui dispositivi mobili */
-        }
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🧠 Mentali / Sociali</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=40" target="_blank" style="color: #4fc3f7; text-decoration: none;">Modular Abilities 🧠👽🪄</a></li>
+        </ul>
+      </div>
 
-        /* Struttura della singola colonna */
-        .column {
-            flex: 1; /* Distribuisce lo spazio equamente */
-            min-width: 280px; /* Impedisce alle colonne di stringersi troppo su schermi piccoli */
-            background: #ffffff;
-            padding: 24px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .column h2 {
-            margin-top: 0;
-            color: #0066cc;
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 8px;
-        }
-
-        /* Lista di esempio stilizzata */
-        .column ul {
-            padding-left: 20px;
-        }
-
-        .column li {
-            margin-bottom: 8px;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Titolo del Documento</h1>
-
-    <div class="column-container">
-        
-        <div class="column">
-            <h2>Colonna 1</h2>
-            <p>Questo è il testo della prima colonna. Puoi inserire paragrafi, descrizioni o dati specifici qui.</p>
-            <ul>
-                <li>Elemento importante 1</li>
-                <li>Elemento importante 2</li>
-            </ul>
-        </div>
-
-        <div class="column">
-            <h2>Colonna 2</h2>
-            <p>Questo è il contenuto della seconda colonna. Il layout si adatterà automaticamente per mantenere l'altezza allineata.</p>
-        </div>
-
-        <div class="column">
-            <h2>Colonna 3</h2>
-            <p>Inserisci qui le tue note finali, tabelle o elenchi. Se hai bisogno di sole due colonne, ti basta eliminare interamente questo blocco.</p>
-        </div>
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🪄 Soprannaturali / Magici</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=35" target="_blank" style="color: #4fc3f7; text-decoration: none;">Luck (all levels) 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=35" target="_blank" style="color: #4fc3f7; text-decoration: none;">Magery 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=46" target="_blank" style="color: #4fc3f7; text-decoration: none;">Power Investiture 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=52" target="_blank" style="color: #4fc3f7; text-decoration: none;">Serendipity 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=58" target="_blank" style="color: #4fc3f7; text-decoration: none;">Super Luck 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=68" target="_blank" style="color: #4fc3f7; text-decoration: none;">Wild Talent 🪄</a></li>
+        </ul>
+      </div>
 
     </div>
+  </div>
 
-</body>
-</html>
+  <!-- ================= TIER A ================= -->
+  <div class="tier-section" style="margin-bottom: 30px; border: 1px solid #ff9800; border-radius: 8px; overflow: hidden; background-color: #25252d;">
+    <div class="tier-header" style="background-color: #ff9800; color: #fff; padding: 10px 15px; font-weight: bold; font-size: 18px; display: flex; justify-content: space-between; align-items: center;">
+      <span>Tier A: Eccellenti (Impatto Massiccio)</span>
+      <span style="background: rgba(0,0,0,0.2); padding: 2px 10px; border-radius: 20px; font-size: 12px;">Ottimi</span>
+    </div>
+    <div class="tier-body" style="padding: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+      
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🧠 Mentali / Sociali</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=5" target="_blank" style="color: #4fc3f7; text-decoration: none;">Allies 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=12" target="_blank" style="color: #4fc3f7; text-decoration: none;">Compartmentalized Mind 🧠👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=17" target="_blank" style="color: #4fc3f7; text-decoration: none;">Digital Mind 🧠👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=27" target="_blank" style="color: #4fc3f7; text-decoration: none;">Gadgeteer 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=26" target="_blank" style="color: #4fc3f7; text-decoration: none;">Gizmos 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=29" target="_blank" style="color: #4fc3f7; text-decoration: none;">Illuminated 🧠🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=29" target="_blank" style="color: #4fc3f7; text-decoration: none;">Indomitable 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=37" target="_blank" style="color: #4fc3f7; text-decoration: none;">Mimicry 🧠👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=37" target="_blank" style="color: #4fc3f7; text-decoration: none;">Mind Control 🧠👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=38" target="_blank" style="color: #4fc3f7; text-decoration: none;">Mind Probe 🧠👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=38" target="_blank" style="color: #4fc3f7; text-decoration: none;">Mind Reading 🧠👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=39" target="_blank" style="color: #4fc3f7; text-decoration: none;">Mind Shield 🧠👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=39" target="_blank" style="color: #4fc3f7; text-decoration: none;">Mindlink 🧠🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=13" target="_blank" style="color: #4fc3f7; text-decoration: none;">Patrons 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Pitiable 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=44" target="_blank" style="color: #4fc3f7; text-decoration: none;">Possession 🧠👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=47" target="_blank" style="color: #4fc3f7; text-decoration: none;">Puppet 👽🪄</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">⚔️ Combattimento / Fisici</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=12" target="_blank" style="color: #4fc3f7; text-decoration: none;">Constriction Attack ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=15" target="_blank" style="color: #4fc3f7; text-decoration: none;">Damage Resistance ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=20" target="_blank" style="color: #4fc3f7; text-decoration: none;">Enhanced Defenses ⚔️</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=22" target="_blank" style="color: #4fc3f7; text-decoration: none;">Enhanced Tracking ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=24" target="_blank" style="color: #4fc3f7; text-decoration: none;">Extra Hit Points ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=27" target="_blank" style="color: #4fc3f7; text-decoration: none;">Gunslinger ⚔️</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=27" target="_blank" style="color: #4fc3f7; text-decoration: none;">Hard to Kill ⚔️</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=28" target="_blank" style="color: #4fc3f7; text-decoration: none;">Hard to Subdue ⚔️</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=28" target="_blank" style="color: #4fc3f7; text-decoration: none;">High Pain Threshold ⚔️</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=28" target="_blank" style="color: #4fc3f7; text-decoration: none;">Higher Purpose ⚔️🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=29" target="_blank" style="color: #4fc3f7; text-decoration: none;">Injury Tolerance ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=30" target="_blank" style="color: #4fc3f7; text-decoration: none;">Innate Attack ⚔️👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=57" target="_blank" style="color: #4fc3f7; text-decoration: none;">Spines ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=57" target="_blank" style="color: #4fc3f7; text-decoration: none;">Striker ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=57" target="_blank" style="color: #4fc3f7; text-decoration: none;">Striking ST ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=58" target="_blank" style="color: #4fc3f7; text-decoration: none;">Supernatural Durability ⚔️👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=65" target="_blank" style="color: #4fc3f7; text-decoration: none;">Vampiric Bite ⚔️👽</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">👽 Esotici / Raziali</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=9" target="_blank" style="color: #4fc3f7; text-decoration: none;">Amphibious 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=10" target="_blank" style="color: #4fc3f7; text-decoration: none;">Chameleon 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=12" target="_blank" style="color: #4fc3f7; text-decoration: none;">Clinging 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=16" target="_blank" style="color: #4fc3f7; text-decoration: none;">Dark Vision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=18" target="_blank" style="color: #4fc3f7; text-decoration: none;">Discriminatory Senses 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=18" target="_blank" style="color: #4fc3f7; text-decoration: none;">Doesn't Breathe 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=19" target="_blank" style="color: #4fc3f7; text-decoration: none;">Doesn't Eat or Drink 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=19" target="_blank" style="color: #4fc3f7; text-decoration: none;">Doesn't Sleep 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=21" target="_blank" style="color: #4fc3f7; text-decoration: none;">Enhanced Move 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=25" target="_blank" style="color: #4fc3f7; text-decoration: none;">Flight 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=27" target="_blank" style="color: #4fc3f7; text-decoration: none;">Growth 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=29" target="_blank" style="color: #4fc3f7; text-decoration: none;">Hyperspectral Vision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=29" target="_blank" style="color: #4fc3f7; text-decoration: none;">Infravision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=37" target="_blank" style="color: #4fc3f7; text-decoration: none;">Metabolism Control 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=29" target="_blank" style="color: #4fc3f7; text-decoration: none;">Microscopic Vision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=43" target="_blank" style="color: #4fc3f7; text-decoration: none;">Penetrating Vision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=49" target="_blank" style="color: #4fc3f7; text-decoration: none;">Regrowth 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=50" target="_blank" style="color: #4fc3f7; text-decoration: none;">Scanning Sense 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=51" target="_blank" style="color: #4fc3f7; text-decoration: none;">Sealed 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=52" target="_blank" style="color: #4fc3f7; text-decoration: none;">Sensitive Touch 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=54" target="_blank" style="color: #4fc3f7; text-decoration: none;">Silence 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=54" target="_blank" style="color: #4fc3f7; text-decoration: none;">Slippery 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=57" target="_blank" style="color: #4fc3f7; text-decoration: none;">Stretching 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=58" target="_blank" style="color: #4fc3f7; text-decoration: none;">Super Climbing 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=58" target="_blank" style="color: #4fc3f7; text-decoration: none;">Super Jump 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=61" target="_blank" style="color: #4fc3f7; text-decoration: none;">Telescopic Vision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=63" target="_blank" style="color: #4fc3f7; text-decoration: none;">Tunneling 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=64" target="_blank" style="color: #4fc3f7; text-decoration: none;">Universal Digestion 👽</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🪄 Soprannaturali / Magici</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=9" target="_blank" style="color: #4fc3f7; text-decoration: none;">Binding 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=9" target="_blank" style="color: #4fc3f7; text-decoration: none;">Blessed 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=10" target="_blank" style="color: #4fc3f7; text-decoration: none;">Channeling 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=11" target="_blank" style="color: #4fc3f7; text-decoration: none;">Clairsentience 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=17" target="_blank" style="color: #4fc3f7; text-decoration: none;">Detect 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=19" target="_blank" style="color: #4fc3f7; text-decoration: none;">Dominance 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=19" target="_blank" style="color: #4fc3f7; text-decoration: none;">Duplication 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=20" target="_blank" style="color: #4fc3f7; text-decoration: none;">Elastic Skin 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=24" target="_blank" style="color: #4fc3f7; text-decoration: none;">Extra Life 🪄👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=28" target="_blank" style="color: #4fc3f7; text-decoration: none;">Healing 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=31" target="_blank" style="color: #4fc3f7; text-decoration: none;">Insubstantiality 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=32" target="_blank" style="color: #4fc3f7; text-decoration: none;">Invisibility 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=33" target="_blank" style="color: #4fc3f7; text-decoration: none;">Jumper 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=36" target="_blank" style="color: #4fc3f7; text-decoration: none;">Magic Resistance 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=36" target="_blank" style="color: #4fc3f7; text-decoration: none;">Mana Damper / Enhancer 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=37" target="_blank" style="color: #4fc3f7; text-decoration: none;">Medium 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=53" target="_blank" style="color: #4fc3f7; text-decoration: none;">Morph 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=40" target="_blank" style="color: #4fc3f7; text-decoration: none;">Neutralize 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=41" target="_blank" style="color: #4fc3f7; text-decoration: none;">Obscure 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=41" target="_blank" style="color: #4fc3f7; text-decoration: none;">Oracle 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=44" target="_blank" style="color: #4fc3f7; text-decoration: none;">Permeation 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=46" target="_blank" style="color: #4fc3f7; text-decoration: none;">Precognition 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=47" target="_blank" style="color: #4fc3f7; text-decoration: none;">Psychometry 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=49" target="_blank" style="color: #4fc3f7; text-decoration: none;">Regeneration 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=52" target="_blank" style="color: #4fc3f7; text-decoration: none;">See Invisible 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=52" target="_blank" style="color: #4fc3f7; text-decoration: none;">Shadow Form 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=52" target="_blank" style="color: #4fc3f7; text-decoration: none;">Shapeshifting 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=54" target="_blank" style="color: #4fc3f7; text-decoration: none;">Shrinking 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55" target="_blank" style="color: #4fc3f7; text-decoration: none;">Snatcher 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=56" target="_blank" style="color: #4fc3f7; text-decoration: none;">Speak With Animals 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=60" target="_blank" style="color: #4fc3f7; text-decoration: none;">Telecommunication 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=61" target="_blank" style="color: #4fc3f7; text-decoration: none;">Telekinesis 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=61" target="_blank" style="color: #4fc3f7; text-decoration: none;">Temperature Control 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=62" target="_blank" style="color: #4fc3f7; text-decoration: none;">Terror 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=63" target="_blank" style="color: #4fc3f7; text-decoration: none;">True Faith 🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=64" target="_blank" style="color: #4fc3f7; text-decoration: none;">Unkillable 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=66" target="_blank" style="color: #4fc3f7; text-decoration: none;">Walk on Air / Liquid 👽🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=66" target="_blank" style="color: #4fc3f7; text-decoration: none;">Warp 👽🪄</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= TIER B ================= -->
+  <div class="tier-section" style="margin-bottom: 30px; border: 1px solid #4caf50; border-radius: 8px; overflow: hidden; background-color: #25252d;">
+    <div class="tier-header" style="background-color: #4caf50; color: #fff; padding: 10px 15px; font-weight: bold; font-size: 18px; display: flex; justify-content: space-between; align-items: center;">
+      <span>Tier B: Solidi (Efficienza Elevata)</span>
+      <span style="background: rgba(0,0,0,0.2); padding: 2px 10px; border-radius: 20px; font-size: 12px;">Solidi</span>
+    </div>
+    <div class="tier-body" style="padding: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+      
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🧠 Mentali / Sociali</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=3" target="_blank" style="color: #4fc3f7; text-decoration: none;">3D Spatial Sense 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Appearance (Handsome+) 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=12" target="_blank" style="color: #4fc3f7; text-decoration: none;">Common Sense 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=16" target="_blank" style="color: #4fc3f7; text-decoration: none;">Danger Sense 🧠🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=20" target="_blank" style="color: #4fc3f7; text-decoration: none;">Empathy 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=24" target="_blank" style="color: #4fc3f7; text-decoration: none;">Fearlessness ⚔️🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=32" target="_blank" style="color: #4fc3f7; text-decoration: none;">Intuition 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=47" target="_blank" style="color: #4fc3f7; text-decoration: none;">Racial Memory 🧠🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=60" target="_blank" style="color: #4fc3f7; text-decoration: none;">Smooth Operator 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=57" target="_blank" style="color: #4fc3f7; text-decoration: none;">Special Rapport 🧠🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Status 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Wealth (Wealthy+) 🧠</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">⚔️ Combattimento / Fisici</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=24" target="_blank" style="color: #4fc3f7; text-decoration: none;">Fit / Very Fit ⚔️</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=43" target="_blank" style="color: #4fc3f7; text-decoration: none;">Peripheral Vision ⚔️👽</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">👽 Esotici / Raziali</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=3" target="_blank" style="color: #4fc3f7; text-decoration: none;">360° Vision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=40" target="_blank" style="color: #4fc3f7; text-decoration: none;">Night Vision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=43" target="_blank" style="color: #4fc3f7; text-decoration: none;">Perfect Balance 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=48" target="_blank" style="color: #4fc3f7; text-decoration: none;">Rapid Healing / Very Rapid Healing 👽</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🪄 Soprannaturali / Magici</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=17" target="_blank" style="color: #4fc3f7; text-decoration: none;">Destiny 🪄</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= TIER C ================= -->
+  <div class="tier-section" style="margin-bottom: 30px; border: 1px solid #2196f3; border-radius: 8px; overflow: hidden; background-color: #25252d;">
+    <div class="tier-header" style="background-color: #2196f3; color: #fff; padding: 10px 15px; font-weight: bold; font-size: 18px; display: flex; justify-content: space-between; align-items: center;">
+      <span>Tier C: Utilità (Situazionali o di Supporto)</span>
+      <span style="background: rgba(0,0,0,0.2); padding: 2px 10px; border-radius: 20px; font-size: 12px;">Utili</span>
+    </div>
+    <div class="tier-body" style="padding: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+      
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🧠 Mentali / Sociali</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=3" target="_blank" style="color: #4fc3f7; text-decoration: none;">Absolute Direction 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=4" target="_blank" style="color: #4fc3f7; text-decoration: none;">Absolute Timing 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=4" target="_blank" style="color: #4fc3f7; text-decoration: none;">Acute Senses (Vision, Hearing, etc.) 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Administrative Rank 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=9" target="_blank" style="color: #4fc3f7; text-decoration: none;">Animal Empathy 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=59" target="_blank" style="color: #4fc3f7; text-decoration: none;">Animal Friend 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=59" target="_blank" style="color: #4fc3f7; text-decoration: none;">Artificer 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=59" target="_blank" style="color: #4fc3f7; text-decoration: none;">Business Acumen 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=10" target="_blank" style="color: #4fc3f7; text-decoration: none;">Claim to Hospitality 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=12" target="_blank" style="color: #4fc3f7; text-decoration: none;">Clerical Investment 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=13" target="_blank" style="color: #4fc3f7; text-decoration: none;">Contacts / Contact Group 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Courtesy Rank 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=15" target="_blank" style="color: #4fc3f7; text-decoration: none;">Cultural Adaptability 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Cultural Familiarity 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=20" target="_blank" style="color: #4fc3f7; text-decoration: none;">Eidetic / Photographic Memory 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=26" target="_blank" style="color: #4fc3f7; text-decoration: none;">G-Experience 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=59" target="_blank" style="color: #4fc3f7; text-decoration: none;">Green Thumb 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=59" target="_blank" style="color: #4fc3f7; text-decoration: none;">Healer 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=28" target="_blank" style="color: #4fc3f7; text-decoration: none;">High Manual Dexterity 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">High TL 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Independent Income 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=34" target="_blank" style="color: #4fc3f7; text-decoration: none;">Language Talent 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=34" target="_blank" style="color: #4fc3f7; text-decoration: none;">Legal Enforcement Powers 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=34" target="_blank" style="color: #4fc3f7; text-decoration: none;">Legal Immunity 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=34" target="_blank" style="color: #4fc3f7; text-decoration: none;">Less Sleep 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=35" target="_blank" style="color: #4fc3f7; text-decoration: none;">Lightning Calculator 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=59" target="_blank" style="color: #4fc3f7; text-decoration: none;">Mathematical Ability 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Merchant Rank 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Military Rank 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=60" target="_blank" style="color: #4fc3f7; text-decoration: none;">Musical Ability 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=44" target="_blank" style="color: #4fc3f7; text-decoration: none;">Plant Empathy 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Police Rank 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Religious Rank 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=54" target="_blank" style="color: #4fc3f7; text-decoration: none;">Signature Gear 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=54" target="_blank" style="color: #4fc3f7; text-decoration: none;">Single-Minded 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55" target="_blank" style="color: #4fc3f7; text-decoration: none;">Social Chameleon 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55" target="_blank" style="color: #4fc3f7; text-decoration: none;">Social Regard 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=58" target="_blank" style="color: #4fc3f7; text-decoration: none;">Talent 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=62" target="_blank" style="color: #4fc3f7; text-decoration: none;">Tenure 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=65" target="_blank" style="color: #4fc3f7; text-decoration: none;">Versatile 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=66" target="_blank" style="color: #4fc3f7; text-decoration: none;">Voice 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=69" target="_blank" style="color: #4fc3f7; text-decoration: none;">Zeroed 🧠</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">⚔️ Combattimento / Fisici</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=8" target="_blank" style="color: #4fc3f7; text-decoration: none;">Ambidexterity ⚔️</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=9" target="_blank" style="color: #4fc3f7; text-decoration: none;">Arm DX ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=9" target="_blank" style="color: #4fc3f7; text-decoration: none;">Arm ST ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=11" target="_blank" style="color: #4fc3f7; text-decoration: none;">Claws ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=25" target="_blank" style="color: #4fc3f7; text-decoration: none;">Flexibility / Double-Jointed ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=34" target="_blank" style="color: #4fc3f7; text-decoration: none;">Lifting ST ⚔️👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=60" target="_blank" style="color: #4fc3f7; text-decoration: none;">Teeth ⚔️👽</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">👽 Esotici / Raziali</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=69" target="_blank" style="color: #4fc3f7; text-decoration: none;">Accessory 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=10" target="_blank" style="color: #4fc3f7; text-decoration: none;">Brachiator 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=10" target="_blank" style="color: #4fc3f7; text-decoration: none;">Breath-Holding 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">Cast-Iron Stomach 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=10" target="_blank" style="color: #4fc3f7; text-decoration: none;">Catfall 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=15" target="_blank" style="color: #4fc3f7; text-decoration: none;">Cybernetics 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=22" target="_blank" style="color: #4fc3f7; text-decoration: none;">Extended Lifespan 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=22" target="_blank" style="color: #4fc3f7; text-decoration: none;">Extra Arms 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=23" target="_blank" style="color: #4fc3f7; text-decoration: none;">Extra Head 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=23" target="_blank" style="color: #4fc3f7; text-decoration: none;">Extra Legs 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=24" target="_blank" style="color: #4fc3f7; text-decoration: none;">Extra Mouth 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=24" target="_blank" style="color: #4fc3f7; text-decoration: none;">Filter Lungs 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">Fur 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=28" target="_blank" style="color: #4fc3f7; text-decoration: none;">Hermaphromorph 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=1" target="_blank" style="color: #4fc3f7; text-decoration: none;">Improved G-Tolerance 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=35" target="_blank" style="color: #4fc3f7; text-decoration: none;">Longevity 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=40" target="_blank" style="color: #4fc3f7; text-decoration: none;">Nictitating Membrane 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=41" target="_blank" style="color: #4fc3f7; text-decoration: none;">Parabolic Hearing 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=43" target="_blank" style="color: #4fc3f7; text-decoration: none;">Payload 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=46" target="_blank" style="color: #4fc3f7; text-decoration: none;">Pressure Support 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=47" target="_blank" style="color: #4fc3f7; text-decoration: none;">Protected Sense 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=48" target="_blank" style="color: #4fc3f7; text-decoration: none;">Radiation Tolerance 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=48" target="_blank" style="color: #4fc3f7; text-decoration: none;">Rapid Healing 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=49" target="_blank" style="color: #4fc3f7; text-decoration: none;">Recovery 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">Sanitized Metabolism 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=56" target="_blank" style="color: #4fc3f7; text-decoration: none;">Speak Underwater 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=58" target="_blank" style="color: #4fc3f7; text-decoration: none;">Subsonic Hearing / Speech 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=62" target="_blank" style="color: #4fc3f7; text-decoration: none;">Temperature Tolerance 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=62" target="_blank" style="color: #4fc3f7; text-decoration: none;">Terrain Adaptation 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=63" target="_blank" style="color: #4fc3f7; text-decoration: none;">Ultrahearing / Ultrasonic Speech 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=63" target="_blank" style="color: #4fc3f7; text-decoration: none;">Ultravision 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=64" target="_blank" style="color: #4fc3f7; text-decoration: none;">Unaging 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=64" target="_blank" style="color: #4fc3f7; text-decoration: none;">Universal Digestion 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=65" target="_blank" style="color: #4fc3f7; text-decoration: none;">Vacuum Support 👽</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=65" target="_blank" style="color: #4fc3f7; text-decoration: none;">Vibration Sense 👽</a></li>
+        </ul>
+      </div>
+
+      <div class="category-block">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🪄 Soprannaturali / Magici</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">Autotrance 🧠🪄</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=56" target="_blank" style="color: #4fc3f7; text-decoration: none;">Speak With Plants 🪄</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= TIER D ================= -->
+  <div class="tier-section" style="margin-bottom: 10px; border: 1px solid #9e9e9e; border-radius: 8px; overflow: hidden; background-color: #25252d;">
+    <div class="tier-header" style="background-color: #9e9e9e; color: #fff; padding: 10px 15px; font-weight: bold; font-size: 18px; display: flex; justify-content: space-between; align-items: center;">
+      <span>Tier D: Flavor (Narrativi)</span>
+      <span style="background: rgba(0,0,0,0.2); padding: 2px 10px; border-radius: 20px; font-size: 12px;">Flavor</span>
+    </div>
+    <div class="tier-body" style="padding: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+      
+      <div class="category-block" style="grid-column: 1 / -1;">
+        <h4 style="color: #ffca28; margin: 0 0 8px 0; border-bottom: 1px dashed #555; padding-bottom: 5px; font-size: 14px;">🧠 Mentali / Sociali</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; line-height: 1.8;">
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=69" target="_blank" style="color: #4fc3f7; text-decoration: none;">Alcohol Tolerance 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">Deep Sleeper 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">Honest Face 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">No Hangover 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">Penetrating Voice 🧠</a></li>
+          <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=70" target="_blank" style="color: #4fc3f7; text-decoration: none;">Shtick 🧠</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</div>
