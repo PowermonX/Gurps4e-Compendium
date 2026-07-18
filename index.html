@@ -1,55 +1,152 @@
-<!-- =========================================================================
-     TABELLA TIER LIST CON ANTEPRIMA PDF INTEGRATA (GITHUB PAGES VERSION)
-     ========================================================================= -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>GURPS 4e Compendio Vantaggi Tier List</title>
+  <style>
+    body {
+      background-color: #0c0c14;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .gurps-tierlist-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+      margin-top: 20px;
+    }
+    th {
+      background-color: #1a1a24;
+      color: #ffffff;
+      text-align: left;
+      padding: 15px;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+    }
+    th:first-child { border-radius: 8px 0 0 8px; width: 15%; }
+    th:last-child { border-radius: 0 8px 8px 0; width: 85%; }
+    
+    tr.tier-row {
+      background-color: #1e1e2f;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    
+    td.tier-letter {
+      padding: 20px;
+      font-weight: bold;
+      font-size: 1.6em;
+      text-align: center;
+      border-radius: 8px 0 0 8px;
+    }
+    td.tier-content {
+      padding: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    /* Stili specifici per i Tier */
+    .tier-s { border-left: 5px solid #ff4444; }
+    .tier-s .tier-letter { color: #ff4444; background: rgba(255, 68, 68, 0.05); }
+    
+    .tier-a { border-left: 5px solid #ffbb33; }
+    .tier-a .tier-letter { color: #ffbb33; background: rgba(255, 187, 51, 0.05); }
+    
+    .tier-b { border-left: 5px solid #107c10; }
+    .tier-b .tier-letter { color: #107c10; background: rgba(16, 124, 16, 0.05); }
+    
+    ul.advantage-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    ul.advantage-list li {
+      background: rgba(255,255,255,0.03);
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: background 0.2s, transform 0.2s;
+    }
+    ul.advantage-list li:hover {
+      background: rgba(255,255,255,0.07);
+      transform: translateY(-2px);
+    }
+    ul.advantage-list a {
+      color: #4fc3f7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
 <div class="gurps-tierlist-container">
   
-  <table style="width: 100%; border-collapse: separate; border-spacing: 0 10px; margin-top: 20px;">
+  <h1>GURPS 4e Compendio Vantaggi Tier List</h1>
+  <p>Clicca su un vantaggio per aprire l'estratto ufficiale del manuale a schermo intero senza scaricare il file.</p>
+
+  <table>
     <thead>
-      <tr style="background-color: #1a1a24; color: #ffffff; text-align: left;">
-        <th style="padding: 15px; border-radius: 8px 0 0 8px; font-size: 1.1em; letter-spacing: 1px; width: 15%;">Tier</th>
-        <th style="padding: 15px; border-radius: 0 8px 8px 0; font-size: 1.1em; letter-spacing: 1px; width: 85%;">Vantaggi (Clicca per l'Anteprima PDF)</th>
+      <tr>
+        <th>Tier</th>
+        <th>Vantaggi</th>
       </tr>
     </thead>
     <tbody>
       
       <!-- TIER S -->
-      <tr style="background-color: #1e1e2f; border-left: 5px solid #ff4444; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-        <td style="padding: 20px; font-weight: bold; color: #ff4444; font-size: 1.4em; text-align: center; border-radius: 8px 0 0 8px; background: rgba(255, 68, 68, 0.05);">S</td>
-        <td style="padding: 20px; border-radius: 0 8px 8px 0;">
-          <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 15px;">
-            <!-- ESEMPIO VANTAGGIO 1 (Pagina 7) -->
-            <li style="background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); transition: background 0.2s;">
-              <a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=7" 
-                 onclick="apriPreview(this.href); return false;" 
-                 style="color: #4fc3f7; text-decoration: none; font-weight: 500;">
-                 Altered Time Rate ⚔️👽🪄
-              </a>
-            </li>
-            <!-- ESEMPIO VANTAGGIO 2 (Pagina 36) -->
-            <li style="background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05);">
-              <a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=36" 
-                 onclick="apriPreview(this.href); return false;" 
-                 style="color: #4fc3f7; text-decoration: none; font-weight: 500;">
-                 Allies 👥🛡️
-              </a>
-            </li>
+      <tr class="tier-row tier-s">
+        <td class="tier-letter">S</td>
+        <td class="tier-content">
+          <ul class="advantage-list">
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=7">Altered Time Rate ⚔️👽</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=36">Allies 👥🛡️</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=43">Compartmentalized Mind 🧠⚡</a></li>
           </ul>
         </td>
       </tr>
 
       <!-- TIER A -->
-      <tr style="background-color: #1e1e2f; border-left: 5px solid #ffbb33; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-        <td style="padding: 20px; font-weight: bold; color: #ffbb33; font-size: 1.4em; text-align: center; border-radius: 8px 0 0 8px; background: rgba(255, 187, 51, 0.05);">A</td>
-        <td style="padding: 20px; border-radius: 0 8px 8px 0;">
-          <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 15px;">
-            <!-- ESEMPIO VANTAGGIO 3 (Pagina 42) -->
-            <li style="background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05);">
-              <a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=42" 
-                 onclick="apriPreview(this.href); return false;" 
-                 style="color: #4fc3f7; text-decoration: none; font-weight: 500;">
-                 Charisma 🗣️👑
-              </a>
-            </li>
+      <tr class="tier-row tier-a">
+        <td class="tier-letter">A</td>
+        <td class="tier-content">
+          <ul class="advantage-list">
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=42">Charisma 🗣️👑</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=42">Clairsentience 👁️🔮</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=46">Damage Resistance 🛡️💥</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=56">Gadgeteer 🛠️💡</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=57">Gunslinger 🤠🔫</a></li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- TIER B -->
+      <tr class="tier-row tier-b">
+        <td class="tier-letter">B</td>
+        <td class="tier-content">
+          <ul class="advantage-list">
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=42">Claim to Hospitality 🏡🍷</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=42">Claws 🐾🦅</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=44">Clerical Investment 📿⛪</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=44">Clinging 🦎🧱</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55">Extra Mouth 👄咀</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55">Favor 🤝✨</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55">Fearlessness 🦁✊</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55">Filter Lungs 🫁😷</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55">Fit & Very Fit 🏃‍♂️❤️</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=55">Flexibility 🧘‍♂️🤸</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=56">Flight 🦅☁️</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=57">G-Experience 🪐🌀</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=57">Gizmos 🎒🔧</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=58">Growth 🧌📈</a></li>
+            <li><a href="https://PowermonX.github.io/Gurps4e-Compendium/GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf#page=58">Hard to Kill 💀❌</a></li>
           </ul>
         </td>
       </tr>
@@ -59,53 +156,66 @@
 
 </div>
 
-
 <!-- =========================================================================
-     STRUTTURA DI ANTEPRIMA E LOGICA GENERALE (DA LASCIARE IN FONDO)
+     COMPONENTE DI ANTEPRIMA INLINE SOTTOPAGINA
      ========================================================================= -->
 
-<!-- Il Contenitore della Preview (Overlay) -->
-<div id="pdf-preview-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); z-index: 99999; justify-content: center; align-items: center;">
+<!-- Contenitore Overlay -->
+<div id="pdf-preview-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); z-index: 99999; justify-content: center; align-items: center;">
   
-  <!-- Pulsante X di Chiusura -->
-  <button id="close-preview-btn" style="position: absolute; top: 20px; right: 20px; background-color: #ff4444; color: white; border: none; border-radius: 50%; width: 45px; height: 45px; font-size: 24px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+  <!-- Bottone di chiusura (X) -->
+  <button id="close-preview-btn" style="position: absolute; top: 20px; right: 20px; background-color: #ff4444; color: white; border: none; border-radius: 50%; width: 45px; height: 45px; font-size: 24px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 100000;">
     &times;
   </button>
   
-  <!-- Finestra Iframe per visualizzare il PDF -->
+  <!-- Finestra Iframe per forzare la visualizzazione del file -->
   <iframe id="pdf-preview-iframe" src="" style="width: 90%; height: 85%; border: 2px solid #3a3a45; border-radius: 8px; background-color: #fff;"></iframe>
 </div>
 
-<!-- Logica di Controllo JavaScript -->
+<!-- Script logico di cattura e instradamento -->
 <script>
-  // Funzione globale attivata direttamente dai link
-  function apriPreview(url) {
-    const overlay = document.getElementById("pdf-preview-overlay");
-    const iframe = document.getElementById("pdf-preview-iframe");
-    
-    // Inietta l'URL corretto e mostra lo schermo intero
-    iframe.src = url;
-    overlay.style.display = "flex";
-    document.body.style.overflow = "hidden"; // Blocca lo scroll della tierlist sotto
-  }
-
-  // Funzione per ripulire e nascondere la finestra
-  function chiudiPreview() {
-    const overlay = document.getElementById("pdf-preview-overlay");
-    const iframe = document.getElementById("pdf-preview-iframe");
-    
-    overlay.style.display = "none";
-    iframe.src = ""; // Svuota la memoria del browser
-    document.body.style.overflow = "auto"; // Riattiva lo scroll della pagina
-  }
-
-  // Assicura l'attivazione dei pulsanti di chiusura al caricamento della pagina
   document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("close-preview-btn").addEventListener("click", chiudiPreview);
+    const overlay = document.getElementById("pdf-preview-overlay");
+    const iframe = document.getElementById("pdf-preview-iframe");
+    const closeBtn = document.getElementById("close-preview-btn");
     
-    // Se l'utente clicca fuori dal PDF (sullo sfondo scuro), chiude la finestra
-    document.getElementById("pdf-preview-overlay").addEventListener("click", function(e) {
+    // Rileva in automatico tutti i collegamenti ipertestuali ai file manuale PDF
+    const links = document.querySelectorAll("a[href*='.pdf']");
+    
+    links.forEach(link => {
+      link.addEventListener("click", function(event) {
+        // Blocca istantaneamente sia lo scaricamento che i cambi di scheda
+        event.preventDefault();
+        event.stopPropagation(); 
+        
+        let targetUrl = this.getAttribute("href");
+        
+        // TRUCCO ANTI-DOWNLOAD DI GITHUB:
+        // Convertiamo il puntamento grezzo sul server CDN per forzare il rendering all'interno del browser
+        if (targetUrl.includes("raw.githubusercontent.com")) {
+          targetUrl = targetUrl.replace("raw.githubusercontent.com", "media.githubusercontent.com/media");
+        }
+        
+        // Iniezione sorgente dell'iframe e visualizzazione della modale
+        iframe.src = targetUrl;
+        overlay.style.display = "flex";
+        document.body.style.overflow = "hidden"; // Blocca lo scroll del compendio sottostante
+      });
+    });
+    
+    // Funzione interna per il reset dell'interfaccia grafico
+    function chiudiPreview() {
+      overlay.style.display = "none";
+      iframe.src = ""; // Azzera l'istanza per fermare buffering in background
+      document.body.style.overflow = "auto"; // Sblocca lo scroll della tierlist
+    }
+    
+    closeBtn.addEventListener("click", chiudiPreview);
+    overlay.addEventListener("click", function(e) {
       if (e.target === this) chiudiPreview();
     });
   });
 </script>
+
+</body>
+</html>
