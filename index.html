@@ -1,10 +1,18 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  const pdfUrl = new URL('./GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf', window.location.href);
+
   document.querySelectorAll('a[href*="raw.githubusercontent.com/PowermonX/Gurps4e-Compendium"]').forEach(function (link) {
-    const parsed = new URL(link.href);
+    const parsed = new URL(link.href, window.location.href);
     const hash = parsed.hash || '';
-    link.href = './GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf' + hash;
+    const targetUrl = new URL(pdfUrl.href);
+    targetUrl.hash = hash;
+
+    link.href = targetUrl.href;
     link.setAttribute('rel', 'noopener noreferrer');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('type', 'application/pdf');
+    link.setAttribute('download', 'GURPS 4e - ONLY ADV DIS.pdf');
   });
 });
 </script>
