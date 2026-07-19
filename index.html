@@ -1,3 +1,14 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href*="raw.githubusercontent.com/PowermonX/Gurps4e-Compendium"]').forEach(function (link) {
+    const parsed = new URL(link.href);
+    const hash = parsed.hash || '';
+    link.href = './GURPS%204e%20-%20ONLY%20ADV%20DIS.pdf' + hash;
+    link.setAttribute('rel', 'noopener noreferrer');
+  });
+});
+</script>
+
 <div class="gurps-tierlist-container" style="font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; background-color: #1e1e24; color: #f5f5f7; padding: 25px; border-radius: 12px; max-width: 1000px; margin: 20px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #3a3a45;">
   
   <h2 style="text-align: center; color: #ffca28; margin-bottom: 25px; font-size: 28px; letter-spacing: 1px; border-bottom: 2px solid #3a3a45; padding-bottom: 15px;">GURPS 4e - Compendio Vantaggi</h2>
