@@ -1,10 +1,7 @@
 
-## Tier D: Flavor (Narrativi)
-
-[[Alcohol Tolerance 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D100)]
-
-+2 bonus ai tiri di HT contro l'ebbrezza ed elimina i postumi.
-
+## Tier D: Flavor (Narrativi)  
+[[Alcohol Tolerance 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D100)]  
++2 bonus ai tiri di HT contro l'ebbrezza ed elimina i postumi.  
 [[Deep Sleeper 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]
 
 Capacità di dormire in condizioni avverse e ignorare gran parte dei disturbi.
