@@ -1,6 +1,3 @@
-Ecco la lista aggiornata con i collegamenti diretti al file ospitato su GitHub e la formattazione corretta per la visualizzazione in Markdown (inclusi i doppi spazi a fine riga per i requisiti di a capo di Git).
-
----
 
 ## Tier D: Flavor (Narrativi)
 
