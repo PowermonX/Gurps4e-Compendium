@@ -379,8 +379,15 @@
 
 </div>
 
+
+
+
+
+
+
+
 <!-- ========================================== -->
-<!-- AGGIUNTE PER ANTEPRIMA PDF IN MODALE -->
+<!-- AGGIUNTE PER ANTEPRIMA PDF IN MODALE (FIX DOWNLOAD) -->
 <!-- ========================================== -->
 
 <style>
@@ -394,7 +401,7 @@
         width: 100%; 
         height: 100%; 
         background-color: rgba(0,0,0,0.7); 
-        backdrop-filter: blur(3px); /* Leggero effetto sfocato sullo sfondo */
+        backdrop-filter: blur(3px); 
     }
 
     /* Contenitore bianco del PDF */
@@ -428,6 +435,7 @@
         cursor: pointer;
         box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         transition: transform 0.2s;
+        z-index: 100000;
     }
     .modal-pdf-close:hover { transform: scale(1.1); }
 
@@ -459,25 +467,36 @@
 
         pdfLinks.forEach(link => {
             link.addEventListener("click", function(event) {
-                // Impedisce l'apertura in una nuova scheda
                 event.preventDefault(); 
                 
-                // Prende l'URL del PDF (incluso l'eventuale #page=X)
-                const pdfUrl = this.getAttribute("href"); 
+                // Prende l'URL relativo del PDF (es. "documento.pdf#page=3")
+                const relativeUrl = this.getAttribute("href"); 
                 
-                // Carica il PDF nell'iframe e mostra il popup
-                iframe.src = pdfUrl;
+                // Converte l'URL relativo in un URL assoluto completo (richiesto dal visualizzatore)
+                const absoluteUrl = new URL(relativeUrl, window.location.href).href;
+                
+                // Separiamo il link dall'eventuale #page=X per passarlo correttamente a PDF.js
+                const urlParts = absoluteUrl.split('#');
+                const fileUrl = urlParts[0];
+                const pagePart = urlParts[1] ? urlParts[1] : 'page=1';
+                const pageNumber = pagePart.replace('page=', '');
+
+                // Usiamo il visualizzatore ufficiale e sicuro di PDF.js ospitato da cdnjs
+                // Questo costringe il browser a renderizzare il PDF anziché scaricarlo
+                const pdfJsViewer = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/web/viewer.html";
+                
+                // Componiamo l'URL finale per l'iframe
+                iframe.src = `${pdfJsViewer}?file=${encodeURIComponent(fileUrl)}#page=${pageNumber}`;
+                
                 modal.style.display = "block";
             });
         });
 
-        // Funzione per chiudere il popup e resettare l'iframe
         function closeModal() {
             modal.style.display = "none";
             iframe.src = ""; 
         }
 
-        // Chiude la modale cliccando sulla X o sullo sfondo scuro
         closeBtn.addEventListener("click", closeModal);
         modal.addEventListener("click", function(e) {
             if (e.target === modal) closeModal();
