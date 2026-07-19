@@ -2,30 +2,20 @@
 ## Tier D: Flavor (Narrativi)  
 [[Alcohol Tolerance 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D100)]  
 +2 bonus ai tiri di HT contro l'ebbrezza ed elimina i postumi.  
-[[Deep Sleeper 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]
-
-Capacità di dormire in condizioni avverse e ignorare gran parte dei disturbi.
-
-[[Honest Face 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]
-
-Aspetto affidabile; fornisce un bonus di +1 per "recitare l'innocente".
-
-[[No Hangover 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]
-
-Non soffri mai dei postumi dell'alcol, indipendentemente dalla quantità bevuta.
-
-[[Penetrating Voice 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]
-
-Voce potente; +3 ai tiri di udito altrui per sentirti nel rumore.
-
-[[Shtick 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]
-
-Piccola mossa scenica o caratteristica estetica senza bonus meccanici al combattimento.
+[[Deep Sleeper 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]  
+Capacità di dormire in condizioni avverse e ignorare gran parte dei disturbi.  
+[[Honest Face 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]  
+Aspetto affidabile; fornisce un bonus di +1 per "recitare l'innocente".  
+[[No Hangover 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]  
+Non soffri mai dei postumi dell'alcol, indipendentemente dalla quantità bevuta.  
+[[Penetrating Voice 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]  
+Voce potente; +3 ai tiri di udito altrui per sentirti nel rumore.  
+[[Shtick 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D101)]  
+Piccola mossa scenica o caratteristica estetica senza bonus meccanici al combattimento.  
 
 ---
 
-## Tier C: Utilità (Situazionali o di Supporto)
-
+## Tier C: Utilità (Situazionali o di Supporto)  
 [[Accessory 👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/8e6c9f32225f8700926ff7a9ce66da5ce08f7233/GURPS%25204e%2520-%2520ONLY%2520ADV%2520DIS.pdf%23page%3D100)]
 
 Il corpo incorpora uno strumento utile che fornisce piccoli vantaggi non combattivi.
