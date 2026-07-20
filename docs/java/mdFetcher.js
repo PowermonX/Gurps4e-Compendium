@@ -9,11 +9,11 @@ function initMdFetcher() {
     const elements = document.querySelectorAll('.md-loader');
 
     elements.forEach(el => {
-        // Prende il nome del file dall'attributo data-file (es. "asda.md")
+        // Prende il nome del file dall'attributo data-file (es. "esempio.md")
         const fileName = el.getAttribute('data-file');
         
-        // Avendo la root come principale, il percorso corretto parte da /docs/md/
-        const path = `/docs/md/${fileName}`; 
+        // MODIFICA OPZIONE A: Rimosso lo slash iniziale per renderlo relativo
+        const path = `docs/md/${fileName}`; 
 
         fetch(path)
             .then(res => {
