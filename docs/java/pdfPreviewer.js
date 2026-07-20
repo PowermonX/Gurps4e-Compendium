@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
-  // MODIFICA OPZIONE A: Definiamo la cartella in modo relativo (senza / iniziale).
-  // Se non definita nell'HTML, di default cercherà in docs/pdf/
+
+  // Cartella dei PDF (relativa, senza / iniziale)
   const basePdfFolder = window.pdfFolder || 'docs/pdf/';
 
   // 1. Iniettiamo il CSS dinamicamente nella pagina
@@ -30,19 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
   `;
   document.head.appendChild(style);
 
-  // 2. Creazione dinamica dell'interfaccia di preview
+  // 2. Creazione dinamica dell'interfaccia di preview (una sola volta)
   const overlay = document.createElement('div');
   overlay.className = 'pdf-preview-overlay';
-  
   const container = document.createElement('div');
   container.className = 'pdf-preview-container';
-  
   const closeBtn = document.createElement('button');
   closeBtn.className = 'pdf-preview-close-btn';
   closeBtn.innerHTML = '✕';
-  
   const iframe = document.createElement('iframe');
-  
   container.appendChild(closeBtn);
   container.appendChild(iframe);
   overlay.appendChild(container);
@@ -50,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const closePreview = () => {
     overlay.classList.remove('active');
-    iframe.src = ''; 
+    iframe.src = '';
   };
 
   closeBtn.addEventListener('click', closePreview);
@@ -58,38 +53,47 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.target === overlay) closePreview();
   });
 
-  // 3. Intercettazione dei link PDF
-  document.querySelectorAll('a[href*=".pdf"]').forEach(function (link) {
+  // Chiusura con tasto ESC (comodo, opzionale)
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) closePreview();
+  });
+
+  // 3. Helper per calcolare l'URL locale del PDF a partire dal link originale
+  function buildLocalUrl(originalHref) {
+    const parsedUrl = new URL(originalHref, window.location.href);
+    const hash = parsedUrl.hash || '';
+    const pathSegments = parsedUrl.pathname.split('/');
+    const fileName = pathSegments[pathSegments.length - 1];
+
+    let formattedFolder = basePdfFolder.endsWith('/') ? basePdfFolder : basePdfFolder + '/';
+    if (formattedFolder.startsWith('/')) {
+      formattedFolder = formattedFolder.substring(1);
+    }
+
+    const localTargetUrl = new URL(formattedFolder + fileName, window.location.href);
+    localTargetUrl.hash = hash;
+    return localTargetUrl.href;
+  }
+
+  // 4. EVENT DELEGATION: un solo listener sul document, funziona anche
+  //    per i link ai PDF aggiunti DOPO il caricamento iniziale
+  //    (es. da mdFetcher.js che inietta il markdown in modo asincrono)
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('a[href*=".pdf"]');
+    if (!link) return;
+
+    // Evita di intercettare link già gestiti o esterni volutamente esclusi
+    if (link.hasAttribute('data-no-preview')) return;
+
     try {
-      const parsedUrl = new URL(link.href, window.location.href);
-      const hash = parsedUrl.hash || ''; 
-      
-      const pathSegments = parsedUrl.pathname.split('/');
-      const fileName = pathSegments[pathSegments.length - 1];
+      const localTargetUrl = buildLocalUrl(link.getAttribute('href'));
 
-      // MODIFICA STRUTTURALE: Puliamo il percorso della cartella assicurandoci che finisca con '/'
-      // e che NON inizi con '/' per preservare la relatività del branch/repository.
-      let formattedFolder = basePdfFolder.endsWith('/') ? basePdfFolder : basePdfFolder + '/';
-      if (formattedFolder.startsWith('/')) {
-        formattedFolder = formattedFolder.substring(1);
-      }
-
-      // Costruiamo l'URL finale combinando la posizione della pagina corrente con la sottocartella relativa
-      const localTargetUrl = new URL(formattedFolder + fileName, window.location.href);
-      localTargetUrl.hash = hash;
-
-      link.href = localTargetUrl.href;
-      link.setAttribute('rel', 'noopener noreferrer');
-      link.removeAttribute('target');
-      link.removeAttribute('download');
-
-      link.addEventListener('click', function (e) {
-        e.preventDefault(); 
-        iframe.src = localTargetUrl.href; 
-        overlay.classList.add('active'); 
-      });
+      e.preventDefault();
+      iframe.src = localTargetUrl;
+      overlay.classList.add('active');
     } catch (err) {
-      console.error("Errore nella conversione del link PDF:", link.href, err);
+      console.error('Errore nella conversione del link PDF:', link.href, err);
+      // in caso di errore, lascia il comportamento nativo del browser
     }
   });
 });
