@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   
+  // MODIFICA OPZIONE A: Definiamo la cartella in modo relativo (senza / iniziale).
+  // Se non definita nell'HTML, di default cercherà in docs/pdf/
+  const basePdfFolder = window.pdfFolder || 'docs/pdf/';
+
   // 1. Iniettiamo il CSS dinamicamente nella pagina
   const style = document.createElement('style');
   style.textContent = `
@@ -63,7 +67,15 @@ document.addEventListener('DOMContentLoaded', function () {
       const pathSegments = parsedUrl.pathname.split('/');
       const fileName = pathSegments[pathSegments.length - 1];
 
-      const localTargetUrl = new URL('./' + fileName, window.location.href);
+      // MODIFICA STRUTTURALE: Puliamo il percorso della cartella assicurandoci che finisca con '/'
+      // e che NON inizi con '/' per preservare la relatività del branch/repository.
+      let formattedFolder = basePdfFolder.endsWith('/') ? basePdfFolder : basePdfFolder + '/';
+      if (formattedFolder.startsWith('/')) {
+        formattedFolder = formattedFolder.substring(1);
+      }
+
+      // Costruiamo l'URL finale combinando la posizione della pagina corrente con la sottocartella relativa
+      const localTargetUrl = new URL(formattedFolder + fileName, window.location.href);
       localTargetUrl.hash = hash;
 
       link.href = localTargetUrl.href;
