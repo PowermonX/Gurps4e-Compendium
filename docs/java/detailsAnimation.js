@@ -1,4 +1,3 @@
-<script>
 document.querySelectorAll('details').forEach(details => {
   const summary = details.querySelector('summary');
   const content = summary.nextElementSibling;
@@ -38,4 +37,3 @@ document.querySelectorAll('details').forEach(details => {
     animation.oncancel = () => { isExpanding = false; };
   }
 });
-</script>
