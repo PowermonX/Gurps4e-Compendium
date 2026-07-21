@@ -2,38 +2,39 @@ document.querySelectorAll('details').forEach(details => {
   const summary = details.querySelector('summary');
   const content = summary.nextElementSibling;
   let animation = null;
-  let isClosing = false;
-  let isExpanding = false;
 
   summary.addEventListener('click', e => {
-    e.preventDefault(); // blocchiamo il toggle istantaneo nativo
+    e.preventDefault();
+
+    const isOpen = details.open;
+    // Altezza reale ATTUALE, anche se l'animazione precedente è a metà
+    const startHeight = details.getBoundingClientRect().height;
+
     details.style.overflow = 'hidden';
 
-    if (isClosing || !details.open) {
+    if (!isOpen) {
       // APRI
-      isExpanding = true;
       details.open = true;
-      const height = content.offsetHeight;
-      animate(0, height, () => { details.style.overflow = ''; });
-    } else if (isExpanding || details.open) {
+      const endHeight = details.scrollHeight;
+      runAnimation(startHeight, endHeight, () => {
+        details.style.overflow = '';
+      });
+    } else {
       // CHIUDI
-      isClosing = true;
-      const height = content.offsetHeight;
-      animate(height, 0, () => {
+      const endHeight = summary.getBoundingClientRect().height;
+      runAnimation(startHeight, endHeight, () => {
         details.open = false;
         details.style.overflow = '';
-        isClosing = false;
       });
     }
   });
 
-  function animate(from, to, onDone) {
+  function runAnimation(from, to, onDone) {
     if (animation) animation.cancel();
     animation = details.animate(
       { height: [`${from}px`, `${to}px`] },
-      { duration: 5500, easing: 'linear' }
+      { duration: 600, easing: 'ease-out' }
     );
-    animation.onfinish = () => { isExpanding = false; onDone(); };
-    animation.oncancel = () => { isExpanding = false; };
+    animation.onfinish = onDone;
   }
 });
