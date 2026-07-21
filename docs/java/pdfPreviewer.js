@@ -60,26 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.key === 'Escape' && overlay.classList.contains('active')) closePreview();
   });
 
-  // 3. Helper: calcola l'URL del PDF (locale o esterno) + numero di pagina
+  // 3. Helper: calcola l'URL locale del PDF + numero di pagina separatamente
   function buildLocalPdfInfo(originalHref) {
     const parsedUrl = new URL(originalHref, window.location.href);
-    const hash = parsedUrl.hash || '';
-
-    let pageNumber = null;
-    const match = hash.match(/page=(\d+)/);
-    if (match) {
-      pageNumber = match[1];
-    }
-
-    const isExternal = parsedUrl.origin !== window.location.origin;
-
-    if (isExternal) {
-      // Link esterno (es. raw.githubusercontent.com): usiamo l'URL così com'è
-      parsedUrl.hash = '';
-      return { pdfUrl: parsedUrl.href, pageNumber: pageNumber };
-    }
-
-    // Link locale: comportamento originale
+    const hash = parsedUrl.hash || ''; // es. "#page=69"
     const pathSegments = parsedUrl.pathname.split('/');
     const fileName = pathSegments[pathSegments.length - 1];
 
@@ -90,7 +74,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const localPdfUrl = new URL(formattedFolder + fileName, window.location.href);
 
-    return { pdfUrl: localPdfUrl.href, pageNumber: pageNumber };
+    // Estraiamo il numero di pagina dall'hash originale, se presente
+    let pageNumber = null;
+    const match = hash.match(/page=(\d+)/);
+    if (match) {
+      pageNumber = match[1];
+    }
+
+    return { pdfUrl: localPdfUrl.href, pageNumber };
   }
 
   // 4. Helper: costruisce l'URL del viewer PDF.js
