@@ -5,16 +5,19 @@ document.head.appendChild(markedScript);
 
 // 2. Funzione principale che cerca i div e fa il fetch
 function initMdFetcher() {
+    // Cartella dei file .md (configurabile con window.mdFolder, come per i pdf)
+    let baseMdFolder = window.mdFolder || 'docs/md/';
+    if (!baseMdFolder.endsWith('/')) {
+        baseMdFolder += '/';
+    }
+
     // Cerchiamo tutti i div con la classe "md-loader"
     const elements = document.querySelectorAll('.md-loader');
-
     elements.forEach(el => {
         // Prende il nome del file dall'attributo data-file (es. "esempio.md")
         const fileName = el.getAttribute('data-file');
-        
-        // MODIFICA OPZIONE A: Rimosso lo slash iniziale per renderlo relativo
-        const path = `docs/md/${fileName}`; 
 
+        const path = `${baseMdFolder}${fileName}`;
         fetch(path)
             .then(res => {
                 if (!res.ok) {
@@ -32,6 +35,5 @@ function initMdFetcher() {
             });
     });
 }
-
 // Avvia il fetcher quando la libreria Marked è pronta
 markedScript.onload = initMdFetcher;
