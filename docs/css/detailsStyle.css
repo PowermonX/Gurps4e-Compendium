@@ -5,6 +5,7 @@ details {
   margin-bottom: 0.5em;
   overflow: hidden;
   background-color: #a0ceff69;
+  color: #000000; /* per assicurare che il testo rimanga nero*/
 }
 
 summary {
