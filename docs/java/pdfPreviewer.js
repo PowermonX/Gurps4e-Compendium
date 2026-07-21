@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Cartella dei PDF (relativa, senza / iniziale)
   const basePdfFolder = window.pdfFolder || 'docs/pdf/';
 
+  // Percorso del viewer PDF.js (relativo, senza / iniziale)
+  const pdfjsViewerPath = window.pdfjsViewerPath || 'docs/java/pdfjs-6.1.2/web/viewer.html';
+
   // 1. Iniettiamo il CSS dinamicamente nella pagina
   const style = document.createElement('style');
   style.textContent = `
@@ -53,15 +56,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.target === overlay) closePreview();
   });
 
-  // Chiusura con tasto ESC (comodo, opzionale)
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && overlay.classList.contains('active')) closePreview();
   });
 
-  // 3. Helper per calcolare l'URL locale del PDF a partire dal link originale
-  function buildLocalUrl(originalHref) {
+  // 3. Helper: calcola l'URL locale del PDF + numero di pagina separatamente
+  function buildLocalPdfInfo(originalHref) {
     const parsedUrl = new URL(originalHref, window.location.href);
-    const hash = parsedUrl.hash || '';
+    const hash = parsedUrl.hash || ''; // es. "#page=69"
     const pathSegments = parsedUrl.pathname.split('/');
     const fileName = pathSegments[pathSegments.length - 1];
 
@@ -70,30 +72,48 @@ document.addEventListener('DOMContentLoaded', function () {
       formattedFolder = formattedFolder.substring(1);
     }
 
-    const localTargetUrl = new URL(formattedFolder + fileName, window.location.href);
-    localTargetUrl.hash = hash;
-    return localTargetUrl.href;
+    const localPdfUrl = new URL(formattedFolder + fileName, window.location.href);
+
+    // Estraiamo il numero di pagina dall'hash originale, se presente
+    let pageNumber = null;
+    const match = hash.match(/page=(\d+)/);
+    if (match) {
+      pageNumber = match[1];
+    }
+
+    return { pdfUrl: localPdfUrl.href, pageNumber };
   }
 
-  // 4. EVENT DELEGATION: un solo listener sul document, funziona anche
-  //    per i link ai PDF aggiunti DOPO il caricamento iniziale
-  //    (es. da mdFetcher.js che inietta il markdown in modo asincrono)
+  // 4. Helper: costruisce l'URL del viewer PDF.js
+  function buildViewerUrl(pdfUrl, pageNumber) {
+    let formattedViewerPath = pdfjsViewerPath.startsWith('/') ? pdfjsViewerPath.substring(1) : pdfjsViewerPath;
+    const viewerBase = new URL(formattedViewerPath, window.location.href);
+
+    viewerBase.searchParams.set('file', pdfUrl);
+
+    let viewerUrl = viewerBase.href;
+    if (pageNumber) {
+      viewerUrl += `#page=${pageNumber}`;
+    }
+    return viewerUrl;
+  }
+
+  // 5. EVENT DELEGATION
   document.addEventListener('click', function (e) {
     const link = e.target.closest('a[href*=".pdf"]');
     if (!link) return;
 
-    // Evita di intercettare link già gestiti o esterni volutamente esclusi
     if (link.hasAttribute('data-no-preview')) return;
 
     try {
-      const localTargetUrl = buildLocalUrl(link.getAttribute('href'));
+      const { pdfUrl, pageNumber } = buildLocalPdfInfo(link.getAttribute('href'));
+      const viewerUrl = buildViewerUrl(pdfUrl, pageNumber);
 
       e.preventDefault();
-      iframe.src = localTargetUrl;
+      iframe.src = viewerUrl;
       overlay.classList.add('active');
     } catch (err) {
       console.error('Errore nella conversione del link PDF:', link.href, err);
-      // in caso di errore, lascia il comportamento nativo del browser
     }
   });
 });
