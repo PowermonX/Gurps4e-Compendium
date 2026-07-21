@@ -1,23 +1,26 @@
-  details {
-    border: 1px solid #aaaaaa;
-    border-radius: 4px;
-    padding: 0.5em 0.5em 0;
-    margin-bottom: 0.5em;
-    overflow: hidden;
-  }
+details {
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  background-color: #2b3a4a;
+  color: #e8e8e8; /* testo chiaro per contrasto */
+}
 
-  summary {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
-    cursor: pointer;
-  }
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: #1f2b38; /* leggermente più scuro del contenuto, per distinguerlo */
+}
 
-  details[open] {
-    padding: 0.5em;
-  }
+details[open] {
+  padding: 0.5em;
+}
 
-  details[open] summary {
-    border-bottom: 1px solid #aaaaaa;
-    margin-bottom: 0.5em;
-  }
+details[open] summary {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.5em;
+}
