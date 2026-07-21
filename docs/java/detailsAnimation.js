@@ -31,7 +31,7 @@ document.querySelectorAll('details').forEach(details => {
     if (animation) animation.cancel();
     animation = details.animate(
       { height: [`${from}px`, `${to}px`] },
-      { duration: 200, easing: 'ease-out' }
+      { duration: 420, easing: 'ease-out' }
     );
     animation.onfinish = () => { isExpanding = false; onDone(); };
     animation.oncancel = () => { isExpanding = false; };
