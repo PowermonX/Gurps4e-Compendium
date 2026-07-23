@@ -8,7 +8,7 @@ function initMdFetcher() {
     // Cartella dei file .md (configurabile con window.mdFolder, come per i pdf)
     // "Pseudo-assoluto": abbondiamo con i ../ così funziona da qualsiasi profondità
     // ragionevole, il browser clampa alla root se ce ne sono troppi
-    let baseMdFolder = window.mdFolder || '../../../../../../docs/md/';
+    let baseMdFolder = window.mdFolder || 'docs/md/';
     if (!baseMdFolder.endsWith('/')) {
         baseMdFolder += '/';
     }
