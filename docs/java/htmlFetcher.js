@@ -1,46 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
-      // Seleziona tutti gli elementi da popolare
-      const loaders = document.querySelectorAll('.html-loader');
+  // "Pseudo-assoluto": abbondiamo con i ../ così funziona da qualsiasi profondità
+  // ragionevole, il browser clampa alla root se ce ne sono troppi
+  const defaultHtmlFolder = '../../../../../../docs/html/';
 
-      loaders.forEach(loader => {
-        const file = loader.getAttribute('data-file');
+  const loaders = document.querySelectorAll('.html-loader');
 
-        if (!file) {
-          console.warn('Elemento .html-loader senza attributo data-file:', loader);
-          return;
-        }
+  loaders.forEach(loader => {
+    const file = loader.getAttribute('data-file');
 
-        // Path relativo: risolto rispetto alla pagina corrente
-        const path = `./${file}`;
+    if (!file) {
+      console.warn('Elemento .html-loader senza attributo data-file:', loader);
+      return;
+    }
 
-        fetch(path)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(`Errore nel recupero del file: ${path} (status ${response.status})`);
-            }
-            return response.text();
-          })
-          .then(data => {
-            loader.innerHTML = data;
-          })
-          .catch(error => {
-            console.error('Si è verificato un problema:', error);
-            loader.innerHTML = '<p>Impossibile caricare il contenuto.</p>';
-          });
-      });
-    });// Richiesta per recuperare il file esterno
-    fetch('sezione.html')
+    let path;
+
+    if (file.startsWith('../') || file.startsWith('./') || file.startsWith('/')) {
+      path = file;
+    } else {
+      path = `${defaultHtmlFolder}${file}`;
+    }
+
+    fetch(path)
       .then(response => {
         if (!response.ok) {
-          throw new Error('Errore nel recupero del file');
+          throw new Error(`Errore nel recupero del file: ${path} (status ${response.status})`);
         }
         return response.text();
       })
       .then(data => {
-        // Inserisce l'HTML dentro il div scelto
-        document.getElementById('contenuto-esterno').innerHTML = data;
+        loader.innerHTML = data;
       })
       .catch(error => {
         console.error('Si è verificato un problema:', error);
-        document.getElementById('contenuto-esterno').innerHTML = '<p>Impossibile caricare il contenuto.</p>';
+        loader.innerHTML = '<p>Impossibile caricare il contenuto.</p>';
       });
+  });
+});
