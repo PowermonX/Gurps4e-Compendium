@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // "Pseudo-assoluto": abbondiamo con i ../ così funziona da qualsiasi profondità
   // ragionevole, il browser clampa alla root se ce ne sono troppi
-  const defaultHtmlFolder = '../../../../../../docs/html/';
+  const defaultHtmlFolder = 'docs/html/';
 
   const loaders = document.querySelectorAll('.html-loader');
 
