@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // usa il nav già presente nell'HTML, invece di crearne uno nuovo
   const nav = document.getElementById('indice-laterale');
   const lista = nav.querySelector('#lista-indice');
   let contatore = 0;
 
+  const observer = new MutationObserver(() => {
+    ricostruisciIndice();
+  });
+
   function ricostruisciIndice() {
+    observer.disconnect(); // <-- smette di "guardare" temporaneamente
+
     lista.innerHTML = '';
     const titoli = document.querySelectorAll('h1, h2, h3, details > summary');
 
@@ -26,12 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       lista.appendChild(link);
     });
+
+    observer.observe(document.body, { childList: true, subtree: true }); // <-- riattiva dopo
   }
 
   ricostruisciIndice();
-
-  const observer = new MutationObserver(() => ricostruisciIndice());
-  observer.observe(document.body, { childList: true, subtree: true });
 
   if (window.innerWidth <= 768) {
     const btn = document.createElement('button');
