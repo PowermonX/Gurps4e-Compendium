@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // crea il contenitore dell'indice
-  const nav = document.createElement('nav');
-  nav.id = 'indice-laterale';
-  nav.innerHTML = '<strong>Indice</strong><div id="lista-indice"></div>';
-  document.body.appendChild(nav);
-
+  // usa il nav già presente nell'HTML, invece di crearne uno nuovo
+  const nav = document.getElementById('indice-laterale');
   const lista = nav.querySelector('#lista-indice');
   let contatore = 0;
 
@@ -13,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const titoli = document.querySelectorAll('h1, h2, h3, details > summary');
 
     titoli.forEach((titolo) => {
-      if (titolo.closest('#indice-laterale')) return; // ignora l'indice stesso
+      if (titolo.closest('#indice-laterale')) return;
       if (!titolo.id) titolo.id = 'sezione-' + (contatore++);
 
       const link = document.createElement('a');
@@ -32,17 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // prima costruzione (per l'indice statico già presente)
   ricostruisciIndice();
 
-  // osserva la pagina: ogni volta che viene aggiunto contenuto
-  // (es. dopo il caricamento di un file .md o .html), ricostruisce l'indice
-  const observer = new MutationObserver(() => {
-    ricostruisciIndice();
-  });
+  const observer = new MutationObserver(() => ricostruisciIndice());
   observer.observe(document.body, { childList: true, subtree: true });
 
-  // gestione pulsante mobile
   if (window.innerWidth <= 768) {
     const btn = document.createElement('button');
     btn.id = 'toggle-indice';
