@@ -1,576 +1,576 @@
 <h1 id="animal">ANIMAL</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=144|Animal Handling† 🧠]]  
+[[Animal Handling† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=144)]  
 Addestramento, cura e comando di una specifica categoria di animali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=163|Falconry 🧠]]  
+[[Falconry 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=163)]  
 Abilità di addestrare, curare e cacciare con i rapaci.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179|Mimicry (Animal Sounds/Bird Calls) 🧠]]  
+[[Mimicry (Animal Sounds/Bird Calls) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179)]  
 Capacità di imitare fedelmente i versi di animali o uccelli.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179|Mount ⚔️👽]]  
+[[Mount ⚔️👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179)]  
 Abilità di una cavalcatura nel trasportare e collaborare con il cavaliere.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=180|Naturalist 🧠]]  
+[[Naturalist 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=180)]  
 Conoscenza pratica della natura, della fauna e della flora selvatica.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181|Packing 🧠]]  
+[[Packing 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181)]  
 Capacità di caricare animali da soma in modo efficiente e sicuro.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=186|Riding† ⚔️]]  
+[[Riding† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=186)]  
 Abilità di cavalcare e guidare un animale specifico in sella.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=194|Teamster† 🧠]]  
+[[Teamster† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=194)]  
 Guida di animali da tiro che trainano carri, carriole o slitte.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197|Veterinary/TL 🧠]]  
+[[Veterinary/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197)]  
 Medicina e chirurgia applicata alla cura degli animali.  
 <h1 id="arts-entertainment">ARTS/ENTERTAINMENT</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148|Artist† 🧠]]  
+[[Artist† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148)]  
 Capacità di creare opere d'arte visiva in una specifica specialità.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154|Connoisseur† 🧠]]  
+[[Connoisseur† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154)]  
 Conoscenza approfondita e capacità di valutare oggetti di lusso o arte.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155|Current Affairs/TL† 🧠]]  
+[[Current Affairs/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155)]  
 Conoscenza di notizie ed eventi recenti in campi come cultura o politica.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=156|Dancing 🧠]]  
+[[Dancing 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=156)]  
 Abilità nell'eseguire danze ritmiche e coreografie.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158|Electronics Operation/TL (Media) 🧠]]  
+[[Electronics Operation/TL (Media) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158)]  
 Uso di apparecchiature per la registrazione, trasmissione e riproduzione di media.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164|Fire Eating 🧠]]  
+[[Fire Eating 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164)]  
 Abilità acrobatica e scenica di spegnere fiamme in bocca.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=167|Group Performance† 🧠]]  
+[[Group Performance† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=167)]  
 Capacità di dirigere un gruppo di artisti in una performance coordinata.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=175|Makeup/TL 🧠]]  
+[[Makeup/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=175)]  
 Arte di alterare l'aspetto fisico tramite cosmetici e protesi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179|Mimicry† 🧠]]  
+[[Mimicry† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179)]  
 Abilità di imitare voci, suoni o linguaggi specifici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179|Musical Composition 🧠]]  
+[[Musical Composition 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179)]  
 Abilità nello scrivere e comporre brani musicali originali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=180|Musical Instrument† 🧠]]  
+[[Musical Instrument† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=180)]  
 Capacità di suonare uno specifico strumento musicale con perizia.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181|Performance 🧠]]  
+[[Performance 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181)]  
 Recitazione e intrattenimento davanti a un pubblico dal vivo.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Photography/TL 🧠]]  
+[[Photography/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Abilità di catturare immagini fisse usando fotocamere e sviluppo.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=183|Poetry 🧠]]  
+[[Poetry 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=183)]  
 Composizione di versi e rime per intrattenimento o espressione.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=189|Singing 🧠]]  
+[[Singing 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=189)]  
 Abilità nell'utilizzare la voce per intonare brani musicali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190|Sleight of Hand 🧠]]  
+[[Sleight of Hand 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190)]  
 Manipolazione rapida e invisibile di piccoli oggetti; prestidigitazione.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191|Stage Combat ⚔️]]  
+[[Stage Combat ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191)]  
 Esecuzione scenica di manovre di combattimento per intrattenimento.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197|Ventriloquism 🧠]]  
+[[Ventriloquism 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197)]  
 Capacità di proiettare la propria voce facendola sembrare altrove.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197|Writing 🧠]]  
+[[Writing 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197)]  
 Abilità di scrivere testi chiari, informativi o divertenti.  
 <h1 id="athletic">ATHLETIC</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143|Acrobatics ⚔️]]  
+[[Acrobatics ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143)]  
 Ginnastica, rotolamento e manovre acrobatiche per movimento o difesa.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143|Aerobatics ⚔️]]  
+[[Aerobatics ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143)]  
 Manovre acrobatiche eseguite durante il volo o in caduta libera.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143|Aquabatics ⚔️]]  
+[[Aquabatics ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143)]  
 Manovre acrobatiche e nuoto acrobatico eseguiti sott'acqua.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149|Bicycling ⚔️]]  
+[[Bicycling ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149)]  
 Abilità di guidare e manovrare biciclette e veicoli a pedali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=150|Body Sense 🧠]]  
+[[Body Sense 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=150)]  
 Orientamento rapido dopo il teletrasporto o un cambio di gravità.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151|Breath Control ⚔️]]  
+[[Breath Control ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151)]  
 Tecniche di respirazione per recuperare fatica o resistere all'apnea.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152|Climbing ⚔️]]  
+[[Climbing ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152)]  
 Abilità di scalare pareti verticali, ghiaccio o alberi in sicurezza.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153|Combat Art/Sport† ⚔️]]  
+[[Combat Art/Sport† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153)]  
 Pratica di uno stile di combattimento come arte o sport.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164|Flight ⚔️👽]]  
+[[Flight ⚔️👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164)]  
 Abilità nel controllare il volo motorizzato o naturale.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166|Free Fall ⚔️]]  
+[[Free Fall ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166)]  
 Capacità di muoversi e agire efficacemente in assenza di gravità.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169|Hiking ⚔️]]  
+[[Hiking ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169)]  
 Capacità di marciare a lungo su terreni vari senza sfinirsi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172|Jumping ⚔️]]  
+[[Jumping ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172)]  
 Capacità di saltare grandi distanze o altezze con precisione.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174|Lifting ⚔️]]  
+[[Lifting ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174)]  
 Tecnica per sollevare carichi pesanti massimizzando la forza fisica.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181|Parachuting/TL ⚔️]]  
+[[Parachuting/TL ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181)]  
 Abilità nell'uso sicuro e preciso di paracadute e sistemi simili.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187|Running ⚔️]]  
+[[Running ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187)]  
 Abilità nel correre velocemente e mantenere il ritmo su distanze.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188|Scuba/TL ⚔️]]  
+[[Scuba/TL ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188)]  
 Uso di apparecchiature per la respirazione subacquea autonoma.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=189|Skating ⚔️]]  
+[[Skating ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=189)]  
 Muoversi velocemente su ghiaccio o superfici lisce usando pattini.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190|Skiing ⚔️]]  
+[[Skiing ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190)]  
 Abilità di scivolare e manovrare sulla neve usando gli sci.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191|Sports† ⚔️]]  
+[[Sports† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191)]  
 Competenza in un'attività sportiva specifica, competitiva o ricreativa.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=193|Swimming ⚔️]]  
+[[Swimming ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=193)]  
 Capacità di muoversi e restare a galla nell'acqua.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195|Throwing ⚔️]]  
+[[Throwing ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195)]  
 Tecnica per lanciare oggetti generici con forza e precisione.  
 <h1 id="business">BUSINESS</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143|Accounting 🧠]]  
+[[Accounting 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143)]  
 Gestione di conti finanziari, registri e analisi di bilanci.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143|Administration 🧠]]  
+[[Administration 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143)]  
 Capacità di gestire burocrazie e dirigere grandi organizzazioni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155|Current Affairs/TL (Business) 🧠]]  
+[[Current Affairs/TL (Business) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155)]  
 Notizie ed eventi recenti nel mondo del commercio e della finanza.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=156|Diplomacy 🧠]]  
+[[Diplomacy 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=156)]  
 Abilità nel mediare e gestire relazioni interpersonali o politiche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158|Economics 🧠]]  
+[[Economics 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158)]  
 Studio dei sistemi di mercato, ricchezza e impatto economico.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164|Finance 🧠]]  
+[[Finance 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164)]  
 Gestione del denaro, investimenti e mercati finanziari.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=173|Law† 🧠]]  
+[[Law† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=173)]  
 Conoscenza dei sistemi legali e procedure di una cultura.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176|Market Analysis 🧠]]  
+[[Market Analysis 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176)]  
 Previsione delle tendenze di mercato e fluttuazione dei prezzi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176|Mathematics/TL (Statistics) 🧠]]  
+[[Mathematics/TL (Statistics) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176)]  
 Applicazione dei principi statistici per l'analisi dei dati.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Merchant 🧠]]  
+[[Merchant 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Abilità nel commercio, nella vendita e nel baratto di beni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184|Politics 🧠]]  
+[[Politics 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184)]  
 Arte di ottenere potere sociale e influenzare processi decisionali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185|Propaganda/TL 🧠]]  
+[[Propaganda/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185)]  
 Abilità di manipolare l'opinione pubblica tramite informazioni strategiche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185|Public Speaking 🧠]]  
+[[Public Speaking 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185)]  
 Capacità di parlare efficacemente davanti a una folla.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187|Savoir-Faire (High Society) 🧠]]  
+[[Savoir-Faire (High Society) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187)]  
 Etichetta e buone maniere delle classi sociali elevate.  
 <h1 id="combat-weapon">COMBAT/WEAPON</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=147|Artillery/TL† ⚔️]]  
+[[Artillery/TL† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=147)]  
 Uso di armi d'assedio pesanti, fisse o montate.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Axe/Mace ⚔️]]  
+[[Axe/Mace ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di armi a una mano da impatto bilanciate in punta.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148|Beam Weapons/TL† ⚔️👽]]  
+[[Beam Weapons/TL† ⚔️👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148)]  
 Uso di armi a energia direzionata come laser o plasma.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149|Blowpipe ⚔️]]  
+[[Blowpipe ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149)]  
 Uso di cerbottane per scagliare dardi avvelenati.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=150|Bolas ⚔️]]  
+[[Bolas ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=150)]  
 Lancio di pesi legati per abbattere o bloccare nemici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151|Bow ⚔️]]  
+[[Bow ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151)]  
 Uso di archi per scoccare frecce a distanza.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151|Boxing ⚔️]]  
+[[Boxing ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151)]  
 Combattimento pugilistico focalizzato su velocità e gioco di gambe.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151|Brawling ⚔️]]  
+[[Brawling ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151)]  
 Combattimento disarmato rozzo basato sulla velocità e l'istinto.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Broadsword ⚔️]]  
+[[Broadsword ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di spade a una mano bilanciate e versatili.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153|Cloak ⚔️]]  
+[[Cloak ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153)]  
 Uso di un mantello per parare o avvolgere l'avversario.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155|Crossbow ⚔️]]  
+[[Crossbow ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155)]  
 Uso di archi meccanici caricati a molla.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Flail ⚔️]]  
+[[Flail ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di armi con testa snodata, difficili da parare.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Force Sword ⚔️👽🪄]]  
+[[Force Sword ⚔️👽🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di spade a energia altamente letali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Force Whip ⚔️👽🪄]]  
+[[Force Whip ⚔️👽🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Uso di fruste composte da pura energia cariche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166|Garrote ⚔️]]  
+[[Garrote ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166)]  
 Uso di lacci per soffocare il nemico da dietro.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=167|Gunner/TL† ⚔️]]  
+[[Gunner/TL† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=167)]  
 Uso di armi pesanti montate come cannoni o mitragliatrici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=167|Guns/TL† ⚔️]]  
+[[Guns/TL† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=167)]  
 Uso di armi da fuoco individuali come pistole o fucili.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170|Innate Attack† ⚔️👽🪄]]  
+[[Innate Attack† ⚔️👽🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170)]  
 Controllo e mira di attacchi magici o biologici naturali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Jitte/Sai ⚔️]]  
+[[Jitte/Sai ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di armi a forca corte per bloccare spade.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172|Judo ⚔️]]  
+[[Judo ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172)]  
 Combattimento disarmato avanzato basato su proiezioni e leve.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172|Karate ⚔️]]  
+[[Karate ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172)]  
 Combattimento disarmato avanzato focalizzato su colpi precisi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Knife ⚔️]]  
+[[Knife ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di pugnali e lame corte in combattimento ravvicinato.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Kusari ⚔️]]  
+[[Kusari ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Uso della catena pesata per colpire o disarmare.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=173|Lance ⚔️]]  
+[[Lance ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=173)]  
 Uso di armi in asta lunghe durante la carica.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=173|Lasso ⚔️]]  
+[[Lasso ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=173)]  
 Lancio di un cappio di corda per catturare.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174|Liquid Projector/TL† ⚔️]]  
+[[Liquid Projector/TL† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174)]  
 Uso di armi che spruzzano liquidi (idranti, lanciafiamme).  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Main-Gauche ⚔️]]  
+[[Main-Gauche ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di un pugnale paratore nella mano secondaria.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Monowire Whip ⚔️👽]]  
+[[Monowire Whip ⚔️👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Uso di fruste a monofilamento estremamente affilate.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=180|Net ⚔️]]  
+[[Net ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=180)]  
 Lancio di una rete per intrappolare il bersaglio.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181|Parry Missile Weapons ⚔️]]  
+[[Parry Missile Weapons ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181)]  
 Abilità di parare proiettili a mano nuda.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Polearm ⚔️]]  
+[[Polearm ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di armi pesanti in asta lunga (alabarde).  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Rapier ⚔️]]  
+[[Rapier ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di spade lunghe focalizzate su affondi rapidi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Saber ⚔️]]  
+[[Saber ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di spade a lama curva per colpi rapidi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=189|Shield† ⚔️]]  
+[[Shield† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=189)]  
 Abilità nell'usare uno scudo per bloccare o colpire.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Shortsword ⚔️]]  
+[[Shortsword ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Uso di spade corte o bastoni da una mano.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190|Sling ⚔️]]  
+[[Sling ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190)]  
 Uso di una fionda a laccio per lanciare pietre.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Smallsword ⚔️]]  
+[[Smallsword ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di spade corte e leggere per scherma.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Spear ⚔️]]  
+[[Spear ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di armi in asta lunghe per affondi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191|Spear Thrower ⚔️]]  
+[[Spear Thrower ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191)]  
 Uso dell'atlatl per lanciare giavellotti con forza.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Staff ⚔️]]  
+[[Staff ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di bastoni lunghi impugnati a due mani.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192|Sumo Wrestling ⚔️]]  
+[[Sumo Wrestling ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192)]  
 Lotta per spingere fuori o atterrare l'avversario.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195|Thrown Weapon† ⚔️]]  
+[[Thrown Weapon† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195)]  
 Abilità di lanciare armi specifiche come coltelli.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Tonfa ⚔️]]  
+[[Tonfa ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Uso di bastoni laterali per blocchi e colpi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Two-Handed Axe/Mace ⚔️]]  
+[[Two-Handed Axe/Mace ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di grandi asce o mazze a due mani.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177|Two-Handed Flail ⚔️]]  
+[[Two-Handed Flail ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=177)]  
 Uso di grandi mazze a catena a due mani.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Two-Handed Sword ⚔️]]  
+[[Two-Handed Sword ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Uso di spade grandi impugnate a due mani.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Whip ⚔️]]  
+[[Whip ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Uso della frusta per colpire o afferrare a distanza.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197|Wrestling ⚔️]]  
+[[Wrestling ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197)]  
 Lotta ravvicinata focalizzata sull'immobilizzare l'avversario.  
 <h1 id="craft">CRAFT</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148|Artist (Pottery/Sculpting/Woodworking) 🧠]]  
+[[Artist (Pottery/Sculpting/Woodworking) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148)]  
 Creazione di opere in argilla, pietra o legno.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152|Carpentry 🧠]]  
+[[Carpentry 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152)]  
 Costruzione e riparazione di strutture e oggetti in legno.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172|Jeweler/TL 🧠]]  
+[[Jeweler/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172)]  
 Lavorazione di metalli preziosi e pietre per gioielli.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174|Leatherworking 🧠]]  
+[[Leatherworking 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174)]  
 Confezionamento e riparazione di beni in cuoio.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176|Masonry 🧠]]  
+[[Masonry 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176)]  
 Abilità nel costruire strutture in muratura.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188|Sewing/TL 🧠]]  
+[[Sewing/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188)]  
 Riparazione e confezione di abiti e tessuti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190|Smith/TL† 🧠]]  
+[[Smith/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190)]  
 Forgiatura di metalli a caldo per utensili o armi.  
 <h1 id="criminal-street">CRIMINAL/STREET</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152|Carousing 🧠]]  
+[[Carousing 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152)]  
 Socializzare in contesti informali o loschi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153|Computer Hacking/TL 🧠👽]]  
+[[Computer Hacking/TL 🧠👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153)]  
 Intrusione non autorizzata in sistemi informatici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154|Counterfeiting/TL 🧠]]  
+[[Counterfeiting/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154)]  
 Produzione di repliche illegali di valuta o documenti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=156|Disguise/TL† 🧠]]  
+[[Disguise/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=156)]  
 Camuffare l'identità tramite trucco e abbigliamento.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161|Escape ⚔️]]  
+[[Escape ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161)]  
 Abilità di liberarsi da legacci o celle chiuse.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164|Fast-Talk 🧠]]  
+[[Fast-Talk 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164)]  
 Abilità di convincere qualcuno con la parlantina.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164|Filch 🧠]]  
+[[Filch 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164)]  
 Abilità di rubare rapidamente piccoli oggetti incustoditi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165|Forced Entry ⚔️]]  
+[[Forced Entry ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165)]  
 Abilità di sfondare barriere usando la forza.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165|Forgery/TL 🧠]]  
+[[Forgery/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165)]  
 Creazione di documenti falsi apparentemente autentici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166|Gambling 🧠]]  
+[[Gambling 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166)]  
 Conoscenza dei giochi d'azzardo e capacità di barare.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169|Holdout 🧠]]  
+[[Holdout 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169)]  
 Capacità di occultare oggetti sul proprio corpo.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=175|Lockpicking/TL 🧠]]  
+[[Lockpicking/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=175)]  
 Abilità nell'aprire serrature senza la chiave.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181|Panhandling 🧠]]  
+[[Panhandling 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181)]  
 Arte di chiedere denaro in modo efficace.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Pickpocket 🧠]]  
+[[Pickpocket 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Sottrazione discreta di oggetti dalle tasche altrui.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=183|Poisons/TL 🧠]]  
+[[Poisons/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=183)]  
 Conoscenza e uso di sostanze tossiche e venefiche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187|Savoir-Faire (Mafia) 🧠]]  
+[[Savoir-Faire (Mafia) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187)]  
 Codice di condotta delle organizzazioni criminali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187|Scrounging 🧠]]  
+[[Scrounging 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187)]  
 Abilità nel trovare oggetti utili tra i rottami.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188|Shadowing 🧠]]  
+[[Shadowing 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188)]  
 Abilità di seguire qualcuno senza farsi scoprire.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190|Smuggling 🧠]]  
+[[Smuggling 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190)]  
 Occultare e trasportare merci illegali oltre i confini.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191|Stealth ⚔️]]  
+[[Stealth ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191)]  
 Muoversi e agire senza produrre rumore.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192|Streetwise 🧠]]  
+[[Streetwise 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192)]  
 Conoscenza dell'ambiente criminale e dei suoi codici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195|Traps/TL 🧠]]  
+[[Traps/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195)]  
 Abilità nel costruire e disarmare trappole e congegni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197|Urban Survival 🧠]]  
+[[Urban Survival 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197)]  
 Capacità di sopravvivere in sicurezza in una città.  
 <h1 id="design-invention">DESIGN/INVENTION</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=145|Architecture/TL 🧠]]  
+[[Architecture/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=145)]  
 Progettazione di edifici e deduzione della struttura funzionale.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149|Bioengineering/TL† 🧠👽]]  
+[[Bioengineering/TL† 🧠👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149)]  
 Modifica genetica e tecnologica degli organismi viventi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153|Computer Programming/TL 🧠]]  
+[[Computer Programming/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153)]  
 Scrittura e debug di software per calcolatori.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=159|Engineer/TL† 🧠]]  
+[[Engineer/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=159)]  
 Progettazione e reverse-engineering di macchinari complessi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Pharmacy/TL† 🧠]]  
+[[Pharmacy/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Preparazione di farmaci, chimici o erboristici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197|Weird Science 🧠👽🪄]]  
+[[Weird Science 🧠👽🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197)]  
 Studio di teorie scientifiche marginali o extraterrestri.  
 <h1 id="esoteric">ESOTERIC</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148|Autohypnosis 🧠🪄]]  
+[[Autohypnosis 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148)]  
 Controllo mentale su fatica, dolore e processi corporei.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149|Blind Fighting ⚔️🧠🪄]]  
+[[Blind Fighting ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149)]  
 Abilità di combattere efficacemente senza la vista.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=150|Body Control ⚔️👽🪄]]  
+[[Body Control ⚔️👽🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=150)]  
 Controllo conscio di funzioni fisiologiche involontarie.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151|Breaking Blow ⚔️🧠🪄]]  
+[[Breaking Blow ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=151)]  
 Tecnica per convogliare la forza e rompere oggetti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=157|Dreaming 🧠🪄]]  
+[[Dreaming 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=157)]  
 Controllo dei sogni e capacità di trarne informazioni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=160|Enthrallment† 🧠🪄]]  
+[[Enthrallment† 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=160)]  
 Capacità di influenzare una folla tramite discorsi oratori.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161|Esoteric Medicine 🧠🪄]]  
+[[Esoteric Medicine 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161)]  
 Trattamenti medici basati su energie mistiche o interne.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165|Flying Leap ⚔️🧠🪄]]  
+[[Flying Leap ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165)]  
 Salto potenziato misticamente per coprire distanze sovrumane.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170|Immovable Stance ⚔️🧠🪄]]  
+[[Immovable Stance ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170)]  
 Capacità di ancorarsi al terreno per resistere a spinte.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=171|Invisibility Art ⚔️🧠🪄]]  
+[[Invisibility Art ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=171)]  
 Abilità di rendersi invisibili tramite concentrazione profonda.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172|Kiai ⚔️🧠🪄]]  
+[[Kiai ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172)]  
 Grido concentrato che può stordire l'avversario.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174|Light Walk ⚔️🧠🪄]]  
+[[Light Walk ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174)]  
 Abilità di camminare su superfici fragili senza traccia.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176|Meditation 🧠🪄]]  
+[[Meditation 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176)]  
 Pratica mentale per focalizzare le proprie energie.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Mental Strength 🧠🪄]]  
+[[Mental Strength 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Resistenza psichica allenata contro intrusioni mentali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179|Mind Block 🧠🪄]]  
+[[Mind Block 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179)]  
 Schermatura mentale per prevenire la lettura del pensiero.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179|Musical Influence 🧠🪄]]  
+[[Musical Influence 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=179)]  
 Uso della musica per indurre stati emotivi negli altri.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184|Power Blow ⚔️🧠🪄]]  
+[[Power Blow ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184)]  
 Raddoppiare temporaneamente la Forza fisica tramite concentrazione.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184|Pressure Points ⚔️🧠🪄]]  
+[[Pressure Points ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184)]  
 Conoscenza dei punti vitali per paralizzare con tocchi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184|Pressure Secrets ⚔️🧠🪄]]  
+[[Pressure Secrets ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184)]  
 Conoscenza esoterica di punti vitali per colpi letali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185|Push ⚔️🧠🪄]]  
+[[Push ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185)]  
 Uso del chi per sbilanciare l'avversario senza ferire.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195|Throwing Art ⚔️🧠🪄]]  
+[[Throwing Art ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195)]  
 Trasformare qualsiasi oggetto lanciato in un'arma letale.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197|Zen Archery ⚔️🧠🪄]]  
+[[Zen Archery ⚔️🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197)]  
 Abilità mistica di colpire bersagli impossibili con l'arco.  
 <h1 id="everyman">EVERYMAN</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=145|Area Knowledge† 🧠]]  
+[[Area Knowledge† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=145)]  
 Conoscenza dettagliata di un luogo specifico e gente.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153|Computer Operation/TL 🧠]]  
+[[Computer Operation/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=153)]  
 Abilità base nell'uso di computer e programmi standard.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154|Cooking 🧠]]  
+[[Cooking 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154)]  
 Abilità di preparare pasti nutrienti e piacevoli.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155|Current Affairs/TL† 🧠]]  
+[[Current Affairs/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155)]  
 Conoscenza generale degli eventi e notizie correnti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164|First Aid/TL 🧠]]  
+[[First Aid/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164)]  
 Trattamento d'emergenza immediato per ferite e traumi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169|Housekeeping 🧠]]  
+[[Housekeeping 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169)]  
 Gestione efficiente delle faccende domestiche e manutenzione.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172|Knot-Tying ⚔️]]  
+[[Knot-Tying ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=172)]  
 Abilità di legare nodi sicuri per vari scopi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187|Savoir-Faire (Servant) 🧠]]  
+[[Savoir-Faire (Servant) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187)]  
 Protocollo appropriato per chi serve classi elevate.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188|Sewing/TL 🧠]]  
+[[Sewing/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188)]  
 Riparazione e confezione di abiti e tessuti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197|Typing 🧠]]  
+[[Typing 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=197)]  
 Uso rapido di tastiere per la stesura testi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Weather Sense 🧠]]  
+[[Weather Sense 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Prevedere cambiamenti meteorologici tramite osservazione naturale.  
 <h1 id="knowledge">KNOWLEDGE</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162|Expert Skill† 🧠]]  
+[[Expert Skill† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162)]  
 Conoscenza accademica profonda e interdisciplinare di un tema.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166|Games† 🧠]]  
+[[Games† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166)]  
 Conoscenza delle regole e strategie di specifici giochi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168|Heraldry 🧠]]  
+[[Heraldry 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168)]  
 Studio di blasoni, insegne nobiliari e gerarchie sociali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168|Hidden Lore† 🧠🪄]]  
+[[Hidden Lore† 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168)]  
 Conoscenza di segreti oscuri o misteri proibiti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169|Hobby Skill† 🧠]]  
+[[Hobby Skill† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169)]  
 Conoscenza e competenza in attività ricreative personali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184|Professional Skill† 🧠]]  
+[[Professional Skill† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=184)]  
 Conoscenze relative a un'occupazione pratica non d'avventura.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187|Savoir-Faire† 🧠]]  
+[[Savoir-Faire† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187)]  
 Conoscenza delle convenzioni sociali in vari contesti.  
 <h1 id="medical">MEDICAL</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=156|Diagnosis/TL 🧠]]  
+[[Diagnosis/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=156)]  
 Identificare malattie e la causa di ferite fisiche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158|Electronics Operation/TL (Medical) 🧠]]  
+[[Electronics Operation/TL (Medical) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158)]  
 Uso di macchinari medici complessi per diagnostica.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161|Esoteric Medicine 🧠🪄]]  
+[[Esoteric Medicine 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161)]  
 Cura basata su tradizioni mistiche o energie.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162|Expert Skill (Epidemiology) 🧠]]  
+[[Expert Skill (Epidemiology) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162)]  
 Studio accademico sulla diffusione delle malattie contagiose.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170|Hypnotism 🧠🪄]]  
+[[Hypnotism 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170)]  
 Induzione di trance per terapia o informazioni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Physician/TL 🧠]]  
+[[Physician/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Pratica medica generale per curare malattie e guarigione.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Physiology/TL 🧠]]  
+[[Physiology/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Studio approfondito della struttura e funzione del corpo.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185|Psychology 🧠]]  
+[[Psychology 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185)]  
 Studio e analisi del comportamento e della mente.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192|Surgery/TL 🧠⚔️]]  
+[[Surgery/TL 🧠⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192)]  
 Eseguire operazioni invasive per riparare danni fisici.  
 <h1 id="military">MILITARY</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=147|Armoury/TL† 🧠⚔️]]  
+[[Armoury/TL† 🧠⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=147)]  
 Costruzione e riparazione di armi e armature.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155|Cryptography/TL 🧠]]  
+[[Cryptography/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155)]  
 Creazione e decifrazione di codici e messaggi segreti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158|Electronics Operation/TL (Electronic Warfare) 🧠]]  
+[[Electronics Operation/TL (Electronic Warfare) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158)]  
 Gestione di sistemi di disturbo e intercettazione.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=159|Electronics Repair/TL (Electronic Warfare) 🧠]]  
+[[Electronics Repair/TL (Electronic Warfare) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=159)]  
 Riparazione di sistemi per la guerra elettronica.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162|Expert Skill (Military Science) 🧠]]  
+[[Expert Skill (Military Science) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162)]  
 Studio teorico di organizzazione militare e logistica.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=163|Explosives/TL† 🧠]]  
+[[Explosives/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=163)]  
 Preparazione di cariche esplosive per fini bellici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165|Forward Observer/TL 🧠]]  
+[[Forward Observer/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165)]  
 Dirigere l'artiglieria da una posizione avanzata.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170|Intelligence Analysis/TL 🧠]]  
+[[Intelligence Analysis/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170)]  
 Valutazione di dati informativi per scopi strategici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161|NBC Suit/TL ⚔️👽]]  
+[[NBC Suit/TL ⚔️👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161)]  
 Uso di tute protettive contro agenti chimici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190|Soldier/TL 🧠]]  
+[[Soldier/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190)]  
 Conoscenze base della vita militare e marcia.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191|Strategy† 🧠]]  
+[[Strategy† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191)]  
 Pianificazione di campagne belliche e grandi operazioni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=193|Tactics 🧠]]  
+[[Tactics 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=193)]  
 Dirigere unità minori in scontri armati immediati.  
 <h1 id="natural-sciences">NATURAL SCIENCES</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143|Alchemy/TL 🧠🪄]]  
+[[Alchemy/TL 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=143)]  
 Studio delle trasformazioni magiche e produzione elisir.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148|Astronomy/TL 🧠]]  
+[[Astronomy/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=148)]  
 Studio degli astri, pianeti e fenomeni extra-atmosferici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149|Biology/TL† 🧠]]  
+[[Biology/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149)]  
 Studio scientifico generale degli organismi viventi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152|Chemistry/TL 🧠]]  
+[[Chemistry/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152)]  
 Studio della materia e delle sue reazioni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162|Expert Skill (Epidemiology/Hydrology/Natural Philosophy) 🧠]]  
+[[Expert Skill (Epidemiology/Hydrology/Natural Philosophy) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162)]  
 Studi specialistici sui fenomeni naturali e scientifici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=167|Geology/TL† 🧠]]  
+[[Geology/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=167)]  
 Studio della struttura solida dei corpi celesti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176|Mathematics/TL† 🧠]]  
+[[Mathematics/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176)]  
 Studio teorico dei numeri e strutture logiche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Metallurgy/TL 🧠]]  
+[[Metallurgy/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Studio dei metalli e creazione di leghe.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178|Meteorology/TL† 🧠]]  
+[[Meteorology/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=178)]  
 Studio scientifico dei fenomeni atmosferici e clima.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181|Paleontology/TL† 🧠]]  
+[[Paleontology/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181)]  
 Studio degli organismi di epoche geologiche passate.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Physics/TL 🧠👽]]  
+[[Physics/TL 🧠👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Studio delle leggi fondamentali dell'universo.  
 <h1 id="occult-magical">OCCULT/MAGICAL</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162|Exorcism 🧠🪄]]  
+[[Exorcism 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162)]  
 Rituale per scacciare entità da persone e luoghi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162|Expert Skill (Psionics) 🧠🪄]]  
+[[Expert Skill (Psionics) 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=162)]  
 Studio accademico dei poteri mentali e psionici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168|Herb Lore/TL 🧠🪄]]  
+[[Herb Lore/TL 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168)]  
 Proprietà magiche e curative delle erbe naturali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168|Hidden Lore (Demon/Faerie/Spirit Lore) 🧠🪄]]  
+[[Hidden Lore (Demon/Faerie/Spirit Lore) 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168)]  
 Conoscenza di regni soprannaturali e abitanti segreti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181|Occultism 🧠🪄]]  
+[[Occultism 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181)]  
 Studio accademico di leggende e forze soprannaturali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=186|Religious Ritual† 🧠🪄]]  
+[[Religious Ritual† 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=186)]  
 Conoscenza delle cerimonie e pratiche di fede.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187|Ritual Magic† 🧠🪄]]  
+[[Ritual Magic† 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187)]  
 Studio e pratica di magia cerimoniale.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=193|Symbol Drawing† 🧠🪄]]  
+[[Symbol Drawing† 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=193)]  
 Tracciare sigilli che canalizzano poteri arcani.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=194|Thaumatology 🧠🪄]]  
+[[Thaumatology 🧠🪄](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=194)]  
 Studio teorico della natura profonda della magia.  
 <h1 id="outdoor-exploration">OUTDOOR/EXPLORATION</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152|Cartography 🧠]]  
+[[Cartography 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=152)]  
 Creazione e interpretazione di mappe e carte.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164|Fishing 🧠]]  
+[[Fishing 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=164)]  
 Catturare pesci usando vari strumenti e tecniche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=180|Navigation† 🧠]]  
+[[Navigation† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=180)]  
 Determinare la propria posizione e rotta in viaggio.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185|Prospecting/TL 🧠]]  
+[[Prospecting/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=185)]  
 Ricerca di giacimenti minerari e risorse naturali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192|Survival† 🧠]]  
+[[Survival† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192)]  
 Trovare cibo e riparo in ambienti ostili.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195|Tracking 🧠]]  
+[[Tracking 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=195)]  
 Abilità di seguire tracce di persone o animali.  
 <h1 id="plant">PLANT</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=163|Farming/TL 🧠]]  
+[[Farming/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=163)]  
 Tecniche di coltivazione agricola e gestione raccolti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166|Gardening 🧠]]  
+[[Gardening 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166)]  
 Cura di piante ornamentali o alimentari locali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181|Paleontology/TL (Paleobotany) 🧠]]  
+[[Paleontology/TL (Paleobotany) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=181)]  
 Studio di piante fossili ed ecosistemi antichi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Pharmacy/TL (Herbal) 🧠]]  
+[[Pharmacy/TL (Herbal) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Preparazione di medicamenti da fonti vegetali naturali.  
 <h1 id="police">POLICE</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155|Criminology/TL 🧠]]  
+[[Criminology/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155)]  
 Studio accademico dei crimini e mente criminale.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158|Electronics Operation/TL (Surveillance) 🧠]]  
+[[Electronics Operation/TL (Surveillance) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158)]  
 Uso di microspie e telecamere per monitoraggio.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=163|Explosives/TL (EOD) 🧠]]  
+[[Explosives/TL (EOD) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=163)]  
 Individuazione e disinnesco di cariche esplosive e bombe.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165|Forensics/TL 🧠]]  
+[[Forensics/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=165)]  
 Analisi scientifica delle prove sulla scena del crimine.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187|Savoir-Faire (Police) 🧠]]  
+[[Savoir-Faire (Police) 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187)]  
 Codice di condotta interno delle forze di polizia.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188|Search 🧠]]  
+[[Search 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=188)]  
 Ispezione sistematica per trovare prove nascoste.  
 <h1 id="repair-maintenance">REPAIR/MAINTENANCE</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158|Electrician/TL 🧠]]  
+[[Electrician/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158)]  
 Installazione e riparazione di impianti sistemi elettrici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=159|Electronics Repair/TL† 🧠]]  
+[[Electronics Repair/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=159)]  
 Diagnosi e riparazione di circuiti elettronici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=175|Machinist/TL 🧠]]  
+[[Machinist/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=175)]  
 Produzione e riparazione di parti meccaniche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176|Mechanic/TL† 🧠]]  
+[[Mechanic/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=176)]  
 Riparazione di motori e sistemi meccanici veicoli.  
 <h1 id="scholarly">SCHOLARLY</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174|Literature 🧠]]  
+[[Literature 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174)]  
 Studio critico dei classici letterari e opere.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=186|Research/TL 🧠]]  
+[[Research/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=186)]  
 Reperire informazioni in archivi e biblioteche.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191|Speed-Reading 🧠]]  
+[[Speed-Reading 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=191)]  
 Leggere e comprendere testi molto più velocemente.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=193|Teaching 🧠]]  
+[[Teaching 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=193)]  
 Trasmettere conoscenze e formare altri studenti.  
 <h1 id="social-sciences-humanities">SOCIAL SCIENCES/HUMANITIES</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=144|Anthropology† 🧠]]  
+[[Anthropology† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=144)]  
 Studio delle culture umane e dei costumi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169|History† 🧠]]  
+[[History† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=169)]  
 Ricerca e analisi degli eventi passati documentati.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174|Linguistics 🧠]]  
+[[Linguistics 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174)]  
 Studio della struttura del linguaggio e relazioni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Philosophy† 🧠]]  
+[[Philosophy† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Studio dei sistemi pensiero e etica fondamentali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190|Sociology 🧠]]  
+[[Sociology 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=190)]  
 Studio della società e modelli relazioni sociali.  
 <h1 id="spy">SPY</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155|Cryptography/TL 🧠]]  
+[[Cryptography/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=155)]  
 Decodifica messaggi nemici e protezione proprie comunicazioni.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170|Intelligence Analysis/TL 🧠]]  
+[[Intelligence Analysis/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=170)]  
 Unione di informazioni per svelare piani nemici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174|Lip Reading 🧠]]  
+[[Lip Reading 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=174)]  
 Comprensione del parlato osservando movimenti labbra.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182|Photography/TL 🧠]]  
+[[Photography/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=182)]  
 Utilizzo telecamere spia per documentare prove luoghi.  
 <h1 id="technical">TECHNICAL</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161|Battlesuit/TL ⚔️👽]]  
+[[Battlesuit/TL ⚔️👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161)]  
 Controllo e manovra di tute corazzate potenziate.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161|Diving Suit/TL ⚔️👽]]  
+[[Diving Suit/TL ⚔️👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161)]  
 Uso scafandri pesanti per lavori sottomarini.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158|Electronics Operation/TL† 🧠]]  
+[[Electronics Operation/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=158)]  
 Utilizzo strumenti elettronici specialistici (Radar, etc.).  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166|Freight Handling/TL 🧠]]  
+[[Freight Handling/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=166)]  
 Gestione logistica del carico merci pesanti.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168|Hazardous Materials/TL† 🧠]]  
+[[Hazardous Materials/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=168)]  
 Gestione sicura di rifiuti materiali radioattivi chimici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161|Vacc Suit/TL ⚔️👽]]  
+[[Vacc Suit/TL ⚔️👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=161)]  
 Uso tute spaziali per operare nel vuoto.  
 <h1 id="vehicle">VEHICLE</h1>  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154|Airshipman/TL 🧠]]  
+[[Airshipman/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154)]  
 Equipaggio esperto in dirigibili e veicoli aerostatici.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149|Boating/TL† ⚔️]]  
+[[Boating/TL† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=149)]  
 Guida imbarcazioni motore vela o remi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=157|Driving/TL† ⚔️]]  
+[[Driving/TL† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=157)]  
 Conduzione veicoli terrestri motore auto camion.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=183|Piloting/TL† ⚔️]]  
+[[Piloting/TL† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=183)]  
 Conduzione aerei alianti o navette spaziali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154|Seamanship/TL 🧠]]  
+[[Seamanship/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154)]  
 Vita e manovre bordo grandi navi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=189|Shiphandling/TL† 🧠]]  
+[[Shiphandling/TL† 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=189)]  
 Comandare e dirigere grandi vascelli equipaggi.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154|Spacer/TL 🧠👽]]  
+[[Spacer/TL 🧠👽](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154)]  
 Capacità vivere lavorare bordo navi spaziali.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192|Submarine/TL† ⚔️]]  
+[[Submarine/TL† ⚔️](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=192)]  
 Pilota piccoli sottomarini o veicoli subacquei.  
-[[https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154|Submariner/TL 🧠]]  
+[[Submariner/TL 🧠](https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=154)]  
 Operazioni bordo grandi sottomarini.
