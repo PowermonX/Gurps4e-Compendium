@@ -31,13 +31,14 @@
   list-style: none;
 }
 
-/* Stato APERTO: box grande, comodo da leggere e cliccare */
+/* Stato APERTO: si adatta al contenuto, cresce se il testo è più lungo */
 #indice-laterale[open] {
-  width: 440px;
-  max-width: 90vw;
+  width: max-content;
+  min-width: 160px;
+  max-width: min(550px, 90vw);
   max-height: 60vh;
   overflow-y: auto;
-  padding: 22px;
+  padding: 16px 24px 16px 10px;
   border-radius: 14px;
 }
 
