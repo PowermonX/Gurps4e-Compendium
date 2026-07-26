@@ -20,6 +20,22 @@
   padding: 3px 0;
 }
 
+/* Livelli di indentazione per H1 / H2 / H3 */
+#indice-laterale a.livello-1 {
+  padding-left: 0;
+  font-weight: 600;
+}
+
+#indice-laterale a.livello-2 {
+  padding-left: 16px;
+}
+
+#indice-laterale a.livello-3 {
+  padding-left: 32px;
+  font-size: 13px;
+  color: #555;
+}
+
 /* piccolo respiro per il contenuto, per non finire sotto la sidebar */
 @media (min-width: 769px) {
   body {
@@ -27,7 +43,7 @@
   }
 }
 
-/* Su mobile: nascondi la sidebar fissa e mostra un pulsante */
+/* Su mobile: barra in basso con apertura a fisarmonica nativa */
 @media (max-width: 768px) {
   #indice-laterale {
     top: auto;
@@ -37,22 +53,10 @@
     width: auto;
     max-height: 40vh;
     border-radius: 12px 12px 0 0;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
   }
-  #indice-laterale.aperto {
-    transform: translateY(0);
-  }
-  #toggle-indice {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    z-index: 1001;
-    padding: 10px 16px;
-    border-radius: 20px;
-    border: none;
-    background: #333;
-    color: white;
-    font-size: 14px;
+
+  #indice-laterale summary {
+    cursor: pointer;
+    font-weight: 600;
   }
 }
