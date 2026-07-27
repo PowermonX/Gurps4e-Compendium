@@ -2,7 +2,7 @@
   position: fixed !important;
   top: 16px;
   right: 16px;
-  border: 1px solid #ccc !important; /* 🌟 bordo pannello */
+  border: 1px solid #ccc !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
   font-size: 14px;
   z-index: 1000;
@@ -14,16 +14,14 @@
 }
 
 #indice-laterale, #indice-laterale * {
-  color: #222 !important; /* 🌟 colore testo generico */
+  color: #222 !important;
   text-shadow: none !important;
 }
 
-/* Sfondo della fascia summary, SEMPRE (chiuso e aperto) */
 #indice-laterale summary {
-  background: #e8f0fe !important; /* 🌟 colore fascia emoji/summary */
+  background: #e8f0fe !important;
 }
 
-/* Rimuove il triangolo di default del browser (rompeva la centratura) */
 #indice-laterale summary::-webkit-details-marker { display: none !important; }
 #indice-laterale summary::marker { display: none !important; content: ""; }
 
@@ -53,9 +51,10 @@
 #indice-laterale[open] {
   width: max-content;
   min-width: 160px;
-  max-width: calc(100vw - 20px);
-  max-height: 90vh;
+  max-width: 94vw; /* 16px right + almeno 6px da sinistra */
+  max-height: 80vh; /* 16px top + almeno 10px dal fondo */
   overflow-y: auto;
+  overscroll-behavior: contain !important; /* lo scroll non "passa" alla pagina sotto */
   padding: 0 0 12px 0 !important;
   border-radius: 14px;
 }
@@ -80,11 +79,11 @@
 #indice-laterale a {
   display: block;
   text-decoration: none;
-  color: #0645ad !important; /* 🌟 colore link livello 1/base */
+  color: #0645ad !important;
   padding: 6px 24px 6px 10px;
   font-size: 17px;
 }
 
 #indice-laterale a.livello-1 { padding-left: 10px; font-weight: 600; }
 #indice-laterale a.livello-2 { padding-left: 34px; }
-#indice-laterale a.livello-3 { padding-left: 58px; font-size: 16px; color: #555 !important; } /* 🌟 colore link livello 3 */
+#indice-laterale a.livello-3 { padding-left: 58px; font-size: 16px; color: #555 !important; }
