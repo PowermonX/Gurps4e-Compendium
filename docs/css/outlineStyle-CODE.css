@@ -9,7 +9,7 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
   z-index: 1000;
   overflow: hidden;
-  transition: border-radius 0.15s ease;
+  transition: width 0.15s ease, border-radius 0.15s ease;
   padding: 0 !important;
   margin: 0 !important;
 }
