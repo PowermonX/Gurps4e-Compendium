@@ -1,0 +1,13 @@
+/* CSS che modifica gli elementi base della pagina */
+body {
+  background-color: black;
+  color: rgb(140,140,140); /* Aggiunto per garantire che il testo sia leggibile sul fondo nero */
+  margin: 0;
+  padding: 0;
+}
+
+/* permette al testo di andare a capo quando raggiunge il bordo dello schermo */
+div {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
