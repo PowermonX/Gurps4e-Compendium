@@ -2,10 +2,10 @@
   position: fixed !important;
   top: 16px;
   right: 16px;
-  color: #33ff66 !important; /* 🌟 colore testo, uguale al body */
-  font-family: 'Courier New', Courier, monospace !important; /* 🌟 font, uguale al body */
-  text-shadow: 0 0 4px rgba(51, 255, 102, 0.6) !important; /* 🌟 glow, uguale al body */
-  border: 1px solid #33ff66 !important; /* 🌟 bordo = stesso colore del testo */
+  color: #33ff66 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  text-shadow: 0 0 4px rgba(51, 255, 102, 0.6) !important;
+  border: 1px solid #33ff66 !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
   z-index: 1000;
   overflow: hidden;
@@ -19,17 +19,14 @@
   text-shadow: inherit !important;
 }
 
-/* Corpo del pannello: sfondo -30% (solo visibile da aperto, sotto la fascia) */
 #indice-laterale[open] {
-  background: rgb(4, 13, 8) !important; /* 🌟 sfondo pannello: -30% rispetto a #05130b */
+  background: rgb(4, 13, 8) !important;
 }
 
-/* Sfondo della fascia summary, SEMPRE (chiuso e aperto) */
 #indice-laterale summary {
-  background: rgb(3, 12, 7) !important; /* 🌟 sfondo fascia: -35% rispetto a #05130b */
+  background: rgb(3, 12, 7) !important;
 }
 
-/* Rimuove il triangolo di default del browser (rompeva la centratura) */
 #indice-laterale summary::-webkit-details-marker { display: none !important; }
 #indice-laterale summary::marker { display: none !important; content: ""; }
 
@@ -59,9 +56,10 @@
 #indice-laterale[open] {
   width: max-content;
   min-width: 160px;
-  max-width: calc(100vw - 20px);
-  max-height: 90vh;
+  max-width: calc(100vw - 22px); /* 16px right + almeno 6px da sinistra */
+  max-height: calc(100vh - 26px); /* 16px top + almeno 10px dal fondo */
   overflow-y: auto;
+  overscroll-behavior: contain; /* lo scroll non "passa" alla pagina sotto */
   padding: 0 0 12px 0 !important;
   border-radius: 14px;
 }
@@ -79,14 +77,14 @@
   cursor: pointer;
   list-style: none;
   margin: 0 !important;
-  border-bottom: 1px solid #33ff66 !important; /* 🌟 linea divisoria = colore testo */
+  border-bottom: 1px solid #33ff66 !important;
   font-weight: normal !important;
 }
 
 #indice-laterale a {
   display: block;
   text-decoration: none;
-  color: #33ff66 !important; /* 🌟 colore link, uguale al testo del body */
+  color: #33ff66 !important;
   padding: 6px 24px 6px 10px;
   font-size: 17px;
 }
