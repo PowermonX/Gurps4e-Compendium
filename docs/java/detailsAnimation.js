@@ -3,11 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const summary = details.querySelector('summary');
     if (!summary) return;
 
-    // Larghezza "di partenza" misurata allo stato iniziale della pagina
-    // (per la maggior parte dei details normali sarà identica aperta/chiusa,
-    // quindi l'animazione di larghezza per loro sarà semplicemente istantanea)
-    const closedWidth = details.getBoundingClientRect().width;
-
     let animation = null;
 
     summary.addEventListener('click', e => {
@@ -20,44 +15,46 @@ document.addEventListener('DOMContentLoaded', () => {
       details.style.overflow = 'hidden';
 
       if (!isOpen) {
-        // APRI: prima si allarga, poi si allunga
+        // Blocca la larghezza attuale in px (necessario per poterla animare via CSS)
+        details.style.width = `${startWidth}px`;
+        details.style.height = `${startHeight}px`;
         details.open = true;
+
+        // forza il browser ad "applicare" lo stato bloccato prima di cambiare target
+        void details.offsetWidth;
+
         const endWidth = details.scrollWidth;
         const endHeight = details.scrollHeight;
 
-        details.style.height = `${startHeight}px`; // blocca l'altezza durante la fase larghezza
+        // FASE 1: il summary/contenitore si allarga (transizione CSS, 150ms)
+        details.style.width = `${endWidth}px`;
 
-        runWidth(startWidth, endWidth, () => {
+        setTimeout(() => {
+          // FASE 2: il contenuto scende (come prima, Web Animation)
           runHeight(startHeight, endHeight, () => {
             details.style.overflow = '';
             details.style.height = '';
             details.style.width = '';
           });
-        });
+        }, 150); // deve combaciare con la durata della transizione CSS qui sotto
+
       } else {
-        // CHIUDI: prima si accorcia, poi si restringe
         const summaryHeight = summary.getBoundingClientRect().height;
 
         runHeight(startHeight, summaryHeight, () => {
-          runWidth(startWidth, closedWidth, () => {
+          details.style.width = `${startWidth}px`;
+          void details.offsetWidth;
+          details.style.width = `${summary.getBoundingClientRect().width}px`;
+
+          setTimeout(() => {
             details.open = false;
             details.style.overflow = '';
             details.style.height = '';
             details.style.width = '';
-          });
+          }, 150);
         });
       }
     });
-
-    function runWidth(from, to, onDone) {
-      if (Math.round(from) === Math.round(to)) { onDone(); return; } // niente da animare
-      if (animation) animation.cancel();
-      animation = details.animate(
-        { width: [`${from}px`, `${to}px`] },
-        { duration: 150, easing: 'ease-out' }
-      );
-      animation.onfinish = onDone;
-    }
 
     function runHeight(from, to, onDone) {
       if (animation) animation.cancel();
