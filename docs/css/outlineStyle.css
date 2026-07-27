@@ -3,7 +3,6 @@
   top: 16px;
   right: 16px;
   border: 1px solid #ccc !important; /* 🌟 bordo pannello */
-  background: #f9f9f9 !important; /* 🌟 sfondo pannello */
   box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
   font-size: 14px;
   z-index: 1000;
@@ -16,14 +15,17 @@
 
 #indice-laterale, #indice-laterale * {
   color: #222 !important; /* 🌟 colore testo generico */
-  text-shadow: none !important; /* 🌟 rimuove effetti glow ereditati */
+  text-shadow: none !important;
 }
 
-/* Colore condiviso della fascia, sia chiusa che aperta */
-#indice-laterale:not([open]),
-#indice-laterale[open] summary {
+/* Sfondo della fascia summary, SEMPRE (chiuso e aperto) */
+#indice-laterale summary {
   background: #e8f0fe !important; /* 🌟 colore fascia emoji/summary */
 }
+
+/* Rimuove il triangolo di default del browser (rompeva la centratura) */
+#indice-laterale summary::-webkit-details-marker { display: none !important; }
+#indice-laterale summary::marker { display: none !important; content: ""; }
 
 #indice-laterale:not([open]) {
   width: 36px;
@@ -42,7 +44,6 @@
   line-height: 1;
   cursor: pointer;
   list-style: none;
-  background: transparent !important;
   margin: 0 !important;
   padding: 0 !important;
   border: none !important;
