@@ -56,10 +56,10 @@
 #indice-laterale[open] {
   width: max-content;
   min-width: 160px;
-  max-width: calc(100vw - 22px); /* 16px right + almeno 6px da sinistra */
-  max-height: calc(100vh - 26px); /* 16px top + almeno 10px dal fondo */
+  max-width: 90vw; /* 16px right + almeno 6px da sinistra */
+  max-height: 90vh; /* 16px top + almeno 10px dal fondo */
   overflow-y: auto;
-  overscroll-behavior: contain; /* lo scroll non "passa" alla pagina sotto */
+  overscroll-behavior: none; /* lo scroll non "passa" alla pagina sotto */
   padding: 0 0 12px 0 !important;
   border-radius: 14px;
 }
