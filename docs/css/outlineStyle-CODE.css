@@ -57,9 +57,9 @@
   width: max-content;
   min-width: 160px;
   max-width: 94vw; /* 16px right + almeno 6px da sinistra */
-  max-height: 60vh; /* 16px top + almeno 10px dal fondo */
+  max-height: 80vh; /* 16px top + almeno 10px dal fondo */
   overflow-y: auto;
-  overscroll-behavior: none; /* lo scroll non "passa" alla pagina sotto */
+  overscroll-behavior: contain !important; /* lo scroll non "passa" alla pagina sotto */
   padding: 0 0 12px 0 !important;
   border-radius: 14px;
 }
