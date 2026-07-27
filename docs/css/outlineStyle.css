@@ -1,0 +1,80 @@
+#indice-laterale {
+  position: fixed !important;
+  top: 16px;
+  right: 16px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-size: 14px;
+  z-index: 1000;
+  overflow: hidden;
+  transition: border-radius 0.15s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* ignora il font della pagina */
+}
+
+/* Blocca lo stile del sito (colori, ombre, ecc) su tutto ciò che sta dentro l'outline */
+#indice-laterale, #indice-laterale * {
+  color: #222 !important;
+  text-shadow: none !important;
+}
+
+/* Stato CHIUSO: pallina tonda */
+#indice-laterale:not([open]) {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+#indice-laterale:not([open]) summary {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Stato APERTO */
+#indice-laterale[open] {
+  width: max-content;
+  min-width: 160px;
+  max-width: calc(100vw - 20px); /* mai oltre lo schermo, 10px di margine per lato */
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 0 0 12px 0; /* il padding orizzontale/superiore lo gestisce il contenuto, non il summary */
+  border-radius: 14px;
+}
+
+/* La fascia col summary resta fissa in cima mentre scorri la lista sotto */
+#indice-laterale[open] summary {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0; /* fascia un paio di px più bassa di prima */
+  font-size: 30px;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  list-style: none;
+  margin: 0; /* niente margine = niente bordo bianco visibile ai lati */
+  border-bottom: 1px solid #ddd;
+}
+
+#indice-laterale a {
+  display: block;
+  text-decoration: none;
+  color: #0645ad !important;
+  padding: 6px 24px 6px 10px;
+  font-size: 17px; /* solo un filino più grande del testo base */
+}
+
+#indice-laterale a.livello-1 { padding-left: 10px; font-weight: 600; }
+#indice-laterale a.livello-2 { padding-left: 34px; }
+#indice-laterale a.livello-3 { padding-left: 58px; font-size: 16px; color: #555 !important; }
