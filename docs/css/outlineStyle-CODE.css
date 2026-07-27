@@ -56,8 +56,8 @@
 #indice-laterale[open] {
   width: max-content;
   min-width: 160px;
-  max-width: 90vw; /* 16px right + almeno 6px da sinistra */
-  max-height: 90vh; /* 16px top + almeno 10px dal fondo */
+  max-width: 94vw; /* 16px right + almeno 6px da sinistra */
+  max-height: 80vh; /* 16px top + almeno 10px dal fondo */
   overflow-y: auto;
   overscroll-behavior: none; /* lo scroll non "passa" alla pagina sotto */
   padding: 0 0 12px 0 !important;
