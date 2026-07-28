@@ -1,12 +1,8 @@
-// ⏱️ APERTURA — durata larghezza (orizzontale) in ms. 0 = scatta istantanea.
-const APERTURA_ORIZZONTALE = 1; // ⏱️
-// ⏱️ APERTURA — durata altezza (verticale) in ms.
-const APERTURA_VERTICALE = 150; // ⏱️
+// ⏱️ APERTURA — durata discesa (verticale) in ms
+const APERTURA_VERTICALE = 100; // ⏱️
 
-// ⏰ CHIUSURA — durata altezza (verticale) in ms.
-const CHIUSURA_VERTICALE = 150; // ⏰
-// ⏰ CHIUSURA — durata larghezza (orizzontale) in ms. 0 = scatta istantanea.
-const CHIUSURA_ORIZZONTALE = 1; // ⏰
+// ⏰ CHIUSURA — durata risalita (verticale) in ms
+const CHIUSURA_VERTICALE = 100; // ⏰
 
 function inizializzaOutline(details) {
   if (details.dataset.outlineReady) return;
@@ -20,53 +16,35 @@ function inizializzaOutline(details) {
   summary.addEventListener('click', e => {
     e.preventDefault();
     const isOpen = details.open;
-    const startRect = details.getBoundingClientRect();
-    const startWidth = startRect.width;
-    const startHeight = startRect.height;
+    const startHeight = details.getBoundingClientRect().height;
 
     details.style.overflow = 'hidden';
 
     if (!isOpen) {
-      // APRI — FASE 1: larghezza (⏱️), FASE 2: altezza (⏱️)
-      details.style.width = `${startWidth}px`;
+      // APRI — il summary compare subito a dimensione piena, POI il contenuto scende
       details.style.height = `${startHeight}px`;
-      details.open = true;
+      details.open = true; // ⚡ scatta istantaneo: pallino → pannello pieno, nessuna animazione
       void details.offsetWidth;
 
-      const endWidth = details.scrollWidth;
       const fullHeight = details.scrollHeight;
+      const summaryOpenHeight = summary.getBoundingClientRect().height;
 
-      details.style.transition = `width ${APERTURA_ORIZZONTALE}ms ease, border-radius 0.15s ease`;
-      details.style.width = `${endWidth}px`; // ⏱️ FASE 1: si allarga
+      details.style.height = `${summaryOpenHeight}px`; // riparte da "solo summary visibile"
+      void details.offsetWidth;
 
-      setTimeout(() => {
-        runHeight(startHeight, fullHeight, APERTURA_VERTICALE, () => { // ⏱️ FASE 2: scende
-          details.style.overflow = '';
-          details.style.height = '';
-          details.style.width = '';
-          details.style.transition = '';
-        });
-      }, APERTURA_ORIZZONTALE);
+      runHeight(summaryOpenHeight, fullHeight, APERTURA_VERTICALE, () => { // ⏱️ scende
+        details.style.overflow = '';
+        details.style.height = '';
+      });
 
     } else {
-      // CHIUDI — FASE 1: altezza (⏰), FASE 2: larghezza (⏰)
+      // CHIUDI — il contenuto risale, POI il pannello scompare subito
       const summaryHeight = summary.getBoundingClientRect().height;
 
-      runHeight(startHeight, summaryHeight, CHIUSURA_VERTICALE, () => { // ⏰ FASE 1: si accorcia
-        details.style.width = `${startWidth}px`;
-        void details.offsetWidth;
-        const closedWidth = summary.getBoundingClientRect().width;
-
-        details.style.transition = `width ${CHIUSURA_ORIZZONTALE}ms ease, border-radius 0.15s ease`;
-        details.style.width = `${closedWidth}px`; // ⏰ FASE 2: si restringe
-
-        setTimeout(() => {
-          details.open = false;
-          details.style.overflow = '';
-          details.style.height = '';
-          details.style.width = '';
-          details.style.transition = '';
-        }, CHIUSURA_ORIZZONTALE);
+      runHeight(startHeight, summaryHeight, CHIUSURA_VERTICALE, () => { // ⏰ risale
+        details.open = false; // ⚡ scatta istantaneo: pannello pieno → pallino, nessuna animazione
+        details.style.overflow = '';
+        details.style.height = '';
       });
     }
   });
