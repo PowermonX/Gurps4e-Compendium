@@ -1,8 +1,10 @@
-// ⏱️ APERTURA — durata discesa (verticale) in ms
+// ⏱️ APERTURA — Animazione 1: comparsa del summary già in posizione (istantanea, gestita dal CSS)
+// ⏱️ APERTURA — Animazione 2: discesa del contenuto, durata in ms
 const APERTURA_VERTICALE = 100; // ⏱️
 
-// ⏰ CHIUSURA — durata risalita (verticale) in ms
+// ⏰ CHIUSURA — Animazione 1: risalita del contenuto, durata in ms
 const CHIUSURA_VERTICALE = 100; // ⏰
+// ⏰ CHIUSURA — Animazione 2: scomparsa del summary (istantanea, gestita dal CSS)
 
 function inizializzaOutline(details) {
   if (details.dataset.outlineReady) return;
@@ -21,28 +23,30 @@ function inizializzaOutline(details) {
     details.style.overflow = 'hidden';
 
     if (!isOpen) {
-      // APRI — il summary compare subito a dimensione piena, POI il contenuto scende
+      // Animazione 1: il summary compare subito a dimensione piena (nessuna transizione su width nel CSS)
       details.style.height = `${startHeight}px`;
-      details.open = true; // ⚡ scatta istantaneo: pallino → pannello pieno, nessuna animazione
+      details.open = true;
       void details.offsetWidth;
 
       const fullHeight = details.scrollHeight;
       const summaryOpenHeight = summary.getBoundingClientRect().height;
 
-      details.style.height = `${summaryOpenHeight}px`; // riparte da "solo summary visibile"
+      details.style.height = `${summaryOpenHeight}px`;
       void details.offsetWidth;
 
-      runHeight(summaryOpenHeight, fullHeight, APERTURA_VERTICALE, () => { // ⏱️ scende
+      // Animazione 2: il contenuto scende
+      runHeight(summaryOpenHeight, fullHeight, APERTURA_VERTICALE, () => {
         details.style.overflow = '';
         details.style.height = '';
       });
 
     } else {
-      // CHIUDI — il contenuto risale, POI il pannello scompare subito
       const summaryHeight = summary.getBoundingClientRect().height;
 
-      runHeight(startHeight, summaryHeight, CHIUSURA_VERTICALE, () => { // ⏰ risale
-        details.open = false; // ⚡ scatta istantaneo: pannello pieno → pallino, nessuna animazione
+      // Animazione 1: il contenuto risale
+      runHeight(startHeight, summaryHeight, CHIUSURA_VERTICALE, () => {
+        // Animazione 2: il summary scompare subito (nessuna transizione su width nel CSS)
+        details.open = false;
         details.style.overflow = '';
         details.style.height = '';
       });
