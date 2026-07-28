@@ -9,34 +9,28 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
   z-index: 1000;
   overflow: hidden;
-  transition: width 0.15s ease, border-radius 0.15s ease;
+  transition: border-radius 0.15s ease; /* niente width qui: deve scattare istantaneo */
   padding: 0 !important;
   margin: 0 !important;
 }
-
 #indice-laterale, #indice-laterale * {
   font-family: inherit !important;
   text-shadow: inherit !important;
 }
-
 #indice-laterale[open] {
   background: rgb(4, 13, 8) !important;
 }
-
 #indice-laterale summary {
   background: rgb(3, 12, 7) !important;
 }
-
 #indice-laterale summary::-webkit-details-marker { display: none !important; }
 #indice-laterale summary::marker { display: none !important; content: ""; }
-
 #indice-laterale:not([open]) {
   width: 36px;
   height: 36px;
   padding: 0 !important;
   border-radius: 50%;
 }
-
 #indice-laterale:not([open]) summary {
   width: 36px;
   height: 36px;
@@ -52,18 +46,16 @@
   border: none !important;
   font-weight: normal !important;
 }
-
 #indice-laterale[open] {
   width: max-content;
   min-width: 160px;
-  max-width: 94vw; /* 16px right + almeno 6px da sinistra */
-  max-height: 80vh; /* 16px top + almeno 10px dal fondo */
+  max-width: 94vw;
+  max-height: 80vh;
   overflow-y: auto;
-  overscroll-behavior: none !important; /* lo scroll non "passa" alla pagina sotto */
+  overscroll-behavior: none !important;
   padding: 0 0 12px 0 !important;
   border-radius: 14px;
 }
-
 #indice-laterale[open] summary {
   position: sticky;
   top: 0;
@@ -80,7 +72,6 @@
   border-bottom: 1px solid #33ff66 !important;
   font-weight: normal !important;
 }
-
 #indice-laterale a {
   display: block;
   text-decoration: none;
@@ -88,7 +79,27 @@
   padding: 6px 24px 6px 10px;
   font-size: 17px;
 }
-
 #indice-laterale a.livello-1 { padding-left: 10px; font-weight: 600; }
 #indice-laterale a.livello-2 { padding-left: 34px; }
 #indice-laterale a.livello-3 { padding-left: 58px; font-size: 16px; opacity: 0.75; }
+
+/* Barra di scorrimento colorata come il testo — Firefox */
+#indice-laterale[open] {
+  scrollbar-width: thin;
+  scrollbar-color: #33ff66 rgb(3, 12, 7);
+}
+/* Barra di scorrimento colorata come il testo — Chrome, Edge, Safari */
+#indice-laterale[open]::-webkit-scrollbar {
+  width: 10px;
+}
+#indice-laterale[open]::-webkit-scrollbar-track {
+  background: rgb(3, 12, 7);
+}
+#indice-laterale[open]::-webkit-scrollbar-thumb {
+  background-color: #33ff66;
+  border-radius: 6px;
+  border: 2px solid rgb(3, 12, 7);
+}
+#indice-laterale[open]::-webkit-scrollbar-thumb:hover {
+  background-color: #66ff99;
+}
