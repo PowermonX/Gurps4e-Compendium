@@ -1,10 +1,10 @@
 const STRISCIA = 2; // px — spessore verticale iniziale/finale (praticamente solo il bordo)
 const PALLINO_DIAMETRO = 36; // px — deve combaciare con la dimensione del pallino chiuso nel CSS
-const PAUSA = 300; // ms di attesa tra una fase e l'altra
+const PAUSA = 1; // ms di attesa tra una fase e l'altra
 
 // ⏱️ APERTURA — fase 1: espansione orizzontale (nascosta, striscia sottile)
 const APERTURA_ORIZZONTALE = 150; // ⏱️
-// ⏱️ APERTURA — fase 2: espansione verticale (rivela il contenuto)
+// ⏱️ APERTURA — fase 2: espansione verticale (rivela il contenuto, tipo tenda)
 const APERTURA_VERTICALE = 100; // ⏱️
 
 // ⏰ CHIUSURA — fase 1: richiusura verticale (torna a striscia sottile)
@@ -24,26 +24,27 @@ function inizializzaOutline(details) {
   summary.addEventListener('click', e => {
     e.preventDefault();
     const isOpen = details.open;
-    const startRect = details.getBoundingClientRect();
-    const startWidth = startRect.width;
-    const startHeight = startRect.height;
+    const startWidth = details.getBoundingClientRect().width;
 
     details.style.overflow = 'hidden';
 
     if (!isOpen) {
-      // Blocchiamo la dimensione di partenza, poi apriamo "a vista nascosta"
-      details.style.width = `${startWidth}px`;
-      details.style.height = `${STRISCIA}px`; // subito ridotto a striscia sottile
+      // STEP 1: apriamo SENZA bloccare la larghezza, per misurare quella naturale del contenuto
       details.open = true;
       void details.offsetWidth;
 
-      const endWidth = details.scrollWidth;
-      const fullHeight = details.scrollHeight;
+      const fullWidth = details.scrollWidth;  // larghezza vera del corpo del details
+      const fullHeight = details.scrollHeight; // altezza vera (summary + lista)
+
+      // STEP 2: ORA blocchiamo i valori di partenza per poter animare da lì
+      details.style.width = `${startWidth}px`;
+      details.style.height = `${STRISCIA}px`;
+      void details.offsetWidth;
 
       // ⏱️ FASE 1: si allarga in orizzontale, restando una striscia sottile
-      runWidth(startWidth, endWidth, APERTURA_ORIZZONTALE, () => {
+      runWidth(startWidth, fullWidth, APERTURA_ORIZZONTALE, () => {
         setTimeout(() => {
-          // ⏱️ FASE 2: solo ora si espande in verticale, rivelando il contenuto
+          // ⏱️ FASE 2: solo ora si espande in verticale, rivelando il contenuto (tenda)
           runHeight(STRISCIA, fullHeight, APERTURA_VERTICALE, () => {
             details.style.overflow = '';
             details.style.height = '';
@@ -53,6 +54,8 @@ function inizializzaOutline(details) {
       });
 
     } else {
+      const startHeight = details.getBoundingClientRect().height;
+
       // ⏰ FASE 1: il contenuto si richiude in verticale, fino alla striscia sottile
       runHeight(startHeight, STRISCIA, CHIUSURA_VERTICALE, () => {
         setTimeout(() => {
