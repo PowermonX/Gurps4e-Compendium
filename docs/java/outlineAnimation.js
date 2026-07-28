@@ -1,7 +1,7 @@
 // ⏱️ APERTURA — durata larghezza (orizzontale) in ms. 0 = scatta istantanea.
-const APERTURA_ORIZZONTALE = 2000; // ⏱️
+const APERTURA_ORIZZONTALE = 1; // ⏱️
 // ⏱️ APERTURA — durata altezza (verticale) in ms.
-const APERTURA_VERTICALE = 4050; // ⏱️
+const APERTURA_VERTICALE = 150; // ⏱️
 
 // ⏰ CHIUSURA — durata altezza (verticale) in ms.
 const CHIUSURA_VERTICALE = 450; // ⏰
