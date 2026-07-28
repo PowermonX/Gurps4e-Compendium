@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('details').forEach(details => {
+  document.querySelectorAll('.outline').forEach(details => {
     const summary = details.querySelector('summary');
     if (!summary) return;
 
@@ -15,36 +15,40 @@ document.addEventListener('DOMContentLoaded', () => {
       details.style.overflow = 'hidden';
 
       if (!isOpen) {
-        // Blocca la larghezza attuale in px (necessario per poterla animare via CSS)
+        // blocca dimensioni attuali (necessario per poterle animare via CSS/JS)
         details.style.width = `${startWidth}px`;
         details.style.height = `${startHeight}px`;
         details.open = true;
-
-        // forza il browser ad "applicare" lo stato bloccato prima di cambiare target
-        void details.offsetWidth;
+        void details.offsetWidth; // forza il browser ad "applicare" lo stato bloccato
 
         const endWidth = details.scrollWidth;
-        const endHeight = details.scrollHeight;
+        const fullHeight = details.scrollHeight;
 
-        // FASE 1: il summary/contenitore si allarga (transizione CSS, 150ms)
+        // altezza naturale del SOLO summary in stato aperto (non del contenuto)
+        const summaryOpenHeight = summary.getBoundingClientRect().height;
+
+        // FASE 1 (150ms): la larghezza si espande (transizione CSS)
+        // E l'altezza cresce solo fino a contenere il summary per intero (niente schiacciamenti)
         details.style.width = `${endWidth}px`;
-
-        setTimeout(() => {
-          // FASE 2: il contenuto scende (come prima, Web Animation)
-          runHeight(startHeight, endHeight, () => {
+        runHeight(startHeight, summaryOpenHeight, 150, () => {
+          // FASE 2 (450ms): SOLO ORA scende il contenuto sotto al summary
+          runHeight(summaryOpenHeight, fullHeight, 450, () => {
             details.style.overflow = '';
             details.style.height = '';
             details.style.width = '';
           });
-        }, 150); // deve combaciare con la durata della transizione CSS qui sotto
+        });
 
       } else {
         const summaryHeight = summary.getBoundingClientRect().height;
 
-        runHeight(startHeight, summaryHeight, () => {
+        // Fase 1 chiusura: il contenuto si ritira, fino a lasciare solo il summary
+        runHeight(startHeight, summaryHeight, 450, () => {
+          // Fase 2 chiusura: summary si restringe a pallino
           details.style.width = `${startWidth}px`;
           void details.offsetWidth;
-          details.style.width = `${summary.getBoundingClientRect().width}px`;
+          const closedWidth = summary.getBoundingClientRect().width;
+          details.style.width = `${closedWidth}px`;
 
           setTimeout(() => {
             details.open = false;
@@ -56,11 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    function runHeight(from, to, onDone) {
+    function runHeight(from, to, duration, onDone) {
       if (animation) animation.cancel();
       animation = details.animate(
         { height: [`${from}px`, `${to}px`] },
-        { duration: 450, easing: 'ease-out' }
+        { duration, easing: 'ease-out' }
       );
       animation.onfinish = onDone;
     }
