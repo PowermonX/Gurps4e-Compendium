@@ -1,5 +1,15 @@
+// ⏱️ APERTURA — durata larghezza (orizzontale) in ms. 0 = scatta istantanea.
+const APERTURA_ORIZZONTALE = 0; // ⏱️
+// ⏱️ APERTURA — durata altezza (verticale) in ms.
+const APERTURA_VERTICALE = 450; // ⏱️
+
+// ⏰ CHIUSURA — durata altezza (verticale) in ms.
+const CHIUSURA_VERTICALE = 450; // ⏰
+// ⏰ CHIUSURA — durata larghezza (orizzontale) in ms. 0 = scatta istantanea.
+const CHIUSURA_ORIZZONTALE = 0; // ⏰
+
 function inizializzaOutline(details) {
-  if (details.dataset.outlineReady) return; // evita di attaccare 2 volte lo stesso details
+  if (details.dataset.outlineReady) return;
   details.dataset.outlineReady = 'true';
 
   const summary = details.querySelector('summary');
@@ -17,6 +27,7 @@ function inizializzaOutline(details) {
     details.style.overflow = 'hidden';
 
     if (!isOpen) {
+      // APRI — FASE 1: larghezza (⏱️), FASE 2: altezza (⏱️)
       details.style.width = `${startWidth}px`;
       details.style.height = `${startHeight}px`;
       details.open = true;
@@ -24,32 +35,38 @@ function inizializzaOutline(details) {
 
       const endWidth = details.scrollWidth;
       const fullHeight = details.scrollHeight;
-      const summaryOpenHeight = summary.getBoundingClientRect().height;
 
-      details.style.width = `${endWidth}px`;
-      runHeight(startHeight, summaryOpenHeight, 150, () => {
-        runHeight(summaryOpenHeight, fullHeight, 450, () => {
+      details.style.transition = `width ${APERTURA_ORIZZONTALE}ms ease, border-radius 0.15s ease`;
+      details.style.width = `${endWidth}px`; // ⏱️ FASE 1: si allarga
+
+      setTimeout(() => {
+        runHeight(startHeight, fullHeight, APERTURA_VERTICALE, () => { // ⏱️ FASE 2: scende
           details.style.overflow = '';
           details.style.height = '';
           details.style.width = '';
+          details.style.transition = '';
         });
-      });
+      }, APERTURA_ORIZZONTALE);
 
     } else {
+      // CHIUDI — FASE 1: altezza (⏰), FASE 2: larghezza (⏰)
       const summaryHeight = summary.getBoundingClientRect().height;
 
-      runHeight(startHeight, summaryHeight, 450, () => {
+      runHeight(startHeight, summaryHeight, CHIUSURA_VERTICALE, () => { // ⏰ FASE 1: si accorcia
         details.style.width = `${startWidth}px`;
         void details.offsetWidth;
         const closedWidth = summary.getBoundingClientRect().width;
-        details.style.width = `${closedWidth}px`;
+
+        details.style.transition = `width ${CHIUSURA_ORIZZONTALE}ms ease, border-radius 0.15s ease`;
+        details.style.width = `${closedWidth}px`; // ⏰ FASE 2: si restringe
 
         setTimeout(() => {
           details.open = false;
           details.style.overflow = '';
           details.style.height = '';
           details.style.width = '';
-        }, 150);
+          details.style.transition = '';
+        }, CHIUSURA_ORIZZONTALE);
       });
     }
   });
@@ -65,26 +82,19 @@ function inizializzaOutline(details) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // gestisce gli outline già presenti nella pagina al primo caricamento
   document.querySelectorAll('.outline details, details.outline').forEach(inizializzaOutline);
 
-  // gestisce gli outline che arriveranno DOPO, via fetch (html-loader)
   const observer = new MutationObserver(mutazioni => {
     mutazioni.forEach(m => {
       m.addedNodes.forEach(nodo => {
-        if (nodo.nodeType !== 1) return; // salta nodi che non sono elementi (es. testo)
+        if (nodo.nodeType !== 1) return;
 
-        // Caso 1: il nodo aggiunto è lui stesso un details con classe outline
         if (nodo.matches && nodo.matches('details.outline')) {
           inizializzaOutline(nodo);
         }
-
-        // Caso 2: il nodo aggiunto è un details, dentro un genitore con classe outline
         if (nodo.matches && nodo.matches('details') && nodo.closest('.outline')) {
           inizializzaOutline(nodo);
         }
-
-        // Caso 3: il nodo aggiunto è un contenitore che racchiude un details da qualche parte dentro
         if (nodo.querySelectorAll) {
           nodo.querySelectorAll('.outline details, details.outline').forEach(inizializzaOutline);
         }
