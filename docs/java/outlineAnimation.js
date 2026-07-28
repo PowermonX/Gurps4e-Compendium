@@ -1,4 +1,4 @@
-const STRISCIA = 2; // px — spessore verticale iniziale/finale (praticamente solo il bordo)
+const STRISCIA = 36; // px — spessore verticale iniziale/finale (praticamente solo il bordo)
 const PALLINO_DIAMETRO = 36; // px — deve combaciare con la dimensione del pallino chiuso nel CSS
 const PAUSA = 1; // ms di attesa tra una fase e l'altra
 
