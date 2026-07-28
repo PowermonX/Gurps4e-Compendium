@@ -1,6 +1,6 @@
 const STRISCIA = 2; // px — spessore verticale iniziale/finale (praticamente solo il bordo)
 const PALLINO_DIAMETRO = 36; // px — deve combaciare con la dimensione del pallino chiuso nel CSS
-const PAUSA = 5; // ms di attesa tra una fase e l'altra
+const PAUSA = 300; // ms di attesa tra una fase e l'altra
 
 // ⏱️ APERTURA — fase 1: espansione orizzontale (nascosta, striscia sottile)
 const APERTURA_ORIZZONTALE = 150; // ⏱️
