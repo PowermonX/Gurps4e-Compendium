@@ -1,6 +1,6 @@
 const STRISCIA = 2; // px — spessore verticale iniziale/finale (praticamente solo il bordo)
 const PALLINO_DIAMETRO = 36; // px — deve combaciare con la dimensione del pallino chiuso nel CSS
-const PAUSA = 1000; // ms di attesa tra una fase e l'altra
+const PAUSA = 1; // ms di attesa tra una fase e l'altra
 
 // ⏱️ APERTURA — fase 1: espansione orizzontale (nascosta, striscia sottile)
 const APERTURA_ORIZZONTALE = 150; // ⏱️
@@ -29,14 +29,12 @@ function inizializzaOutline(details) {
     details.style.overflow = 'hidden';
 
     if (!isOpen) {
-      // STEP 1: apriamo SENZA bloccare la larghezza, per misurare quella naturale del contenuto
       details.open = true;
       void details.offsetWidth;
 
-      const fullWidth = details.scrollWidth;  // larghezza vera del corpo del details
-      const fullHeight = details.scrollHeight; // altezza vera (summary + lista)
+      const fullWidth = details.scrollWidth;
+      const fullHeight = details.scrollHeight;
 
-      // STEP 2: ORA blocchiamo i valori di partenza per poter animare da lì
       details.style.width = `${startWidth}px`;
       details.style.height = `${STRISCIA}px`;
       void details.offsetWidth;
@@ -75,18 +73,26 @@ function inizializzaOutline(details) {
     if (animation) animation.cancel();
     animation = details.animate(
       { width: [`${from}px`, `${to}px`] },
-      { duration, easing: 'ease-out' }
+      { duration, easing: 'ease-out', fill: 'forwards' } // mantiene il valore finale
     );
-    animation.onfinish = onDone;
+    animation.onfinish = () => {
+      details.style.width = `${to}px`; // fissa il valore reale, stabile
+      animation.cancel(); // rilascia il controllo dell'animazione, ora gestisce lo style inline
+      onDone();
+    };
   }
 
   function runHeight(from, to, duration, onDone) {
     if (animation) animation.cancel();
     animation = details.animate(
       { height: [`${from}px`, `${to}px`] },
-      { duration, easing: 'ease-out' }
+      { duration, easing: 'ease-out', fill: 'forwards' } // mantiene il valore finale
     );
-    animation.onfinish = onDone;
+    animation.onfinish = () => {
+      details.style.height = `${to}px`; // fissa il valore reale, stabile
+      animation.cancel();
+      onDone();
+    };
   }
 }
 
