@@ -1,10 +1,16 @@
-// ⏱️ APERTURA — Animazione 1: comparsa del summary già in posizione (istantanea, gestita dal CSS)
-// ⏱️ APERTURA — Animazione 2: discesa del contenuto, durata in ms
+const STRISCIA = 2; // px — spessore verticale iniziale/finale (praticamente solo il bordo)
+const PALLINO_DIAMETRO = 36; // px — deve combaciare con la dimensione del pallino chiuso nel CSS
+const PAUSA = 5; // ms di attesa tra una fase e l'altra
+
+// ⏱️ APERTURA — fase 1: espansione orizzontale (nascosta, striscia sottile)
+const APERTURA_ORIZZONTALE = 150; // ⏱️
+// ⏱️ APERTURA — fase 2: espansione verticale (rivela il contenuto)
 const APERTURA_VERTICALE = 100; // ⏱️
 
-// ⏰ CHIUSURA — Animazione 1: risalita del contenuto, durata in ms
+// ⏰ CHIUSURA — fase 1: richiusura verticale (torna a striscia sottile)
 const CHIUSURA_VERTICALE = 100; // ⏰
-// ⏰ CHIUSURA — Animazione 2: scomparsa del summary (istantanea, gestita dal CSS)
+// ⏰ CHIUSURA — fase 2: richiusura orizzontale (torna al pallino)
+const CHIUSURA_ORIZZONTALE = 150; // ⏰
 
 function inizializzaOutline(details) {
   if (details.dataset.outlineReady) return;
@@ -18,40 +24,58 @@ function inizializzaOutline(details) {
   summary.addEventListener('click', e => {
     e.preventDefault();
     const isOpen = details.open;
-    const startHeight = details.getBoundingClientRect().height;
+    const startRect = details.getBoundingClientRect();
+    const startWidth = startRect.width;
+    const startHeight = startRect.height;
 
     details.style.overflow = 'hidden';
 
     if (!isOpen) {
-      // Animazione 1: il summary compare subito a dimensione piena (nessuna transizione su width nel CSS)
-      details.style.height = `${startHeight}px`;
+      // Blocchiamo la dimensione di partenza, poi apriamo "a vista nascosta"
+      details.style.width = `${startWidth}px`;
+      details.style.height = `${STRISCIA}px`; // subito ridotto a striscia sottile
       details.open = true;
       void details.offsetWidth;
 
+      const endWidth = details.scrollWidth;
       const fullHeight = details.scrollHeight;
-      const summaryOpenHeight = summary.getBoundingClientRect().height;
 
-      details.style.height = `${summaryOpenHeight}px`;
-      void details.offsetWidth;
-
-      // Animazione 2: il contenuto scende
-      runHeight(summaryOpenHeight, fullHeight, APERTURA_VERTICALE, () => {
-        details.style.overflow = '';
-        details.style.height = '';
+      // ⏱️ FASE 1: si allarga in orizzontale, restando una striscia sottile
+      runWidth(startWidth, endWidth, APERTURA_ORIZZONTALE, () => {
+        setTimeout(() => {
+          // ⏱️ FASE 2: solo ora si espande in verticale, rivelando il contenuto
+          runHeight(STRISCIA, fullHeight, APERTURA_VERTICALE, () => {
+            details.style.overflow = '';
+            details.style.height = '';
+            details.style.width = '';
+          });
+        }, PAUSA);
       });
 
     } else {
-      const summaryHeight = summary.getBoundingClientRect().height;
-
-      // Animazione 1: il contenuto risale
-      runHeight(startHeight, summaryHeight, CHIUSURA_VERTICALE, () => {
-        // Animazione 2: il summary scompare subito (nessuna transizione su width nel CSS)
-        details.open = false;
-        details.style.overflow = '';
-        details.style.height = '';
+      // ⏰ FASE 1: il contenuto si richiude in verticale, fino alla striscia sottile
+      runHeight(startHeight, STRISCIA, CHIUSURA_VERTICALE, () => {
+        setTimeout(() => {
+          // ⏰ FASE 2: solo ora si restringe in orizzontale, tornando al pallino
+          runWidth(startWidth, PALLINO_DIAMETRO, CHIUSURA_ORIZZONTALE, () => {
+            details.open = false;
+            details.style.overflow = '';
+            details.style.height = '';
+            details.style.width = '';
+          });
+        }, PAUSA);
       });
     }
   });
+
+  function runWidth(from, to, duration, onDone) {
+    if (animation) animation.cancel();
+    animation = details.animate(
+      { width: [`${from}px`, `${to}px`] },
+      { duration, easing: 'ease-out' }
+    );
+    animation.onfinish = onDone;
+  }
 
   function runHeight(from, to, duration, onDone) {
     if (animation) animation.cancel();
