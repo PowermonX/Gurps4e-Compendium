@@ -7,7 +7,7 @@
   font-size: 14px;
   z-index: 1000;
   overflow: hidden;
-  transition: border-radius 0.15s ease; /* niente width qui: deve scattare istantaneo */
+  transition: border-radius 0.15s ease;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -21,6 +21,7 @@
 }
 #indice-laterale summary::-webkit-details-marker { display: none !important; }
 #indice-laterale summary::marker { display: none !important; content: ""; }
+
 #indice-laterale:not([open]) {
   width: 36px;
   height: 36px;
@@ -42,20 +43,19 @@
   border: none !important;
   font-weight: normal !important;
 }
+
 #indice-laterale[open] {
+  display: flex;
+  flex-direction: column;
   width: max-content;
   min-width: 160px;
   max-width: 94vw;
   max-height: 80vh;
-  overflow-y: auto;
-  overscroll-behavior: none !important;
-  padding: 0 0 12px 0 !important;
+  padding: 0 !important;
   border-radius: 14px;
 }
 #indice-laterale[open] summary {
-  position: sticky;
-  top: 0;
-  z-index: 2;
+  flex-shrink: 0; /* resta fisso in cima, fuori dall'area di scroll */
   width: 100%;
   box-sizing: border-box;
   padding: 10px 0 !important;
@@ -68,6 +68,15 @@
   border-bottom: 1px solid #ddd !important;
   font-weight: normal !important;
 }
+
+#lista-indice {
+  flex: 1 1 auto;
+  min-height: 0; /* necessario perché lo scroll funzioni dentro un flex item */
+  overflow-y: auto;
+  overscroll-behavior: none !important;
+  padding-bottom: 12px;
+}
+
 #indice-laterale a {
   display: block;
   text-decoration: none;
@@ -79,23 +88,17 @@
 #indice-laterale a.livello-2 { padding-left: 34px; }
 #indice-laterale a.livello-3 { padding-left: 58px; font-size: 16px; color: #555 !important; }
 
-/* Barra di scorrimento colorata come i link — Firefox */
-#indice-laterale[open] {
+/* Barra di scorrimento SOLO sulla lista, non sul summary — Firefox */
+#lista-indice {
   scrollbar-width: thin;
   scrollbar-color: #0645ad #f9f9f9;
 }
-/* Barra di scorrimento colorata come i link — Chrome, Edge, Safari */
-#indice-laterale[open]::-webkit-scrollbar {
-  width: 10px;
-}
-#indice-laterale[open]::-webkit-scrollbar-track {
-  background: #f9f9f9;
-}
-#indice-laterale[open]::-webkit-scrollbar-thumb {
+/* Chrome, Edge, Safari */
+#lista-indice::-webkit-scrollbar { width: 10px; }
+#lista-indice::-webkit-scrollbar-track { background: #f9f9f9; }
+#lista-indice::-webkit-scrollbar-thumb {
   background-color: #0645ad;
   border-radius: 6px;
   border: 2px solid #f9f9f9;
 }
-#indice-laterale[open]::-webkit-scrollbar-thumb:hover {
-  background-color: #3b73c9;
-}
+#lista-indice::-webkit-scrollbar-thumb:hover { background-color: #3b73c9; }
