@@ -4,9 +4,9 @@ const APERTURA_ORIZZONTALE = 1; // ⏱️
 const APERTURA_VERTICALE = 150; // ⏱️
 
 // ⏰ CHIUSURA — durata altezza (verticale) in ms.
-const CHIUSURA_VERTICALE = 450; // ⏰
+const CHIUSURA_VERTICALE = 150; // ⏰
 // ⏰ CHIUSURA — durata larghezza (orizzontale) in ms. 0 = scatta istantanea.
-const CHIUSURA_ORIZZONTALE = 0; // ⏰
+const CHIUSURA_ORIZZONTALE = 1; // ⏰
 
 function inizializzaOutline(details) {
   if (details.dataset.outlineReady) return;
