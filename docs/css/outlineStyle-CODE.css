@@ -9,7 +9,7 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
   z-index: 1000;
   overflow: hidden;
-  transition: border-radius 0.15s ease; /* niente width qui: deve scattare istantaneo */
+  transition: border-radius 0.15s ease;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -49,17 +49,18 @@
 }
 
 #indice-laterale[open] {
-  display: flex;
-  flex-direction: column; /* summary sopra, lista sotto: separa fisicamente lo scroll dal summary */
   width: max-content;
   min-width: 160px;
   max-width: 94vw;
   max-height: 80vh;
-  padding: 0 !important;
+  overflow: hidden; /* il contenitore NON scrolla più, solo #lista-indice lo farà */
+  padding: 0 0 12px 0 !important;
   border-radius: 14px;
 }
 #indice-laterale[open] summary {
-  flex-shrink: 0; /* resta fisso in cima, MAI dentro l'area che scrolla */
+  position: sticky;
+  top: 0;
+  z-index: 2;
   width: 100%;
   box-sizing: border-box;
   padding: 10px 0 !important;
@@ -73,13 +74,11 @@
   font-weight: normal !important;
 }
 
-/* Area scrollabile: SOLO la lista dei link, mai il summary */
+/* Area scrollabile: SOLO la lista, il summary resta sempre fuori */
 #lista-indice {
-  flex: 1 1 auto;
-  min-height: 0; /* necessario perché lo scroll funzioni dentro un flex item */
+  max-height: calc(80vh - 60px); /* 80vh del pannello meno l'altezza approssimativa del summary */
   overflow-y: auto;
   overscroll-behavior: none !important;
-  padding-bottom: 12px;
 }
 
 #indice-laterale a {
@@ -93,12 +92,12 @@
 #indice-laterale a.livello-2 { padding-left: 34px; }
 #indice-laterale a.livello-3 { padding-left: 58px; font-size: 16px; opacity: 0.75; }
 
-/* Barra di scorrimento — stessi colori della pagina (#1f8a4c / #0a2015) */
+/* Barra di scorrimento — stessi colori della pagina */
 #lista-indice {
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: thin;
   scrollbar-color: #1f8a4c #0a2015;
 }
-#lista-indice::-webkit-scrollbar { width: 10px; } /* Chrome/Edge/Safari */
+#lista-indice::-webkit-scrollbar { width: 10px; }
 #lista-indice::-webkit-scrollbar-track { background: #0a2015; }
 #lista-indice::-webkit-scrollbar-thumb {
   background-color: #1f8a4c;
