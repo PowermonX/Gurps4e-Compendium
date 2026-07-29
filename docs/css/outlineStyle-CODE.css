@@ -25,6 +25,7 @@
 }
 #indice-laterale summary::-webkit-details-marker { display: none !important; }
 #indice-laterale summary::marker { display: none !important; content: ""; }
+
 #indice-laterale:not([open]) {
   width: 36px;
   height: 36px;
@@ -46,20 +47,19 @@
   border: none !important;
   font-weight: normal !important;
 }
+
 #indice-laterale[open] {
+  display: flex;
+  flex-direction: column; /* summary sopra, lista sotto: separa fisicamente lo scroll dal summary */
   width: max-content;
   min-width: 160px;
   max-width: 94vw;
   max-height: 80vh;
-  overflow-y: auto;
-  overscroll-behavior: none !important;
-  padding: 0 0 12px 0 !important;
+  padding: 0 !important;
   border-radius: 14px;
 }
 #indice-laterale[open] summary {
-  position: sticky;
-  top: 0;
-  z-index: 2;
+  flex-shrink: 0; /* resta fisso in cima, MAI dentro l'area che scrolla */
   width: 100%;
   box-sizing: border-box;
   padding: 10px 0 !important;
@@ -72,6 +72,16 @@
   border-bottom: 1px solid #33ff66 !important;
   font-weight: normal !important;
 }
+
+/* Area scrollabile: SOLO la lista dei link, mai il summary */
+#lista-indice {
+  flex: 1 1 auto;
+  min-height: 0; /* necessario perché lo scroll funzioni dentro un flex item */
+  overflow-y: auto;
+  overscroll-behavior: none !important;
+  padding-bottom: 12px;
+}
+
 #indice-laterale a {
   display: block;
   text-decoration: none;
@@ -83,23 +93,16 @@
 #indice-laterale a.livello-2 { padding-left: 34px; }
 #indice-laterale a.livello-3 { padding-left: 58px; font-size: 16px; opacity: 0.75; }
 
-/* Barra di scorrimento colorata come il testo — Firefox */
-#indice-laterale[open] {
-  scrollbar-width: thin;
-  scrollbar-color: #33ff66 rgb(3, 12, 7);
+/* Barra di scorrimento — stessi colori della pagina (#1f8a4c / #0a2015) */
+#lista-indice {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #1f8a4c #0a2015;
 }
-/* Barra di scorrimento colorata come il testo — Chrome, Edge, Safari */
-#indice-laterale[open]::-webkit-scrollbar {
-  width: 10px;
-}
-#indice-laterale[open]::-webkit-scrollbar-track {
-  background: rgb(3, 12, 7);
-}
-#indice-laterale[open]::-webkit-scrollbar-thumb {
-  background-color: #33ff66;
+#lista-indice::-webkit-scrollbar { width: 10px; } /* Chrome/Edge/Safari */
+#lista-indice::-webkit-scrollbar-track { background: #0a2015; }
+#lista-indice::-webkit-scrollbar-thumb {
+  background-color: #1f8a4c;
   border-radius: 6px;
-  border: 2px solid rgb(3, 12, 7);
+  border: 2px solid #0a2015;
 }
-#indice-laterale[open]::-webkit-scrollbar-thumb:hover {
-  background-color: #66ff99;
-}
+#lista-indice::-webkit-scrollbar-thumb:hover { background-color: #2aa862; }
