@@ -6,7 +6,7 @@ details {
   background-color: transparent;     /* sfondo trasparente: eredita il colore di sfondo della pagina/body */
   color: inherit;                    /* eredita il colore del testo dal body */
   font-family: inherit;              /* eredita il font */
-  max-width: 90vw;                   /* MODIFICA: larghezza massima 90% dello schermo (era 95vw) */
+  max-width: (800px, 90vw);                   /* MODIFICA: larghezza massima 90% dello schermo (era 95vw) */
   box-sizing: border-box;            /* garantisce che padding + bordo siano INCLUSI nel max-width, senza sforare il 90vw */
 }
 summary {
@@ -21,7 +21,7 @@ summary {
   background-color: rgba(0, 0, 0, 0.1); /* nero al 10% di opacità, scurisce leggermente lo sfondo sottostante */
   color: inherit;                    /* eredita il colore del testo dal body */
   border-radius: 4px;                /* MODIFICA: stesso border-radius del bottone HomePage (era 3px) */
-  max-width: 90vw;                   /* MODIFICA: stesso limite di larghezza del details (era 95vw) */
+  max-width: (800px, 90vw);                   /* MODIFICA: stesso limite di larghezza del details (era 95vw) */
   box-sizing: border-box;            /* include padding nel calcolo del max-width */
   display: inline-block;             /* il box si restringe alla larghezza del testo, non occupa tutta la riga */
 }
