@@ -6,18 +6,18 @@ details {
   background-color: transparent;     /* sfondo trasparente: eredita il colore di sfondo della pagina/body */
   color: inherit;                    /* eredita il colore del testo dal body */
   font-family: inherit;              /* eredita il font */
-  max-width: 90vw;                   /* larghezza massima 90% dello schermo (vw = viewport width) */
+  max-width: 95vw;                   /* larghezza massima 90% dello schermo (vw = viewport width) */
   box-sizing: border-box;            /* garantisce che padding + bordo siano INCLUSI nel max-width, senza sforare il 90vw */
 }
 summary {
   font-weight: bold;
   font-family: inherit;              /* eredita il font */
   font-size: 40px;                   /* dimensione font fissa a 30px */
-  padding: 10px 0.5em;               /* MODIFICA: 10px sopra/sotto (valore FISSO in px, non più in em) */
+  padding: 1px 0.5em;               /* MODIFICA: 10px sopra/sotto (valore FISSO in px, non più in em) */
                                       /* così il box è sempre 10px sopra + 10px sotto la parola, */
                                       /* indipendentemente dal font-size (con "em" invece sarebbe cambiato proporzionalmente) */
                                       /* lati sinistro/destro invariati a 0.5em (spazio orizzontale legato al font, va bene così) */
-  margin: -10px -0.4em 0.5em;        /* MODIFICA: margine verticale allineato al nuovo padding (-10px invece di -0.4em) */
+  margin: -1px -0.4em 0.5em;        /* MODIFICA: margine verticale allineato al nuovo padding (-10px invece di -0.4em) */
                                       /* per mantenere l'effetto "staccato dal bordo" anche in verticale: */
                                       /* il rettangolo scuro resta compatto attorno al testo (10px sopra/sotto), */
                                       /* senza toccare il bordo verde del details */
@@ -25,6 +25,6 @@ summary {
   background-color: rgba(0, 0, 0, 0.1); /* nero al 10% di opacità, scurisce leggermente lo sfondo sottostante */
   color: inherit;                    /* eredita il colore del testo dal body */
   border-radius: 3px 3px 0 0;        /* arrotonda solo l'alto, in coerenza col contenitore */
-  max-width: 90vw;                   /* stesso limite di larghezza anche sul summary */
+  max-width: 95vw;                   /* stesso limite di larghezza anche sul summary */
   box-sizing: border-box;            /* stesso motivo: include padding nel calcolo del max-width */
 }
