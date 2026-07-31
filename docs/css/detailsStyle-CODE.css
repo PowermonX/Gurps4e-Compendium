@@ -1,6 +1,7 @@
 details {
-  display: inline-block;
-  width: fit-content;
+  display: block;                    /* MODIFICA: torna block (era inline-block), così occupa sempre la larghezza impostata */
+  width: min(800px, 90vw);           /* MODIFICA: larghezza fissa (non più max-width + fit-content) */
+                                      /* il minore tra 800px e il 90% dello schermo, sempre uguale sia chiuso che aperto */
   border: 1px solid #1f8a4c;
   border-radius: 4px;
   padding: 0.5em;
@@ -8,10 +9,8 @@ details {
   background-color: transparent;
   color: inherit;
   font-family: inherit;
-  max-width: min(800px, 90vw);       /* MODIFICA: il minore tra 800px e il 90% dello schermo */
-                                      /* su schermi grandi: si ferma a 800px anche se il 90vw sarebbe più largo */
-                                      /* su schermi piccoli: si ferma al 90vw anche se è meno di 800px */
   box-sizing: border-box;
+  overflow: hidden;                  /* AGGIUNTA: nasconde eventuale contenuto che sfora dalla larghezza fissa */
 }
 
 summary {
@@ -24,12 +23,14 @@ summary {
   background-color: rgba(0, 0, 0, 0.1);
   color: inherit;
   border-radius: 4px;
-  max-width: min(800px, 90vw);       /* MODIFICA: stesso limite anche sul summary, per coerenza */
   box-sizing: border-box;
-  display: inline-block;
+  display: block;                    /* MODIFICA: torna block (era inline-block) */
+                                      /* così riempie sempre tutta la larghezza del details, */
+                                      /* invece di restringersi al testo */
+  white-space: nowrap;               /* mantiene il testo su una riga (va in overflow se troppo lungo) */
+  overflow: hidden;                  /* nasconde l'eventuale eccesso di testo oltre il box */
+  text-overflow: ellipsis;           /* AGGIUNTA: se il testo è troppo lungo, mostra "..." invece di tagliarlo brutalmente */
 }
 
-details[open] {
-  width: min(800px, 90vw);           /* MODIFICA: stesso principio quando il details è aperto */
-  display: block;
-}
+/* Con "width" fisso invece di "max-width", non serve più una regola separata */
+/* per lo stato [open]: la larghezza resta sempre la stessa, aperto o chiuso. */
