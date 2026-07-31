@@ -12,7 +12,7 @@ details {
 summary {
   font-weight: bold;
   font-family: inherit;              /* eredita il font */
-  font-size: 40px;                   /* dimensione font fissa a 40px */
+  font-size: 25px;                   /* dimensione font fissa a 40px */
   padding: 2px 4px;                  /* MODIFICA: padding ridotto al minimo (2px sopra/sotto, 4px lati) */
                                       /* giusto lo spazio per non far toccare il testo al bordo del rettangolo scuro */
   margin: 0;                         /* MODIFICA: margine azzerato completamente */
