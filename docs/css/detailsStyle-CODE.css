@@ -1,19 +1,28 @@
 details {
-  border: 1px solid #1f8a4c;         /* bordo colorato */
+  border: 1px solid #1f8a4c;         /* bordo colorato: verde (#1f8a4c) */
   border-radius: 4px;
   padding: 0.5em;                    /* fisso, non cambia più tra chiuso/aperto (niente animazione di dimensione) */
   margin-bottom: 0.5em;
-  background-color: transparent;    
+  background-color: transparent;     /* sfondo trasparente: eredita il colore di sfondo della pagina/body */
   color: inherit;                    /* eredita il colore del testo dal body */
   font-family: inherit;              /* eredita il font */
+  max-width: 95vw;                   /* MODIFICA 3: larghezza massima 95% dello schermo (vw = viewport width) */
+  box-sizing: border-box;            /* garantisce che padding + bordo siano INCLUSI nel max-width, senza sforare il 95vw */
 }
 summary {
   font-weight: bold;
   font-family: inherit;              /* eredita il font */
+  font-size: 20px;                   /* MODIFICA 2: dimensione font fissa a 20px (prima ereditava dal contesto) */
   padding: 0.5em;
-  margin: -0.5em -0.5em 0.5em;       /* margine fisso: il summary "esce" dal padding del details creando la fascia superiore, ma senza il ricalcolo -0.5em...0 legato allo stato open */
+  margin: -0.4em -0.4em 0.5em;       /* MODIFICA 1: margine negativo ridotto da -0.5em a -0.4em */
+                                      /* essendo più "corto" del padding del details (0.5em), */
+                                      /* il summary NON arriva più a toccare il bordo esterno: */
+                                      /* si vede quindi solo il rettangolo scuro, staccato di qualche px dal bordo, */
+                                      /* sia col details chiuso che aperto (margine fisso, nessun ricalcolo su open) */
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1); /* nero al 10% di opacità, scurisce leggermente lo sfondo sottostante */
   color: inherit;                    /* eredita il colore del testo dal body */
   border-radius: 3px 3px 0 0;        /* arrotonda solo l'alto, in coerenza col contenitore */
+  max-width: 95vw;                   /* MODIFICA 3: stesso limite di larghezza anche sul summary */
+  box-sizing: border-box;            /* stesso motivo: include padding nel calcolo del max-width */
 }
