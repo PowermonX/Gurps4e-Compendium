@@ -1,0 +1,19 @@
+details {
+  border: 1px solid #1f8a4c;         /* bordo colorato */
+  border-radius: 4px;
+  padding: 0.5em;                    /* fisso, non cambia più tra chiuso/aperto (niente animazione di dimensione) */
+  margin-bottom: 0.5em;
+  background-color: transparent;    
+  color: inherit;                    /* eredita il colore del testo dal body */
+  font-family: inherit;              /* eredita il font */
+}
+summary {
+  font-weight: bold;
+  font-family: inherit;              /* eredita il font */
+  padding: 0.5em;
+  margin: -0.5em -0.5em 0.5em;       /* margine fisso: il summary "esce" dal padding del details creando la fascia superiore, ma senza il ricalcolo -0.5em...0 legato allo stato open */
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1); /* nero al 10% di opacità, scurisce leggermente lo sfondo sottostante */
+  color: inherit;                    /* eredita il colore del testo dal body */
+  border-radius: 3px 3px 0 0;        /* arrotonda solo l'alto, in coerenza col contenitore */
+}
