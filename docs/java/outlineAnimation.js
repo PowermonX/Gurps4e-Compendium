@@ -1,4 +1,4 @@
-const STRISCIA = 36; // px — spessore verticale iniziale/finale (praticamente solo il bordo)
+const STRISCIA = 2; // px — spessore verticale iniziale/finale (praticamente solo il bordo)
 const PALLINO_DIAMETRO = 36; // px — deve combaciare con la dimensione del pallino chiuso nel CSS
 const PAUSA = 1; // ms di attesa tra una fase e l'altra
 
@@ -21,63 +21,78 @@ function inizializzaOutline(details) {
 
   let animation = null;
 
-  summary.addEventListener('click', e => {
-    e.preventDefault();
-    const isOpen = details.open;
+  function apri() {
     const startWidth = details.getBoundingClientRect().width;
-
     details.style.overflow = 'hidden';
 
-    if (!isOpen) {
-      details.open = true;
-      void details.offsetWidth;
+    details.open = true;
+    void details.offsetWidth;
 
-      const fullWidth = details.scrollWidth;
-      const fullHeight = details.scrollHeight;
+    const fullWidth = details.scrollWidth;
+    const fullHeight = details.scrollHeight;
 
-      details.style.width = `${startWidth}px`;
-      details.style.height = `${STRISCIA}px`;
-      void details.offsetWidth;
+    details.style.width = `${startWidth}px`;
+    details.style.height = `${STRISCIA}px`;
+    void details.offsetWidth;
 
-      // ⏱️ FASE 1: si allarga in orizzontale, restando una striscia sottile
-      runWidth(startWidth, fullWidth, APERTURA_ORIZZONTALE, () => {
-        setTimeout(() => {
-          // ⏱️ FASE 2: solo ora si espande in verticale, rivelando il contenuto (tenda)
-          runHeight(STRISCIA, fullHeight, APERTURA_VERTICALE, () => {
-            details.style.overflow = '';
-            details.style.height = '';
-            details.style.width = '';
-          });
-        }, PAUSA);
-      });
+    runWidth(startWidth, fullWidth, APERTURA_ORIZZONTALE, () => {
+      setTimeout(() => {
+        runHeight(STRISCIA, fullHeight, APERTURA_VERTICALE, () => {
+          details.style.overflow = '';
+          details.style.height = '';
+          details.style.width = '';
+        });
+      }, PAUSA);
+    });
+  }
 
+  function chiudi() {
+    if (!details.open) return; // già chiuso, niente da fare
+
+    const startWidth = details.getBoundingClientRect().width;
+    const startHeight = details.getBoundingClientRect().height;
+    details.style.overflow = 'hidden';
+
+    runHeight(startHeight, STRISCIA, CHIUSURA_VERTICALE, () => {
+      setTimeout(() => {
+        runWidth(startWidth, PALLINO_DIAMETRO, CHIUSURA_ORIZZONTALE, () => {
+          details.open = false;
+          details.style.overflow = '';
+          details.style.height = '';
+          details.style.width = '';
+        });
+      }, PAUSA);
+    });
+  }
+
+  summary.addEventListener('click', e => {
+    e.preventDefault();
+    if (details.open) {
+      chiudi();
     } else {
-      const startHeight = details.getBoundingClientRect().height;
-
-      // ⏰ FASE 1: il contenuto si richiude in verticale, fino alla striscia sottile
-      runHeight(startHeight, STRISCIA, CHIUSURA_VERTICALE, () => {
-        setTimeout(() => {
-          // ⏰ FASE 2: solo ora si restringe in orizzontale, tornando al pallino
-          runWidth(startWidth, PALLINO_DIAMETRO, CHIUSURA_ORIZZONTALE, () => {
-            details.open = false;
-            details.style.overflow = '';
-            details.style.height = '';
-            details.style.width = '';
-          });
-        }, PAUSA);
-      });
+      apri();
     }
   });
+
+  // Chiusura automatica quando si clicca un link della lista
+  const lista = details.querySelector('#lista-indice');
+  if (lista) {
+    lista.addEventListener('click', e => {
+      if (e.target.tagName === 'A') {
+        chiudi(); // il link naviga normalmente, il pannello si chiude in parallelo
+      }
+    });
+  }
 
   function runWidth(from, to, duration, onDone) {
     if (animation) animation.cancel();
     animation = details.animate(
       { width: [`${from}px`, `${to}px`] },
-      { duration, easing: 'ease-out', fill: 'forwards' } // mantiene il valore finale
+      { duration, easing: 'ease-out', fill: 'forwards' }
     );
     animation.onfinish = () => {
-      details.style.width = `${to}px`; // fissa il valore reale, stabile
-      animation.cancel(); // rilascia il controllo dell'animazione, ora gestisce lo style inline
+      details.style.width = `${to}px`;
+      animation.cancel();
       onDone();
     };
   }
@@ -86,10 +101,10 @@ function inizializzaOutline(details) {
     if (animation) animation.cancel();
     animation = details.animate(
       { height: [`${from}px`, `${to}px`] },
-      { duration, easing: 'ease-out', fill: 'forwards' } // mantiene il valore finale
+      { duration, easing: 'ease-out', fill: 'forwards' }
     );
     animation.onfinish = () => {
-      details.style.height = `${to}px`; // fissa il valore reale, stabile
+      details.style.height = `${to}px`;
       animation.cancel();
       onDone();
     };
