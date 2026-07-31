@@ -6,31 +6,22 @@ details {
   background-color: transparent;     /* sfondo trasparente: eredita il colore di sfondo della pagina/body */
   color: inherit;                    /* eredita il colore del testo dal body */
   font-family: inherit;              /* eredita il font */
-  max-width: 95vw;                   /* larghezza massima 95% dello schermo (vw = viewport width) */
-  box-sizing: border-box;            /* garantisce che padding + bordo siano INCLUSI nel max-width, senza sforare il 95vw */
+  max-width: 90vw;                   /* MODIFICA: larghezza massima 90% dello schermo (era 95vw) */
+  box-sizing: border-box;            /* garantisce che padding + bordo siano INCLUSI nel max-width, senza sforare il 90vw */
 }
 summary {
   font-weight: bold;
-  font-family: inherit;              /* eredita il font */
-  font-size: 25px;                   /* dimensione font fissa a 40px */
-  padding: 2px 4px;                  /* MODIFICA: padding ridotto al minimo (2px sopra/sotto, 4px lati) */
-                                      /* giusto lo spazio per non far toccare il testo al bordo del rettangolo scuro */
-  margin: 0;                         /* MODIFICA: margine azzerato completamente */
-                                      /* prima serviva un margine NEGATIVO per "staccare" il summary dal padding */
-                                      /* del details (0.5em) e farlo sembrare più stretto del contenitore. */
-                                      /* Ora invece, con padding così piccolo (2px/4px), il summary è già */
-                                      /* praticamente della misura del testo: non serve più nessun trucco di margine, */
-                                      /* il box risulta staccato dal bordo verde "naturalmente" grazie al padding */
-                                      /* residuo del details (0.5em) che resta attorno al summary. */
+  font-family: 'Courier New', Courier, monospace;  /* MODIFICA: stesso font monospace del bottone HomePage (era "inherit") */
+  font-size: 25px;                   /* MODIFICA: 25px, stessa dimensione del testo nel bottone HomePage (era 40px) */
+  padding: 0.4em 0.8em;              /* MODIFICA: stesso padding del bottone HomePage (era 2px 4px) */
+                                      /* a 25px di font-size: 0.4em = 10px sopra/sotto, 0.8em = 20px lati */
+                                      /* così l'altezza verticale del box risulta simile a quella del bottone */
+  margin: 0;                         /* nessun margine: il box resta della misura del testo + padding, niente extra */
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1); /* nero al 10% di opacità, scurisce leggermente lo sfondo sottostante */
   color: inherit;                    /* eredita il colore del testo dal body */
-  border-radius: 3px;                /* MODIFICA: arrotondato su tutti gli angoli (non solo in alto) */
-                                      /* dato che il summary non tocca più i bordi del details, */
-                                      /* non ha più senso tenerlo "quadrato" in alto per allinearsi al contenitore */
-  max-width: 95vw;                   /* stesso limite di larghezza anche sul summary */
-  box-sizing: border-box;            /* stesso motivo: include padding nel calcolo del max-width */
-  display: inline-block;             /* AGGIUNTA: necessario perché il box si restringa alla larghezza del testo */
-                                      /* (di default <summary> è block-level e occuperebbe tutta la riga, */
-                                      /* rendendo il rettangolo largo quanto il details anche col padding ridotto) */
+  border-radius: 4px;                /* MODIFICA: stesso border-radius del bottone HomePage (era 3px) */
+  max-width: 90vw;                   /* MODIFICA: stesso limite di larghezza del details (era 95vw) */
+  box-sizing: border-box;            /* include padding nel calcolo del max-width */
+  display: inline-block;             /* il box si restringe alla larghezza del testo, non occupa tutta la riga */
 }
