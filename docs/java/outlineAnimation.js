@@ -47,7 +47,7 @@ function inizializzaOutline(details) {
   }
 
   function chiudi() {
-    if (!details.open) return; // già chiuso, niente da fare
+    if (!details.open) return;
 
     const startWidth = details.getBoundingClientRect().width;
     const startHeight = details.getBoundingClientRect().height;
@@ -75,11 +75,13 @@ function inizializzaOutline(details) {
   });
 
   // Chiusura automatica quando si clicca un link della lista
+  // (closest('a') invece del tagName diretto: intercetta il click anche se
+  // avviene su un elemento annidato dentro il link, es. <em>, <strong>, icone)
   const lista = details.querySelector('#lista-indice');
   if (lista) {
     lista.addEventListener('click', e => {
-      if (e.target.tagName === 'A') {
-        chiudi(); // il link naviga normalmente, il pannello si chiude in parallelo
+      if (e.target.closest('a')) {
+        chiudi();
       }
     });
   }
