@@ -1,27 +1,35 @@
 details {
-  border: 1px solid #1f8a4c;         /* bordo colorato: verde (#1f8a4c) */
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid #1f8a4c;
   border-radius: 4px;
-  padding: 0.5em;                    /* fisso, non cambia più tra chiuso/aperto (niente animazione di dimensione) */
+  padding: 0.5em;
   margin-bottom: 0.5em;
-  background-color: transparent;     /* sfondo trasparente: eredita il colore di sfondo della pagina/body */
-  color: inherit;                    /* eredita il colore del testo dal body */
-  font-family: inherit;              /* eredita il font */
-  max-width: (800px, 90vw);                   /* MODIFICA: larghezza massima 90% dello schermo (era 95vw) */
-  box-sizing: border-box;            /* garantisce che padding + bordo siano INCLUSI nel max-width, senza sforare il 90vw */
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  max-width: min(800px, 90vw);       /* MODIFICA: il minore tra 800px e il 90% dello schermo */
+                                      /* su schermi grandi: si ferma a 800px anche se il 90vw sarebbe più largo */
+                                      /* su schermi piccoli: si ferma al 90vw anche se è meno di 800px */
+  box-sizing: border-box;
 }
+
 summary {
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;  /* MODIFICA: stesso font monospace del bottone HomePage (era "inherit") */
-  font-size: 25px;                   /* MODIFICA: 25px, stessa dimensione del testo nel bottone HomePage (era 40px) */
-  padding: 0.4em 0.8em;              /* MODIFICA: stesso padding del bottone HomePage (era 2px 4px) */
-                                      /* a 25px di font-size: 0.4em = 10px sopra/sotto, 0.8em = 20px lati */
-                                      /* così l'altezza verticale del box risulta simile a quella del bottone */
-  margin: 0;                         /* nessun margine: il box resta della misura del testo + padding, niente extra */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  padding: 0.4em 0.8em;
+  margin: 0;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.1); /* nero al 10% di opacità, scurisce leggermente lo sfondo sottostante */
-  color: inherit;                    /* eredita il colore del testo dal body */
-  border-radius: 4px;                /* MODIFICA: stesso border-radius del bottone HomePage (era 3px) */
-  max-width: (800px, 90vw);                   /* MODIFICA: stesso limite di larghezza del details (era 95vw) */
-  box-sizing: border-box;            /* include padding nel calcolo del max-width */
-  display: inline-block;             /* il box si restringe alla larghezza del testo, non occupa tutta la riga */
+  background-color: rgba(0, 0, 0, 0.1);
+  color: inherit;
+  border-radius: 4px;
+  max-width: min(800px, 90vw);       /* MODIFICA: stesso limite anche sul summary, per coerenza */
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+details[open] {
+  width: min(800px, 90vw);           /* MODIFICA: stesso principio quando il details è aperto */
+  display: block;
 }
