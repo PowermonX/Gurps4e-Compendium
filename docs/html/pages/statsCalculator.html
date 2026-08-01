@@ -8,6 +8,7 @@
 
 <!--====================            STYLING DELLA TABELLA            ============================-->
     <style>
+        /* Centra .questa-pagina al centro dello schermo, sempre */
         html, body {
             margin: 0;
             height: 100%;
@@ -16,12 +17,16 @@
             justify-content: center;
         }
 
+        /* Contenitore di TUTTO il contenuto: qui imposti la dimensione base
+           (font-size) e autoscale.js applica un transform:scale() per farlo
+           entrare sempre nel 95vw/95vh disponibile */
         .questa-pagina {
             font-size: 25px !important;   /* <-- cambia qui la dimensione base */
             transform-origin: center center;
             will-change: transform;
         }
 
+        /* Le due tabelle: niente allargamento automatico in base al contenuto */
         #attributes-table,
         #derived-table {
             border-collapse: collapse;
@@ -29,6 +34,7 @@
             width: auto;
         }
 
+        /* Celle: padding/font in em così seguono il font-size di .questa-pagina */
         #attributes-table th,
         #attributes-table td,
         #derived-table th,
@@ -38,9 +44,10 @@
             line-height: 1.2;
         }
 
+        /* Larghezza fissa dei campi numerici (ST/DX/IQ/HT, Costo, Punti Totali) */
         #attributes-table input[type="number"],
         #points-header input[type="number"] {
-            width: 2.5em;
+            width: 150px;
             box-sizing: border-box;
             font-size: inherit;
             padding: 1px 2px;
@@ -60,8 +67,11 @@
 </head>
 <body>
 
+<!-- Wrapper unico: tutto ciò che sta qui dentro scala insieme (font, tabelle,
+     input, bordi...) grazie al transform:scale() applicato da autoscale.js -->
 <div class="questa-pagina">
 
+    <!-- Link di ritorno alla homepage del sito -->
     <a href="../../../index.html" style="
             display: inline-block; 
             color: inherit; 
@@ -77,6 +87,7 @@
 
     <h1><u>Calcolatore Statistiche</u></h1>
 
+    <!-- Punti Totali (input editabile) e Punti Rimanenti (calcolato da statsCalculator.js) -->
     <div id="points-header">
         <div id="points-total-wrapper">
             <span class="section-title">Punti Totali</span>
@@ -90,6 +101,8 @@
 
     <h2><u>Statistiche Primarie</u></h2>
 
+    <!-- Tabella ST/DX/IQ/HT: Valore e Costo sono input, Spesa e Totale
+         vengono calcolati e scritti da statsCalculator.js -->
     <table id="attributes-table">
         <thead>
             <tr>
@@ -132,6 +145,9 @@
     </table>
 
     <h2 class="section-title" style="margin-bottom: 20px; margin-top:20px;"><u>Statistiche Derivate</u></h2>
+
+    <!-- Tabella read-only: tutte le celle <td id="..."> sono riempite
+         da statsCalculator.js in base a ST/DX/IQ/HT -->
     <table id="derived-table">
         <thead>
             <tr>
@@ -179,11 +195,8 @@
 
 <!-- SCRIPTS!! ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ -->
 
-<!--MD FETCHER ⭐⭐--> 
+<!-- statsCalculator.js: legge gli input, scrive Spesa/Punti Rimanenti/statistiche derivate -->
 <script src="../../../docs/java/statsCalculator.js"></script>
-<script src="../../../docs/java/autoscale.js"></script>
-
-
 
 <!-- AUTO RESIZER ⭐⭐-->     
 <script>
