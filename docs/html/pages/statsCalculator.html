@@ -6,6 +6,34 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/table.css">
 
+<!--====================            STYLING DELLA TABELLA            ============================-->
+    <style>
+        #attributes-table,
+        #derived-table {
+            border-collapse: collapse;
+            table-layout: fixed;   /* impedisce alle celle di espandersi in base al contenuto */
+            width: auto;           /* oppure una larghezza fissa, es. 400px */
+        }
+        
+        #attributes-table th,
+        #attributes-table td,
+        #derived-table th,
+        #derived-table td {
+            padding: 2px 6px;      /* riduci da un eventuale padding più grande */
+            font-size: 0.85em;
+            line-height: 1.2;
+        }
+        
+        #attributes-table input[type="number"] {
+            width: 50px;           /* input più stretti dentro le celle */
+            box-sizing: border-box;
+            font-size: inherit;
+            padding: 1px 2px;
+        }
+    </style>
+
+<!--====================            STYLING DELLA TABELLA    (FINE)        ============================-->
+
 
 <!--Qua vanno i link per i Css ✨✨✨✨✨✨✨✨✨✨-->
 <link rel="stylesheet" href="../../../docs/css/baseStyle-CODE.css">
