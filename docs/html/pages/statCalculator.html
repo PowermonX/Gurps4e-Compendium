@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>GURPS 4e - Stat Calculator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+<div>
+
+    <h1>Calcolatore Statistiche (GURPS 4e)</h1>
+
+    <div id="points-header">
+        <div id="points-total-wrapper">
+            <span class="section-title">Punti Totali</span>
+            <input type="number" id="total-points" value="100">
+        </div>
+        <div id="points-remaining-wrapper">
+            <span class="section-title">Punti Rimanenti</span>
+            <div id="points-remaining">100</div>
+        </div>
+    </div>
+
+    <table id="attributes-table">
+        <thead>
+            <tr>
+                <th>Stat</th>
+                <th>Valore</th>
+                <th>Spesa</th>
+                <th>Costo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>ST</strong></td>
+                <td><input type="number" id="st-value" value="10"></td>
+                <td><span id="st-spesa">0</span></td>
+                <td><input type="number" id="st-costo" value="10"></td>
+            </tr>
+            <tr>
+                <td><strong>DX</strong></td>
+                <td><input type="number" id="dx-value" value="10"></td>
+                <td><span id="dx-spesa">0</span></td>
+                <td><input type="number" id="dx-costo" value="20"></td>
+            </tr>
+            <tr>
+                <td><strong>IQ</strong></td>
+                <td><input type="number" id="iq-value" value="10"></td>
+                <td><span id="iq-spesa">0</span></td>
+                <td><input type="number" id="iq-costo" value="20"></td>
+            </tr>
+            <tr>
+                <td><strong>HT</strong></td>
+                <td><input type="number" id="ht-value" value="10"></td>
+                <td><span id="ht-spesa">0</span></td>
+                <td><input type="number" id="ht-costo" value="10"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right"><strong>Totale Attributi:</strong></td>
+                <td colspan="2"><strong id="total-attributi">0</strong> punti</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <span class="section-title">Statistiche Derivate</span>
+    <table id="derived-table">
+        <thead>
+            <tr>
+                <th>Statistica</th>
+                <th>Valore</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>HP</strong></td>
+                <td id="hp"></td>
+            </tr>
+            <tr>
+                <td><strong>Basic Lift</strong></td>
+                <td id="bl"></td>
+            </tr>
+            <tr>
+                <td><strong>Dmg (Thr/Sw)</strong></td>
+                <td id="dmg"></td>
+            </tr>
+            <tr>
+                <td><strong>FP</strong></td>
+                <td id="fp"></td>
+            </tr>
+            <tr>
+                <td><strong>Will</strong></td>
+                <td id="will"></td>
+            </tr>
+            <tr>
+                <td><strong>Basic Speed</strong></td>
+                <td id="basic-speed"></td>
+            </tr>
+            <tr>
+                <td><strong>Basic Move</strong></td>
+                <td id="basic-move"></td>
+            </tr>
+            <tr>
+                <td><strong>Dodge</strong></td>
+                <td id="dodge"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<script src="statsCalculator.js"></script>
+</body>
+</html>
