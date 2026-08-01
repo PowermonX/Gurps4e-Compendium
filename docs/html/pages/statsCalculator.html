@@ -183,5 +183,43 @@
 <script src="../../../docs/java/statsCalculator.js"></script>
 <script src="../../../docs/java/autoscale.js"></script>
 
+
+
+<!-- AUTO RESIZER ⭐⭐-->     
+<script>
+(function () {
+    "use strict";
+
+    var el = document.querySelector(".questa-pagina");
+    var naturalWidth = 0;
+    var naturalHeight = 0;
+
+    function applyScale() {
+        if (!naturalWidth || !naturalHeight) return;
+        var maxWidth = window.innerWidth * 0.95;
+        var maxHeight = window.innerHeight * 0.95;
+        var scale = Math.min(maxWidth / naturalWidth, maxHeight / naturalHeight);
+        el.style.transform = "scale(" + scale + ")";
+    }
+
+    var ro = new ResizeObserver(function (entries) {
+        var entry = entries[0];
+        var box = entry.borderBoxSize && entry.borderBoxSize[0];
+        if (box) {
+            naturalWidth = box.inlineSize;
+            naturalHeight = box.blockSize;
+        } else {
+            naturalWidth = entry.contentRect.width;
+            naturalHeight = entry.contentRect.height;
+        }
+        applyScale();
+    });
+
+    ro.observe(el);
+    window.addEventListener("resize", applyScale);
+})();
+    
+</script>
+    
 </body>
 </html>
