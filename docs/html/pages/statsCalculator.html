@@ -8,24 +8,39 @@
 
 <!--====================            STYLING DELLA TABELLA            ============================-->
     <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .questa-pagina {
+            font-size: 25px !important;   /* <-- cambia qui la dimensione base */
+            transform-origin: center center;
+            will-change: transform;
+        }
+
         #attributes-table,
         #derived-table {
             border-collapse: collapse;
-            table-layout: fixed;   /* impedisce alle celle di espandersi in base al contenuto */
-            width: auto;           /* oppure una larghezza fissa, es. 400px */
+            table-layout: fixed;
+            width: auto;
         }
-        
+
         #attributes-table th,
         #attributes-table td,
         #derived-table th,
         #derived-table td {
-            padding: 2px 6px;      /* riduci da un eventuale padding più grande */
-            font-size: 2em;
+            padding: 2px 6px;
+            font-size: 1em;
             line-height: 1.2;
         }
-        
-        #attributes-table input[type="number"] {
-            width: 200px;           /* input più stretti dentro le celle */
+
+        #attributes-table input[type="number"],
+        #points-header input[type="number"] {
+            width: 2.5em;
             box-sizing: border-box;
             font-size: inherit;
             padding: 1px 2px;
@@ -45,22 +60,20 @@
 </head>
 <body>
 
-        <a href="../../../index.html" style="
-                display: inline-block; 
-                color: inherit; 
-                text-decoration: none; 
-                font-weight: bold;
-                font-size: 26px;
-                border: 1px solid #1f8a4c; 
-                border-radius: 4px; 
-                padding: 0.4em 0.8em;
-                margin-left: 200px">
-            ▶ HomePage ◀
-        </a>
+<div class="questa-pagina">
 
-
-    
-<div style="font-size:2em !important; margin-left:15px">
+    <a href="../../../index.html" style="
+            display: inline-block; 
+            color: inherit; 
+            text-decoration: none; 
+            font-weight: bold;
+            font-size: 1.05em;
+            border: 1px solid #1f8a4c; 
+            border-radius: 4px; 
+            padding: 0.4em 0.8em;
+            margin-left: 200px">
+        ▶ HomePage ◀
+    </a>
 
     <h1><u>Calcolatore Statistiche</u></h1>
 
@@ -75,10 +88,8 @@
         </div>
     </div>
 
-    
-<h2>Statistiche Primarie</h2>
+    <h2><u>Statistiche Primarie</u></h2>
 
-    
     <table id="attributes-table">
         <thead>
             <tr>
@@ -120,9 +131,7 @@
         </tbody>
     </table>
 
-
-    
-    <h2 class="section-title" style="margin-bottom: 20px; margin-top:20px;">Statistiche Derivate</h2>
+    <h2 class="section-title" style="margin-bottom: 20px; margin-top:20px;"><u>Statistiche Derivate</u></h2>
     <table id="derived-table">
         <thead>
             <tr>
@@ -172,8 +181,7 @@
 
 <!--MD FETCHER ⭐⭐--> 
 <script src="../../../docs/java/statsCalculator.js"></script>
+<script src="../../../docs/java/autoscale.js"></script>
 
-
-    
 </body>
 </html>
