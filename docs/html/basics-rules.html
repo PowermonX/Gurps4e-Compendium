@@ -1,37 +1,125 @@
+
+<!-- BEGIN RULES GENERAL CHANGES   -->
+
+<h3 id="modificatori" style="margin-left: 15px;">Modificatori</h2>
+Avere troppi modificatori diversi rallenta di molto il gioco. <br>
+È per questo che salvo eccezione per qualche situazione in cui è
+assolutamente necessario, verranno effettuate delle semplificazioni
+e modificatori diversi saranno accorpati al modificatore pari più vicino:
+<details> <!--ESEMPIO-->
+<summary style="max-height: min(30px) !important;">Esempio</summary>
+Riuniamo per situazioni e vediamo come scalano i modificatori:
+<br>Visione: penombra(-2), accecato(-4);
+<br>Postura: in ginocchio(-2), steso(-4);
+
+<br>In determinate situazioni potrebbe essere giustificato anche un -6 o -8!
+<br><em style="font-size: 0.8em;">E i bonus? Essendo questo un gioco che prevede tiri sia per l'attacco che per la difesa, ci sono molte situazioni in cui il tuo vantaggio si tradurrà in un
+malus per l'avversario (un nemico accecato non potrà difenderesi, ma che tu riesca o
+meno a colpire dipende da te...).</em>
+</details>
+
+<h3 id="bad-system" style="margin-left: 20px;">"Bad" System</h3>
+In situazioni in cui la scena è particolarmente impegnativa per i personaggi,
+invece che aggiungere modificatori granulari ad ogni singola azione, si può usare un modificatore di scena, che si applica ad ogni singola azione.
+<br><em style="font-size: 0.8em;">Esempio: durante una scena nella fortezza del nemico, gli scagnozzi avranno un bonus, ovviamente conoscono il terreno di gioco meglio dei giocatori...ma anche scassinare una serratura avrà quello stesso modificatore! Ovviamente non userà serrature scadenti nella sua base! </em>
+
+<!-- END   -->
+
+<!-- BEGIN MACRO SKILLS  -->
 <h2 id="macro-skills" style="margin-left: 15px;">Macro Skills</h2>
 <p>
-    Nella creazione personaggio invece che dover consultare la lista completa delle skills, 
+    Nella creazione personaggio invece che dover consultare la lista completa delle skills,
     è possibile affidarsi a delle macro skills. <br>
     Queste agiranno da "skills ombrello" e forniranno il loro bonus a tutta una serie di skills
     concettualmente collegate (con malus di -2 e -4 quando un'altra macro skill potrebbe essere
     più adatta alla situazione o la skill a cui si vuole fare riferimento è di un grado di difficolatà superiore). <br>
-    <em style="font-size: 0.9em;">esempio: provare a usare "common knowledge!" per un tiro in cui "medicina!" sarebbe più adatto.</em>
-    <br><br>
-    <bold>CUSTOM! :</bold>  puoi anche creare le tue skills! possono essere campi di esperienza più specifici, come ART! (dipingere, scolpire, suonare), 
+    <em style="font-size: 0.8em;">esempio: provare a usare "common knowledge!" per un tiro in cui "medicina!" sarebbe più adatto.</em>
+
+    <h3 id="skills-list" style="margin-left: 15px;">Skills List</h3>
+        <ul>
+            <li>Athletics!</li>
+            <li>Business!</li>
+            <li>Melee!</li>
+            <li>Unarmed!</li>
+            <li>Ranged!</li>
+            <li>Common Knowledge!</li>
+            <li>Social!</li>
+            <li>Anti-Social!</li>
+            <li>Stealth!</li>
+            <li>Survival!</li>
+            <li>CUSTOM!</li>
+        </ul>
+
+    <details>
+    <summary style="max-height: min(30px) !important;"><bold>CUSTOM! :</bold></summary>
+      puoi anche creare le tue skills! possono essere campi di esperienza più specifici, come ART! (dipingere, scolpire, suonare),
     NUOTARE! (nuoto stile libero o anche immersioni), ma volendo puoi anche scrivere <u>concetti!</u>. <br>
     Per esempio SAMURAI! potrebbe contenere katana, arco tradizionale, cavalcare(cavallo) ed etichetta da nobile. <br>
-    <em style="font-size: 0.9em;"> CONSIGLIO: cerca di essere sempre coerente con il tuo personaggio, se quando hai creato il personaggio hai preso ART! 
-        perchè eri interessato a suonare il Violino, tienine conto, magari quando dovrà scolpire un -2 potrebbe starci...sai...per roleplay.
-    </em>
+    <em style="font-size: 0.8em;">CONSIGLIO: cerca di essere sempre coerente con il tuo personaggio, se quando hai creato il personaggio hai preso ART!
+        perchè eri interessato a suonare il Violino, tienine conto, magari quando dovrà scolpire un -2 potrebbe starci...sai...per roleplay.</em> <br>
 
-</p>
+    <details style="marin-left: 200px;">
+    <summary style="max-height: min(30px) !important;">Alcuni Esempi</summary>
+        <ul>
+            <li>Craft!</li>
+            <li>Medicine!</li>
+            <li>Melee!</li>
+            <li>Soldier!</li>
+            <li>Orafo!</li>
+            <li>Marinaio!</li>
+            <li>Nuotare!</li>
+        </ul>
+    </details>
+    </details>
 
+    <h3 id="skills-creation" style="margin-left: 15px;">Durante la creazione del personaggio</h3>
+    Alla creazione del personaggio avrai dei modificatori da distribuire:
+    <ul>
+  <li>1 mod. <u>+2</u></li>
+  <li>2 mod. <u>+1</u></li>
+  <li>3 mod. <u>+0</u></li>
+</ul>
+
+I modificatori possono andare da <u>-3</u> a <u>+3</u> ed è possibile scambiare un
+modificatore di livello superiore per 2 di livello inferiore e viceversa. <br>
+<em style="font-size: 0.8em;">esempio: magari un criminale avrebbe anti-social(+2), business(+1), athletics(+1), Melee (+0)
+</em>
+
+<!-- END   -->
+
+<!-- BEGIN MANOVRE   -->
 
 <h2 id="manovre" style="margin-left: 15px;">Manovre</h2>
+Questo è l'essenziale da sapere in combattimento,
+se non si vuole entrare nel dettaglio, basta conoscere un paio di
+azioni e modificatori.
 
-<h3 id="mosse-base" style="margin-left: 20px;">Mosse Base</h3>
+<h3 id="mosse-attive" style="margin-left: 20px;">Mosse Attive</h3>
     <p>
-        <bold>Attack: </bold> <br>
-        <bold>Move: </bold> <br>
-        <bold>Move+Attack: </bold> <br>
+    Ogni turno hai 1 azione, selezionabile tra queste manovre: <br>
+
+        <bold>Move: </bold>muoviti della tua move speed. <br>
+        <bold>Attack: </bold>fai un attacco. <br>
+        <span style="display:block; margin-left: 20px"><bold>Move+Attack: </bold>puoi fare entrambe le cose, ma con un malus -4 (e la tua skill massima diventa 9 per questo attacco).</span>
+        <bold>Rapid Strike!: </bold>puoi fare due attacchi, ma entrambi sono a -6.<br>
+        <bold>Evaluate: </bold>+1 al prossimo attaco contro quel nemico (cumulabile 3 volte). <br>
+        <bold>Interact: </bold>estrarre un arma, tirare una leva, aprire una porta, etc...<br>
+        <bold>Cambiare postura:</bold>se sei a carponi è 1 azione, se sei steso 2.<br>
+        <bold>All-Out Defense!: </bold>aggiungi +2 a UNO dei tuoi tiri di difesa questo turno.<br>
+        <bold>Wait: </bold>aspetti il momento giusto per compiere un azione, questo comporta però un malus di -4 o superiore (reagire rende tutto più difficile).
     </p>
 
+<h3 id="modificatori-mosse" style="margin-left: 20px;">Modificatori Mosse</h3>
+Ci sono manovre che non richiedono un intera azione, ma vanno semplicemente a
+modificare l'azione a cui le associ, quindi un puoi tranquillamente usare "All-Out Attack!" insieme a "Rapid strike" o con "Called Shot".
+    <p>
+        <bold>All-Out Attack!: </bold>aggiungi +4 al tuo attacco o +2 al tuo danno, ma fino al tuo prossimo turno non ti potrai difendere!<br>
+        <em>Muoviti di metà del tuo basic movement.</em> <br>
+        <bold>Called Shot: </bold>prendi di mira una parte specifica del nemico, con un malus relativo alla difficoltà nel colpire quella parte del corpo.<br>
+        <em style="font-size: 0.8em;">Corpo(-0), Arto(-2), Organi(-4), Testa(-6), Occhio(-8)<em><br>
+        <bold>Deceptive Attack!: </bold>puoi aggiungiungere un malus a un tuo attaco, per assegnarne uno al tiro di difesa avversario(con un rapporto di 2:1).
+    </p>
+
+<!-- END   -->
 
 
-<h2 style="margin-left: 15px;">Macro Skills</h2>
-
-
-
-
-
-<h2 style="margin-left: 15px;">Macro Skills</h2>
