@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--SI TROVA IN docs/html/pages-->
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurps 4e - Character Creation</title>
+   
+<!--Qua vanno i link per i Css ✨✨✨✨✨✨✨✨✨✨-->
+<link rel="stylesheet" href="../../../docs/css/baseStyle-CODE.css">
+<link rel="stylesheet" href="../../../docs/css/outlineStyle-CODE.css">
+<link rel="stylesheet" href="../../../docs/css/detailsStyle-CODE.css">
+<link rel="stylesheet" href="../../../docs/css/tablesStyle-CODE.css">
+
+    
+</head>
+<body>
+<a id="top"></a> <!--questo è da mettere a inizio pagina-->
+	
+<!-- OUTLINE - Manual📃📚️📃📚️📃📚️📃📚️📃📚️📃📚️📃📚️ --> 
+
+<details id="indice-laterale" class="outline">
+  <summary style="cursor: pointer; list-style: none;">📟</summary>
+  <div id="lista-indice">
+  <a href="#classi" class="livello-1">Classi</a>
+    <a href="#guerriero" class="livello-2">Guerriero</a>
+    <a href="#chierico" class="livello-2">Chierico</a>
+    <a href="#ladro" class="livello-2">Ladro</a>
+    <a href="#mago" class="livello-2">Mago</a>
+  <a href="#custom-creation" class="livello-1">Custom Creation</a>
+  <a href="#skills" class="livello-1">Skills</a>
+	<a href="#attributi" class="livello-1">Attributi</a>
+	<a href="#manovre" class="livello-1">Manovre</a>
+
+  <a href="#spells" class="livello-1">Spells</a>
+</details>
+
+	
+<!-- IMMAGINE DI INIZIO PAGINA 🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️🖼️
+	+ HOMEPAGE -->
+<div style="position: relative; display: inline-block;"> <!-- creazione contenitore -->
+    <!-- Immagine di sfondo -->
+    <img 
+        src="https://www.pngarts.com/files/9/Matrix-Code-PNG-Photo.png" 
+        alt="immagine"
+        width="800"
+        height="150"
+        style="display: block; max-width: 95vw;">
+
+    <!-- Titolo sovrapposto all'immagine -->
+    <span style="
+        position: absolute; 
+        top: 55%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        white-space: nowrap; 
+        font-size: 2em;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #fff;
+        text-shadow:
+          0 0 4px #fff,
+          0 0 11px #00ff77,
+          0 0 19px #00ff77,
+          0 0 40px #00ff77;">
+        Character Creation
+    </span>
+
+    <!-- Bottone HomePage, ANCH'ESSO sovrapposto all'immagine -->
+    <div style="
+            position: absolute;
+            top: calc(70% + 50px);
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Courier New', Courier, monospace; 
+            font-size: 25px;
+            white-space: nowrap;">
+        <a href="../../../index.html" style="
+                display: inline-block; 
+                color: inherit; 
+                text-decoration: none; 
+                font-weight: bold; 
+                border: 1px solid #1f8a4c; 
+                border-radius: 4px; 
+                padding: 0.4em 0.8em;">
+            ▶ HomePage ◀
+        </a>
+    </div>
+</div>
+<!-- UN DIV VUOTO PER SEPARARE IL TASTO DALLA PAGINA -->
+<div style="margin-top: 60px;"></div>
+
+
+<!-- =========================== IMMAGINE CON LE STATISTICHE =====================  -->
+<h1 id="attributi" ><u>Attributi</u></h1>
+<a href="../../../docs/img/attributes.png">
+    <img 
+        src="../../../docs/img/attributes.png" 
+        alt="immagine"
+        width="800"
+        style="display: block; max-width: 95vw; margin-bottom: 10px; margin-top: 10px;">
+</a>
+
+ <!-- IL LINK CON L'IMMAGINE È DISATTIVATO	
+  <!--DIVS PER INDEX/Links 🔥🔥🔥🔥🔥🔥--
+<div style="font-family: 'Courier New', Courier, monospace;; font-size:20px;">
+		  
+  
+	<a href="https://2e.aonprd.com/Actions.aspx?ID=2399&Redirected=1" target="_self" rel="noopener noreferrer">
+        Treat Wounds
+        <img src="https://static.wikia.nocookie.net/tf2console/images/7/7c/Mediumhealth.png/revision/latest?cb=20110116023450" 
+            alt="Icona Cura" style="height: 1em; vertical-align: middle; margin-left: 4px;">
+            <span style="font-size: 70%;">
+                (place holder)
+            </span>
+    </a> 
+    <br> 
+    
+    <a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=266">
+   Advantages Summary (pdf)
+    </a>
+    <br> -->
+ 
+</div>
+
+<h1 id="skills" >Skills</h1>
+    <div class="md-loader" data-file="../../../docs/md/skills.md">Caricamento in corso...</div>
+
+	
+<h1 id="manovre" >Manovre</h1>
+    <div class="md-loader" data-file="../../../docs/md/manovre.md">Caricamento in corso...</div>
+
+
+
+
+	
+    <!--CLASSI (PIEGHEVOLE)!!!!!!👻👻👻👻👻👻👻👻👻👻👻👻👻-->
+<h1 id="classi" ><u>Classi</u></h1>
+	<p>Segue una selezione di templates ottimali per determinati stili di gioco.
+	<br>Affidandosi queste linee guida è possibile creare un personaggio della classe scelta, 
+		ma con scelte accurate di vantaggi e vantaggi (o mischiando le classi) è possibile crearne tante altre.
+	</p>
+	
+<details> 
+  <summary> 
+	      <span id="guerriero">Guerriero</span>
+          <span style="font-size: 60%;"> (finito) </span>
+  </summary>
+  <div class="html-loader" data-file="../../../docs/html/class-guerriero.html">
+    Now Loading...
+  </div>
+</details> 
+	<br>
+
+<details> 
+  <summary> 
+	      <span id="chierico">Chierico</span>
+          <span style="font-size: 60%;">(work in progress...)</span>
+  </summary>
+  <div class="html-loader" data-file="../../../docs/html/class-chierico.html">
+    Now Loading...
+  </div>
+</details>
+	<br>
+
+<details> 
+  <summary> 
+	      <span id="ladro">Ladro</span>
+          <span style="font-size: 60%;">(work in progress...)</span>
+  </summary>
+  <div class="html-loader" data-file="../../../docs/html/class-ladro.html">
+    Now Loading...
+  </div>
+</details>
+	<br>
+
+<details> 
+  <summary> 
+	      <span id="mago">Mago</span>
+          <span style="font-size: 60%;">(work in progress...)</span>
+  </summary>
+  <div class="html-loader" data-file="../../../docs/html/class-mago.html">
+    Now Loading...
+  </div>
+</details>
+
+	
+<h1 id="spells" >Spells</h1>
+	
+	
+	<!--      CONTENT    ================= DISATTIVATO =================       
+<div class="html-loader" data-file="../../../docs/html/???.html">
+    html place-holder
+</div> -->
+
+
+
+
+<!-- SCRIPTS!! ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ -->
+
+<!--Configurazione percorsi (necessaria perché questa pagina non è nella root) ⭐⭐-->
+  <script>
+  // cartella dei file markdown
+  window.mdFolder = "../../../docs/md/";
+  // cartella dei pdf
+  window.pdfFolder = "../../../docs/pdf/";
+  // percorso del visualizzatore PDF.js
+  window.pdfjsViewerPath = "../../../docs/java/pdfjs-6.1.2/web/viewer.html";
+  </script>
+
+<!--MD FETCHER ⭐⭐-->
+  <script src="../../../docs/java/mdFetcher.js"></script>
+    
+<!--HTML FETCHER ⭐⭐-->
+  <script src="../../../docs/java/htmlFetcher.js"></script>
+  
+<!--PDF PREVIEWER ⭐⭐-->
+  <script src="../../../docs/java/pdfPreviewer.js"></script>
+
+<!--Summary personalizzato per outline ⭐⭐-->
+<script src="../../../docs/java/summaryChanger.js"></script>
+
+<!--Animazione per DETAILS ⭐⭐-->
+  <script src="../../../docs/java/detailsAnimation.js"></script>
+
+<!--Animazione per OUTLINE ⭐⭐-->
+  <script src="../../../docs/java/outlineAnimation.js"></script>
+
+
+
+    
+</body>
+</html>
