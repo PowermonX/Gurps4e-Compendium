@@ -125,6 +125,143 @@ modificare l'azione a cui le associ, quindi un puoi tranquillamente usare "All-O
 <!-- END   -->
 
 
+<!-- BEGIN DANNO E BODY-PARTS   -->
+
+<h1 id="danno" style="margin-left: 15px;"><u>Moltiplicatore Danni</u></h1>
+Questi sono i moltiplicatori del danno:
+<table><thead>
+  <tr>
+    <th>Type</th>
+    <th>Modifier</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Small Piercing (pi-)</td>
+    <td>x0.5</td>
+  </tr>
+  <tr>
+    <td>Piercing<br>
+        <details class="note">
+        <summary>tutto il resto</summary>
+            <div class="note-content">
+            <strong>x0.5</strong><br>
+            Burning (burn), corrosion (cor), crushing (cr), fatigue (fat), piercing (pi), and toxic (tox)
+            </div>
+        </details>
+    </td>
+    <td>x1</td>
+  </tr>
+  <tr>
+    <td>Cutting (cut) and large piercing (pi+)</td>
+    <td>x1.5</td>
+  </tr>
+  <tr>
+    <td>Impaling (imp) and huge piercing (pi++)<br></td>
+    <td>x2</td>
+  </tr>
+</tbody>
+</table>
+
+<h2 id="body-parts" style="margin-left: 20px;">Body Parts</h2>
+
+I regole per le varie parti del corpo sono state semplificate:
+<ul>
+<li><b>Head: </b>(only physical dmg)dr2; dmgx4</li>
+<li><b>Vitals: </b>pi & imp x3</li>
+<li><b>Limbs: </b>pi & imp x1; max dmg = hp/3</li>
+</ul>
+
+<!-- END   -->
+
+<!-- BEGIN EQUIPAGGIAMENTO   -->
+
+<h1 id="equipment" style="margin-left: 15px;"><u>Equipaggiamento</u></h1>
+Nella pagina per la creazione personaggio c'è anche il link all'equipaggiamento completo,
+ma volendo semplificare basta tenere a mente delle linee guida. <br>
+Approssimativamente:
+<b><u>Weapons</u>:</b>
+<ul>
+<li><u>coltello</u>: dmg-1</li>
+<li><u>spada corta</u>: dmg</li>
+<li><u>spada lunga</u>: dmg+1</li>
+<li><u>spada a 2 mani</u>: dmg+2</li>
+</ul>
+scegli la cosa più simile all'arma che vuoi usare ed hai il tuo danno (il tipo di danno cambia in base all'arma, taglio, contundente, etc. ).
+<br><br>
+E le armature?
+<b><u>Armors</u>:</b>
+<ul>
+<li><u>vestiti</u>: dr 1</li>
+<li><u>armatura in pelle</u>: dr 2</li>
+<li><u>cotta di maglia</u>: dr 4/2 (2 contro contundente)</li>
+<li><u>armatura a piastre</u>: dr 6</li>
+</ul>
+Se non precisato tutto è protetto, ma a -8 si può comunque mirare i punti deboli dell'armatura.
+
+<h2 id="encumbrance" style="margin-left: 20px;">Encumbrance</h2>
+Quanto peso puoi trasportare? La risposta breve è valuta in base alla forza se è o meno credibile che il tuo personaggio possa permettersi un intera armtura in acciaio... <br>
+Ogni volta che super un "soglia" di peso trasportato, sali di un lvl di encumbrance e questo si traduce in dei -1 cumulativi sulla schivata e una diminuzione del movimento(50% mov. a -3)):
+<table><thead>
+  <tr>
+    <th>ST</th>
+    <th>+0</th>
+    <th>-1</th>
+    <th>-2</th>
+    <th>-3</th>
+    <th>-4</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>6 (malato)</td>
+    <td>3</td>
+    <td>6</td>
+    <td>9</td>
+    <td>18</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>8 (fuori forma)</td>
+    <td>6</td>
+    <td>12</td>
+    <td>18</td>
+    <td>36</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>10 (standard)</td>
+    <td>10</td>
+    <td>20</td>
+    <td>30</td>
+    <td>60</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>12 (forzuto)</td>
+    <td>15</td>
+    <td>30</td>
+    <td>45</td>
+    <td>90</td>
+    <td>150</td>
+  </tr>
+  <tr>
+    <td>14 (olimpionico)<br></td>
+    <td>22</td>
+    <td>44</td>
+    <td>66</td>
+    <td>132</td>
+    <td>220</td>
+  </tr>
+</tbody>
+</table>
+
+Dai per scontanto che se hai addosso dell'equipaggiamento adatto alla tua classe sarai -1 o -2, iniziando a portarsi dietro anche attrezzatura arriverai a -3; <br>
+il -4 e -5 sono destinati per chi sta portando in spalla un alleato svenuto o si è messo nello zaino un intero scrigno carico di tesori.
+
+
+
+<!-- END   -->
+
+
 <!-- BEGIN  SPELLS      -->
 <h1 id="spells" style="margin-left: 15px;"><u>Spells</u></h1>
 Quindi hai deciso di complicarti la vita? <br>
@@ -217,6 +354,9 @@ Non andrò troppo nel dettaglio per questo approccio la magia, se stai leggendo 
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=71">Area Effect</a>:[+50%] l'attacco diventa ad area.</li>
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187">Overhead</a>:[+30%] può essere lanciato con una traiettoria arcuata.</li>
 
-<br> Questa dovrebbe essere una buona base d'inizio, ma come ho premesso questa via è una che richiede della dimestichezza con il sistema e per poter ricreare alcuni concetti è conveniente usare vari manuali oltre quello base.
+<br>
+<a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-magic-as-powers">Magic as Powers</a> = questo pdf contiene qualche incantesimo che può essere usato così, modificato, o magari trasformato in dei semplici "poteri" rimuovendo la limitazione "Magical".
+<br>
+Questa dovrebbe essere una buona base d'inizio, ma come ho premesso questa via è una che richiede della dimestichezza con il sistema e per poter ricreare alcuni concetti è conveniente usare vari manuali oltre quello base.
 
 <!-- END   -->
