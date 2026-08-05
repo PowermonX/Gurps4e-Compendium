@@ -1,29 +1,73 @@
 /* ===== NOTA a comparsa (piccolo details cliccabile) ===== */
-details.note {
-  display: inline-block;             /* si inserisce in mezzo a una frase senza andare a capo forzato */
+/* Selettore rafforzato (details.note, ripetuto) per garantire priorità */
+/* sul CSS generico dei details, indipendentemente dall'ordine nel file */
+details.note.note {
+  display: inline-block;
   cursor: pointer;
+
+  /* Reset di tutto ciò che il details generico potrebbe aver impostato */
+  border: none;                      /* niente bordo, come richiesto */
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  width: auto;                       /* annulla eventuale width fissa (es. min(800px, 90vw)) */
+  max-width: none;
+  background-color: transparent;
+  box-sizing: content-box;
+  overflow: visible;
+
+  /* Font e colore presi dal body, non dal details generico */
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
 }
 
-details.note summary {
-  display: inline;                   /* il testo cliccabile resta in linea col resto della frase */
-  color: inherit;                    /* eredita il colore del testo circostante */
-  text-decoration: underline;        /* sottolineato, per far capire che è cliccabile */
-  /* list-style: none; */                  /* rimuove la freccina/triangolino di default del browser */
-  font-size: inherit !important;
+details.note.note summary {
+  display: list-item;                /* IMPORTANTE: torna al default, per far ricomparire la freccetta nativa */
+  list-style: revert;                /* ripristina il marker/triangolino standard del browser (annulla eventuale "none" ereditato) */
+  cursor: pointer;
+
+  /* Reset di eventuale padding/margin/border/background del summary generico */
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  max-width: none;
+  box-sizing: content-box;
+
+  /* Font e colore dal body, ma in GRASSETTO come richiesto */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;             /* niente sottolineato, il grassetto basta a farlo riconoscere come interattivo */
+
+  /* Rimpicciolisce SOLO la freccetta al 70%, mantenendo il testo a dimensione normale */
+  /* (marker e testo sono due elementi separati dentro il summary, quindi si può scalare solo il marker) */
 }
 
-/* Rimuove anche il triangolino su Chrome/Safari (che usano un marker diverso da list-style) */
-details.note summary::-webkit-details-marker {
-  display: none;
+/* Selettore standard per la freccetta (Firefox e browser che supportano ::marker) */
+details.note.note summary::marker {
+  font-size: 0.7em;                  /* 70% della dimensione normale */
 }
 
-details.note div.note-content {
+/* Selettore equivalente per Chrome/Safari (usano ::-webkit-details-marker invece di ::marker) */
+details.note.note summary::-webkit-details-marker {
+  font-size: 0.7em;
+  transform: scale(0.7);             /* fallback: alcuni webkit ignorano font-size sul marker, transform è più affidabile */
+  transform-origin: center;
+}
+
+details.note.note div.note-content {
   margin-top: 6px;
   padding: 8px 12px;
-  border: 1px solid #1f8a4c;         /* stesso verde usato nel resto del sito */
+  border: 1px solid #1f8a4c;         /* il bordo resta SOLO sul contenuto interno, non sul details/summary esterno */
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.3);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.8em !important;
-  max-width: min(500px, 90vw);       /* mai più larga di 500px, ma sempre dentro il 90% dello schermo */
+  font-family: inherit;              /* eredita dal body, non font fisso */
+  font-size: inherit;
+  color: inherit;
+  max-width: min(500px, 90vw);
+  width: fit-content;
 }
