@@ -4,11 +4,13 @@ details.note {
 }
 
 details.note summary {
-  display: list-item;              /* mantiene la freccetta nativa del browser (non nascosta) */
-  font-weight: bold;                /* summary in grassetto, come richiesto */
-  color: inherit;                   /* colore preso dal body */
-  font-family: inherit;             /* font preso dal body */
-  font-size: inherit;                /* dimensione presa dal body */
+  display: list-item;                /* mantiene la freccetta nativa del browser */
+  font-weight: bold;                  /* summary in grassetto */
+  color: inherit;                     /* colore preso dal body */
+  font-family: inherit;               /* font preso dal body */
+  font-size: inherit;                 /* dimensione presa dal body */
+  text-decoration: underline dashed;  /* MODIFICA: sottolineatura tratteggiata, sempre visibile (chiuso o aperto) */
+  text-underline-offset: 3px;         /* piccolo distacco tra testo e linea tratteggiata, per leggibilità */
 }
 
 /* Freccetta al 50% della dimensione normale — Firefox */
@@ -16,21 +18,31 @@ details.note summary::marker {
   font-size: 0.5em;
 }
 
-/* Freccetta al 50% — Chrome/Safari (usano una proprietà diversa da ::marker) */
+/* Freccetta al 50% — Chrome/Safari */
 details.note summary::-webkit-details-marker {
   transform: scale(0.5);
   transform-origin: center;
 }
 
-details.note div.note-content {
-  margin-top: 6px;
-  padding: 8px 12px;
-  border: 1px solid #1f8a4c;
+/* MODIFICA: il bordo tratteggiato appare SOLO quando il details è aperto (attributo [open]), */
+/* e avvolge l'intero blocco — summary + contenuto insieme — non solo il contenuto come prima */
+details.note[open] {
+  border: 1px dashed #1f8a4c;         /* stesso verde usato nel resto del sito, ma tratteggiato invece che continuo */
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-family: inherit;             /* font dal body, non più monospace fisso */
-  font-size: inherit;                /* dimensione dal body, non più 16px fisso */
-  color: inherit;
+  padding: 8px 12px;                  /* spazio interno tra il bordo e summary/contenuto */
+}
+
+/* Un po' di distacco tra il summary e il contenuto, solo quando aperto (da chiuso non serve) */
+details.note[open] summary {
+  margin-bottom: 6px;
+}
+
+details.note div.note-content {
+  font-family: inherit;               /* font dal body */
+  font-size: inherit;                 /* dimensione dal body */
+  color: inherit;                     /* colore dal body */
   max-width: min(500px, 90vw);
   width: fit-content;
+  /* MODIFICA: bordo/sfondo/margin-top rimossi da qui, perché ora il bordo */
+  /* è gestito dal contenitore .note[open] esterno, che avvolge tutto insieme */
 }
