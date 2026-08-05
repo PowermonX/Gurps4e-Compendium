@@ -8,7 +8,8 @@ details.note summary {
   display: inline;                   /* il testo cliccabile resta in linea col resto della frase */
   color: inherit;                    /* eredita il colore del testo circostante */
   text-decoration: underline;        /* sottolineato, per far capire che è cliccabile */
-  list-style: none;                  /* rimuove la freccina/triangolino di default del browser */
+  /* list-style: none; */                  /* rimuove la freccina/triangolino di default del browser */
+  font-size: inherit !important;
 }
 
 /* Rimuove anche il triangolino su Chrome/Safari (che usano un marker diverso da list-style) */
@@ -23,6 +24,6 @@ details.note div.note-content {
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.3);
   font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
+  font-size: 0.8em !important;
   max-width: min(500px, 90vw);       /* mai più larga di 500px, ma sempre dentro il 90% dello schermo */
 }
