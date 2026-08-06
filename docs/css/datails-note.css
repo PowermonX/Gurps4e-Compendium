@@ -1,48 +1,54 @@
 details.note {
   display: inline-block;
   cursor: pointer;
+  vertical-align: baseline;          /* AGGIUNTA: allinea correttamente rispetto al testo attorno */
 }
 
 details.note summary {
-  display: list-item;                /* mantiene la freccetta nativa del browser */
-  font-weight: bold;                  /* summary in grassetto */
-  color: inherit;                     /* colore preso dal body */
-  font-family: inherit;               /* font preso dal body */
-  font-size: inherit;                 /* dimensione presa dal body */
-  text-decoration: underline dashed;  /* MODIFICA: sottolineatura tratteggiata, sempre visibile (chiuso o aperto) */
-  text-underline-offset: 3px;         /* piccolo distacco tra testo e linea tratteggiata, per leggibilità */
+  display: inline;                   /* MODIFICA: era "list-item" (blocco), ora è vero inline, scorre col testo */
+  list-style: none;                  /* nessun marker nativo residuo */
+  font-weight: bold;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: underline dashed;
+  text-underline-offset: 3px;
 }
 
-/* Freccetta al 50% della dimensione normale — Firefox */
-details.note summary::marker {
-  font-size: 0.5em;
-}
-
-/* Freccetta al 50% — Chrome/Safari */
+/* Nasconde il marker nativo residuo su Chrome/Safari (che usa una pseudo-classe diversa da list-style) */
 details.note summary::-webkit-details-marker {
-  transform: scale(0.5);
-  transform-origin: center;
+  display: none;
 }
 
-/* MODIFICA: il bordo tratteggiato appare SOLO quando il details è aperto (attributo [open]), */
-/* e avvolge l'intero blocco — summary + contenuto insieme — non solo il contenuto come prima */
+/* AGGIUNTA: freccetta disegnata a mano con ::before, al posto di quella nativa del browser */
+details.note summary::before {
+  content: "▶";
+  display: inline-block;
+  font-size: 0.5em;                  /* stessa dimensione (50%) che avevi impostato prima */
+  margin-right: 4px;
+  transition: transform 0.15s ease;  /* piccola animazione quando ruota */
+}
+
+/* Quando il details è aperto, la freccetta ruota di 90° invece di essere sostituita da un altro simbolo */
+details.note[open] summary::before {
+  transform: rotate(90deg);
+}
+
 details.note[open] {
-  border: 1px dashed #1f8a4c;         /* stesso verde usato nel resto del sito, ma tratteggiato invece che continuo */
+  border: 1px dashed #1f8a4c;
   border-radius: 4px;
-  padding: 8px 12px;                  /* spazio interno tra il bordo e summary/contenuto */
+  padding: 8px 12px;
 }
 
-/* Un po' di distacco tra il summary e il contenuto, solo quando aperto (da chiuso non serve) */
 details.note[open] summary {
+  display: inline;                   /* resta inline anche da aperto */
   margin-bottom: 6px;
 }
 
 details.note div.note-content {
-  font-family: inherit;               /* font dal body */
-  font-size: inherit;                 /* dimensione dal body */
-  color: inherit;                     /* colore dal body */
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
   max-width: min(500px, 90vw);
   width: fit-content;
-  /* MODIFICA: bordo/sfondo/margin-top rimossi da qui, perché ora il bordo */
-  /* è gestito dal contenitore .note[open] esterno, che avvolge tutto insieme */
 }
