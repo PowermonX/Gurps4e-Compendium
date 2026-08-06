@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<!--SI TROVA IN docs/html/pages-->
+<html lang="it">
+<head>
+
+<link rel="stylesheet" href="../../../docs/css/details-note.css">
+
+
+</head>
+<body>
+
+
 <!-- BEGIN RULES GENERAL CHANGES   -->
 <h1 id="general-changes" style="margin-left: 15px;"><u>General Changes</u></h1>
 <h2 id="modificatori" style="margin-left: 15px;">Modificatori</h2>
@@ -38,6 +50,7 @@ durante una scena nella fortezza del nemico, gli scagnozzi avranno un bonus, ovv
     più adatta alla situazione o la skill a cui si vuole fare riferimento è di un grado di difficolatà superiore). <br>
     <em style="font-size: 0.8em;">esempio: provare a usare "common knowledge!" per un tiro in cui "medicina!" sarebbe più adatto.</em> <br>
     Con l'inclusione delle macro skills il vantaggio "<a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=58">Talent</a>" non fornirà più il bonus generale alle skill incluse.
+</p>
 
     <h2 id="skills-list" style="margin-left: 15px;">Skills List</h2>
         <ul>
@@ -231,9 +244,9 @@ Ecco le cose di cui devi tenere conto.
 <ul>
 <li><b>Shock :</b>ogni volta che subisci danno usi quel valore come modificatore negativo (fino a un massimo di -4) su tutti i tuoi tiri di DX e QI fino alla fine del tuo turno.</li>
 <li><b>Hp<5 :</b>1/2 movement & dodge</li>
-<li><b>Hp<0 :</b>all'inizio di ogni turno devi fare un HT.roll contro <details class="note"><summary>knockdown</summary>all'inizio di ogni turno devi fare un HT.roll per non svenire;<br> fallimeno di 1-2 invece ti lascia <b>stordito</b>(nessuna azione e -4 alle difese) per l'intero turno.</details></li>
-<li><b>Hp<-(n)xHp :</b>ogni volta che raggiungi un multiplo negativo dei tuoi Hp devi fare un HT.roll per non morire (fallimento di 1-2 ti lascia <details class="note"><summary>ferito gravemente</summary>svieni e farai un HT.roll ogni 30min per non morire, se fai un critico o se vieni adeguatamente curato allora inizierai la normale rigenerazione;<br>se hai almeno 1Hp ti svegli , se sono + di -1xHp hai un tiro ogni ora per provarci, altrimenti è goni 12h.</details>); il tiro è fatto con un modificatore pari alla soglia varcata (-1 a -1xHp, -2 a -2Hp, etc) ed a -5xHp muori direttamente.</li>
-<li><b>dmg in singolo colpo >1/2Hp :</b>Ht.roll vs knockdown se una parte vitale del corpo, su un arto invece diventa <details class="note"><summary>crippled</summary>ne perdi l'uso, gli effetti di questo sono dettati dalla logica, ma se curato a full Hp farai un HT.roll per valutare la gravità della ferita e se guarirà nel tempo (magia e tecnologia aiutano ovviamente.)</details>.</li>
+<li><b>Hp<0 :</b>all'inizio di ogni turno devi fare un HT.roll contro <details  class="note"  style="display: inline;"><summary>knockdown</summary>all'inizio di ogni turno devi fare un HT.roll per non svenire;<br> fallimeno di 1-2 invece ti lascia <b>stordito</b>(nessuna azione e -4 alle difese) per l'intero turno.</details></li>
+<li><b>Hp<-(n)xHp :</b>ogni volta che raggiungi un multiplo negativo dei tuoi Hp devi fare un HT.roll per non morire (fallimento di 1-2 ti lascia <details class="note"  style="display: inline;"><summary>ferito gravemente</summary>svieni e farai un HT.roll ogni 30min per non morire, se fai un critico o se vieni adeguatamente curato allora inizierai la normale rigenerazione;<br>se hai almeno 1Hp ti svegli , se sono + di -1xHp hai un tiro ogni ora per provarci, altrimenti è goni 12h.</details>); il tiro è fatto con un modificatore pari alla soglia varcata (-1 a -1xHp, -2 a -2Hp, etc) ed a -5xHp muori direttamente.</li>
+<li><b>dmg in singolo colpo >1/2Hp :</b>Ht.roll vs knockdown se una parte vitale del corpo, su un arto invece diventa <details class="note"  style="display: inline;"><summary>crippled</summary>ne perdi l'uso, gli effetti di questo sono dettati dalla logica, ma se curato a full Hp farai un HT.roll per valutare la gravità della ferita e se guarirà nel tempo (magia e tecnologia aiutano ovviamente.)</details>.</li>
 
 </ul>
 
@@ -392,6 +405,12 @@ Lo spiego comunque per completezza e perchè è particolarmente pratico per ricr
     </ul>
 </details>
 
+</details>
+<!-- AGGIUNTA: chiude qui il details "difficult!", aperto sopra prima di "Classic Magic".
+     Prima mancava, e tutto il contenuto sottostante (Alternative Power, Informazioni
+     aggiuntive, Vantaggi, Limitations, Enhancements, link finale) restava intrappolato
+     dentro "difficult!", quindi nascosto di default finché l'utente non lo apriva. -->
+
 <h3 id="magic-alt" style="margin-left: 25px;">Alternative Power</h3>
 Nel caso in cui il tuo personaggio abbia Wuxia-Powers o dei qualche forma di poteri non direttamente Arcani, puoi sempre usare "<a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=80">Costs Fatigue</a>" e invece che ARCANA! associare questi poteri a SWORD-ART! per esempio e sparare lame d'aria dalla tua spada.
 
@@ -409,7 +428,8 @@ Non andrò troppo nel dettaglio per questo approccio la magia, se stai leggendo 
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=28">Healing</a>: per curare.</li>
 </ul>
 
-<ul> <b>LIMITATIONS:</b>
+<b>LIMITATIONS:</b>
+<ul>
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=80">Costs Fatigue</a>:[-5%*FP]costo in FP.</li>
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=81">Inaccurate</a>:[-5%*bonus non utilizzabile(max3)]non benefici da Evaluate.</li>
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=79">Accessibility</a>:[variabile]limitazioni sulle condizioni d'uso.</li>
@@ -417,14 +437,16 @@ Non andrò troppo nel dettaglio per questo approccio la magia, se stai leggendo 
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=84">Takes Extra Time</a>:[-10%*lvl] aumenta il casting time.</li>
 </ul>
 
-
-<ul> <b>ENHANCEMENTS:</b>
+<b>ENHANCEMENTS:</b>
+<ul>
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=71">Area Effect</a>:[+50%] l'attacco diventa ad area.</li>
 <li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187">Overhead</a>:[+30%] può essere lanciato con una traiettoria arcuata.</li>
-
+</ul>
 <br>
 <a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-magic-as-powers.pdf">Magic as Powers</a> = questo pdf contiene qualche incantesimo che può essere usato così, modificato, o magari trasformato in dei semplici "poteri" rimuovendo la limitazione "Magical".
 <br>
 Questa dovrebbe essere una buona base d'inizio, ma come ho premesso questa via è una che richiede della dimestichezza con il sistema e per poter ricreare alcuni concetti è conveniente usare vari manuali oltre quello base.
 
 <!-- END   -->
+
+</body></html>
