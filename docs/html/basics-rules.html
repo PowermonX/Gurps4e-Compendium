@@ -1,220 +1,423 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8">
-    <!-- maximum-scale=1, user-scalable=no => blocca lo zoom (pinch) su mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>GURPS 4e - Stat Calculator</title>
-<link rel="stylesheet" href="../../../docs/css/baseStyle-CODE.css">
-<link rel="stylesheet" href="../../../docs/css/tablesStyle-CODE.css">
-<!--====================            STYLING DELLA TABELLA            ============================-->
-    <style>
-        /* Blocca lo scroll e il "rimbalzo" della pagina su mobile:
-           html/body hanno esattamente l'altezza dello schermo e nulla
-           trabocca, quindi non c'è nulla da scrollare */
-        html, body {
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* impedisce pinch-zoom, doppio tap zoom, pan da gesto touch */
-            touch-action: none;
-            overscroll-behavior: none;
-        }
-        /* Contenitore di TUTTO il contenuto: qui imposti la dimensione base
-           (font-size) e autoscale.js applica un transform:scale() per farlo
-           entrare sempre nel 95vw/95vh disponibile */
-        .questa-pagina {
-            font-size: 25px !important;   /* <-- cambia qui la dimensione base */
-            transform-origin: center center;
-            will-change: transform;
-        }
-        /* Le due tabelle: niente allargamento automatico in base al contenuto */
-        #attributes-table,
-        #derived-table {
-            border-collapse: collapse;
-            table-layout: fixed;
-            width: auto;
-        }
-        /* Celle: padding/font in em così seguono il font-size di .questa-pagina */
-        #attributes-table th,
-        #attributes-table td,
-        #derived-table th,
-        #derived-table td {
-            padding: 2px 6px;
-            font-size: 1em;
-            line-height: 1.2;
-        }
-        /* Larghezza fissa dei campi numerici (ST/DX/IQ/HT, Costo, Punti Totali) */
-        #attributes-table input[type="number"],
-        #points-header input[type="number"] {
-            width: 150px;
-            box-sizing: border-box;
-            font-size: inherit;
-            padding: 1px 2px;
-        }
-    </style>
-<!--====================            STYLING DELLA TABELLA    (FINE)        ============================-->
-<!--Qua vanno i link per i Css ✨✨✨✨✨✨✨✨✨✨-->
-<link rel="stylesheet" href="../../../docs/css/baseStyle-CODE.css">
-<link rel="stylesheet" href="../../../docs/css/outlineStyle-CODE.css">
-<link rel="stylesheet" href="../../../docs/css/detailsStyle-CODE.css">
-<link rel="stylesheet" href="../../../docs/css/tablesStyle-CODE.css">
-    
-</head>
-<body>
-<!-- Wrapper unico: tutto ciò che sta qui dentro scala insieme (font, tabelle,
-     input, bordi...) grazie al transform:scale() applicato da autoscale.js -->
-<div class="questa-pagina">
-    <h1><u>Calcolatore Statistiche</u></h1>
-    <!-- Punti Totali (input editabile) e Punti Rimanenti (calcolato da statsCalculator.js) -->
-    <div id="points-header">
-        <div id="points-total-wrapper">
-            <span class="section-title">Punti Totali</span>
-            <input type="number" id="total-points" value="100">
-        </div>
-        <div id="points-remaining-wrapper">
-            <span class="section-title">Punti Rimanenti</span>
-            <div id="points-remaining">100</div>
-        </div>
-    </div>
-    <h2><u>Statistiche Primarie</u></h2>
-    <!-- Tabella ST/DX/IQ/HT: Valore e Costo sono input, Spesa e Totale
-         vengono calcolati e scritti da statsCalculator.js -->
-    <table id="attributes-table">
-        <thead>
-            <tr>
-                <th>Stat</th>
-                <th>Valore</th>
-                <th>Spesa</th>
-                <th>Costo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>ST</strong></td>
-                <td><input type="number" id="st-value" value="10"></td>
-                <td><span id="st-spesa">0</span></td>
-                <td><input type="number" id="st-costo" value="10"></td>
-            </tr>
-            <tr>
-                <td><strong>DX</strong></td>
-                <td><input type="number" id="dx-value" value="10"></td>
-                <td><span id="dx-spesa">0</span></td>
-                <td><input type="number" id="dx-costo" value="20"></td>
-            </tr>
-            <tr>
-                <td><strong>IQ</strong></td>
-                <td><input type="number" id="iq-value" value="10"></td>
-                <td><span id="iq-spesa">0</span></td>
-                <td><input type="number" id="iq-costo" value="20"></td>
-            </tr>
-            <tr>
-                <td><strong>HT</strong></td>
-                <td><input type="number" id="ht-value" value="10"></td>
-                <td><span id="ht-spesa">0</span></td>
-                <td><input type="number" id="ht-costo" value="10"></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align:right"><strong>Spesa Totale:</strong></td>
-                <td colspan="2"><strong id="total-attributi">0</strong> punti</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2 class="section-title" style="margin-bottom: 20px; margin-top:20px;"><u>Statistiche Derivate</u></h2>
-    <!-- Tabella read-only: tutte le celle <td id="..."> sono riempite
-         da statsCalculator.js in base a ST/DX/IQ/HT -->
-    <table id="derived-table">
-        <thead>
-            <tr>
-                <th>Statistica</th>
-                <th>Valore</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>HP</strong></td>
-                <td id="hp"></td>
-            </tr>
-            <tr>
-                <td><strong>Basic Lift</strong></td>
-                <td id="bl"></td>
-            </tr>
-            <tr>
-                <td><strong>Dmg (Thr/Sw)</strong></td>
-                <td id="dmg"></td>
-            </tr>
-            <tr>
-                <td><strong>FP</strong></td>
-                <td id="fp"></td>
-            </tr>
-            <tr>
-                <td><strong>Will</strong></td>
-                <td id="will"></td>
-            </tr>
-            <tr>
-                <td><strong>Basic Speed</strong></td>
-                <td id="basic-speed"></td>
-            </tr>
-            <tr>
-                <td><strong>Basic Move</strong></td>
-                <td id="basic-move"></td>
-            </tr>
-            <tr>
-                <td><strong>Dodge</strong></td>
-                <td id="dodge"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<!-- SCRIPTS!! ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ -->
-<!-- statsCalculator.js: legge gli input, scrive Spesa/Punti Rimanenti/statistiche derivate -->
-<script src="../../../docs/java/statsCalculator.js"></script>
-<!-- AUTO RESIZER ⭐⭐-->     
-<script>
-(function () {
-    "use strict";
-    var el = document.querySelector(".questa-pagina");
-    var naturalWidth = 0;
-    var naturalHeight = 0;
-    function applyScale() {
-        if (!naturalWidth || !naturalHeight) return;
-        var maxWidth = window.innerWidth * 0.95;
-        var maxHeight = window.innerHeight * 0.95;
-        var scale = Math.min(maxWidth / naturalWidth, maxHeight / naturalHeight);
-        el.style.transform = "scale(" + scale + ")";
-    }
-    var ro = new ResizeObserver(function (entries) {
-        var entry = entries[0];
-        var box = entry.borderBoxSize && entry.borderBoxSize[0];
-        if (box) {
-            naturalWidth = box.inlineSize;
-            naturalHeight = box.blockSize;
-        } else {
-            naturalWidth = entry.contentRect.width;
-            naturalHeight = entry.contentRect.height;
-        }
-        applyScale();
-    });
-    ro.observe(el);
-    window.addEventListener("resize", applyScale);
+<!-- BEGIN RULES GENERAL CHANGES   -->
+<h1 id="general-changes" style="margin-left: 15px;"><u>General Changes</u></h1>
+<h2 id="modificatori" style="margin-left: 15px;">Modificatori</h2>
+Avere troppi modificatori diversi rallenta di molto il gioco. <br>
+È per questo che salvo eccezione per qualche situazione in cui è
+assolutamente necessario, verranno effettuate delle semplificazioni
+e modificatori diversi saranno accorpati al modificatore pari più vicino:
+<details class="block"> <!--ESEMPIO-->
+<summary style="max-height: min(30px) !important; font-size:15px;"><em>Esempio</em></summary>
+Riuniamo per situazioni e vediamo come scalano i modificatori:
+<br>Visione: penombra(-2), accecato(-4);
+<br>Postura: in ginocchio(-2), steso(-4);
 
-    // Blocco extra anti-gesture: previene il pinch-zoom su alcuni browser
-    // mobile che ignorano "user-scalable=no" nel meta viewport.
-    document.addEventListener("gesturestart", function (e) {
-        e.preventDefault();
-    });
-    document.addEventListener("touchmove", function (e) {
-        if (e.touches.length > 1) {
-            e.preventDefault();
-        }
-    }, { passive: false });
-})();
-    
-</script>
-    
-</body>
-</html>
+<br>In determinate situazioni potrebbe essere giustificato anche un -6 o -8!
+<br><br><em style="font-size: 0.8em;">E i bonus? Essendo questo un gioco che prevede tiri sia per l'attacco che per la difesa, ci sono molte situazioni in cui il tuo vantaggio si tradurrà in un
+malus per l'avversario (un nemico accecato non potrà difenderesi, ma che tu riesca o
+meno a colpire dipende da te...).</em>
+</details>
+
+<h2 id="bad-system" style="margin-left: 20px;">"Bad" System</h2>
+In situazioni in cui la scena è particolarmente impegnativa per i personaggi,
+invece che aggiungere modificatori granulari ad ogni singola azione, si può usare un modificatore di scena, che si applica ad ogni singola azione.
+<details class="block"> <!--ESEMPIO-->
+<summary style="max-height: min(30px) !important; font-size:15px;"><em>Esempio</em></summary>
+durante una scena nella fortezza del nemico, gli scagnozzi avranno un bonus, ovviamente conoscono il terreno di gioco meglio dei giocatori...ma anche scassinare una serratura avrà quello stesso modificatore! Ovviamente non userà serrature scadenti nella sua base!
+</details>
+
+
+<!-- END   -->
+
+<!-- BEGIN MACRO SKILLS  -->
+<h1 id="macro-skills" style="margin-left: 15px;"><u>Macro Skills</u></h1>
+<p>
+    Nella creazione personaggio invece che dover consultare la lista completa delle skills,
+    è possibile affidarsi a delle macro skills. <br>
+    Queste agiranno da "skills ombrello" e forniranno il loro bonus a tutta una serie di skills
+    concettualmente collegate (con malus di -2 e -4 quando un'altra macro skill potrebbe essere
+    più adatta alla situazione o la skill a cui si vuole fare riferimento è di un grado di difficolatà superiore). <br>
+    <em style="font-size: 0.8em;">esempio: provare a usare "common knowledge!" per un tiro in cui "medicina!" sarebbe più adatto.</em> <br>
+    Con l'inclusione delle macro skills il vantaggio "<a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=58">Talent</a>" non fornirà più il bonus generale alle skill incluse.
+
+    <h2 id="skills-list" style="margin-left: 15px;">Skills List</h2>
+        <ul>
+            <li>Athletics!</li>
+            <li>Business!</li>
+            <li>Melee!</li>
+            <li>Unarmed!</li>
+            <li>Ranged!</li>
+            <li>Common Knowledge!</li>
+            <li>Social!</li>
+            <li>Anti-Social!</li>
+            <li>Stealth!</li>
+            <li>Survival!</li>
+            <li>CUSTOM!</li>
+        </ul>
+
+    <details  class="block">
+    <summary style="max-height: min(30px) !important; font-size:15px;"><b>CUSTOM!</b></summary>
+      puoi anche creare le tue skills! possono essere campi di esperienza più specifici, come ART! (dipingere, scolpire, suonare),
+    NUOTARE! (nuoto stile libero o anche immersioni), ma volendo puoi anche scrivere <u><b>concetti!</b></u>. <br>
+    Per esempio SAMURAI! potrebbe contenere katana, arco tradizionale, cavalcare(cavallo) ed etichetta da nobile. <br>
+    <em style="font-size: 0.8em;">CONSIGLIO: cerca di essere sempre coerente con il tuo personaggio, se quando hai creato il personaggio hai preso ART!
+        perchè eri interessato a suonare il Violino, tienine conto, magari quando dovrà scolpire un -2 potrebbe starci...sai...per roleplay.</em> <br>
+
+    <details class="block" style="margin-left: min(200px, 20vw); width: fit-content;">
+    <summary style="max-height: min(30px) !important; font-size:15px;">Alcuni Esempi</summary>
+        <ul>
+            <li>Craft!</li>
+            <li>Medicine!</li>
+            <li>Melee!</li>
+            <li>Soldier!</li>
+            <li>Orafo!</li>
+            <li>Marinaio!</li>
+            <li>Nuotare!</li>
+        </ul>
+    </details>
+    </details>
+
+    <h2 id="skills-creation" style="margin-left: 15px;">Durante la creazione del personaggio</h2>
+    Alla creazione del personaggio avrai dei modificatori da distribuire:
+    <ul>
+  <li>1 mod. <u><b>+2</b></u></li>
+  <li>2 mod. <u><b>+1</b></u></li>
+  <li>3 mod. <u><b>+0</b></u></li>
+</ul>
+
+I modificatori possono andare da <u><b>-3</b></u> a <u><b>+3</b></u> ed è possibile scambiare un
+modificatore di livello superiore per 2 di livello inferiore e viceversa. <br>
+<em style="font-size: 0.8em;">esempio: magari un criminale avrebbe anti-social(+2), business(+1), athletics(+1), Melee (+0)</em>
+
+<details  class="block">
+    <summary style="max-height: min(30px) !important; font-size:15px;"><b>skill normali</b></summary>
+ Se vuoi usare delle skills normali puoi scambiare una macro skill con una skill normale di 3 livelli superiore (quindi un +1 diventerebbe un +4), per queste il limite alla creazione è di +4.
+
+    <details  class="block">
+        <summary style="max-height: min(30px) !important; font-size:15px;">
+        D&D-like Skills LIST</summary>
+    <div style="max-width: 95vw;" class="html-loader" data-file="../../../docs/html/dnd-skills.html">Caricamento in corso...</div>
+    </details>
+
+</details>
+
+    <h2 id="prezzi-skills" style="margin-left: 15px;">Prezzo Skills</h2>
+Per limitare la necessità di tabelle e semplificare i calcoli tutte le skill costano <b>4pt</b> (fatta eccezzione per le macro skills che costano 12pt); ciò che cambia è il modificato da cui parti alla prima spesa du di una determinata skill.
+<table><thead>
+  <tr>
+    <th>Easy</th>
+    <th>Average</th>
+    <th>Hard</th>
+    <th>Very Hard</th>
+    <th>Macro Skills</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>+0</td>
+    <td>-1</td>
+    <td>-2</td>
+    <td>-3</td>
+    <td>-5</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+<!-- END   -->
+
+<!-- BEGIN MANOVRE   -->
+
+<h1 id="manovre" style="margin-left: 15px;"><u>Manovre</u></h1>
+Questo è l'essenziale da sapere in combattimento,
+se non si vuole entrare nel dettaglio, basta conoscere un paio di
+azioni e modificatori.
+
+<h2 id="mosse-attive" style="margin-left: 20px;">Mosse Attive</h2>
+    <p>
+    Ogni turno hai 1 azione, selezionabile tra queste manovre: <br>
+
+        <b><u>Move:</u> </b>muoviti della tua move speed. <br>
+        <b><u>Attack:</u> </b>fai un attacco. <br>
+        <span style="display:block; margin-left: 20px"><b><u>Move+Attack:</u> </b>puoi fare entrambe le cose, ma con un malus -4 (e la tua skill massima diventa 9 per questo attacco).</span>
+        <b><u>Rapid Strike!:</u> </b>puoi fare due attacchi, ma entrambi sono a -6.<br>
+        <b><u>Evaluate:</u> </b>+1 al prossimo attaco contro quel nemico (cumulabile 3 volte). <br>
+        <b><u>Interact:</u> </b>estrarre un arma, tirare una leva, aprire una porta, etc...<br>
+        <b><u>Cambiare postura:</u> </b>se sei a carponi è 1 azione, se sei steso 2.<br>
+        <b><u>All-Out Defense!:</u> </b>aggiungi +2 a UNO dei tuoi tiri di difesa questo turno.<br>
+        <b><u>Wait:</u> </b>aspetti il momento giusto per compiere un azione, questo comporta però un malus di -4 o superiore (reagire rende tutto più difficile).
+    </p>
+
+<h2 id="modificatori-mosse" style="margin-left: 20px;">Modificatori Mosse</h2>
+Ci sono manovre che non richiedono un intera azione, ma vanno semplicemente a
+modificare l'azione a cui le associ, quindi un puoi tranquillamente usare "All-Out Attack!" insieme a "Rapid strike" o con "Called Shot".
+    <p>
+        <b><u>All-Out Attack!:</u> </b>aggiungi +4 al tuo attacco o +2 al tuo danno, ma fino al tuo prossimo turno non ti potrai difendere!<br>
+        <em>Muoviti di metà del tuo basic movement.</em> <br>
+        <b><u>Called Shot:</u> </b>prendi di mira una parte specifica del nemico, con un malus relativo alla difficoltà nel colpire quella parte del corpo.<br>
+        <em style="font-size: 0.8em;">Corpo(-0), Arto(-2), Organi(-4), Testa(-6), Occhio(-8)</em><br>
+        <b><u>Deceptive Attack!:</u> </b>puoi aggiungiungere un malus a un tuo attaco, per assegnarne uno al tiro di difesa avversario(con un rapporto di 2:1).
+    </p>
+<!-- END   -->
+
+
+<!-- BEGIN DANNO E BODY-PARTS   -->
+
+<h1 id="danno" style="margin-left: 15px;"><u>Moltiplicatore Danni</u></h1>
+Questi sono i moltiplicatori del danno:
+<table><thead>
+  <tr>
+    <th>Type</th>
+    <th>Modifier</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Small Piercing (pi-)</td>
+    <td>x0.5</td>
+  </tr>
+  <tr>
+    <td>Piercing<br>
+        <details class="note">
+        <summary>tutto il resto</summary>
+            <div class="note-content">
+            Burning (burn), corrosion (cor), crushing (cr), fatigue (fat), piercing (pi), and toxic (tox)
+            </div>
+        </details>
+    </td>
+    <td>x1</td>
+  </tr>
+  <tr>
+    <td>Cutting (cut) and large piercing (pi+)</td>
+    <td>x1.5</td>
+  </tr>
+  <tr>
+    <td>Impaling (imp) and huge piercing (pi++)<br></td>
+    <td>x2</td>
+  </tr>
+</tbody>
+</table>
+
+<h2 id="body-parts" style="margin-left: 20px;">Body Parts</h2>
+
+I regole per le varie parti del corpo sono state semplificate:
+<ul>
+<li><b>Head: </b>(only physical dmg)dr2; dmgx4; <br> knockdown.rolls -10</li>
+<li><b>Vitals: </b>pi & imp x3; <br> knockdown.rolls -10</li>
+<li><b>Limbs: </b>pi & imp x1; max dmg = hp/3</li>
+</ul>
+
+<!-- END   -->
+
+<!-- BEGIN wound-flowchart      -->
+La cosa base da capire è che il gioco è simulativo per natura, quindi anche con tutte le semplificazioni applicabili una nozione rimane sempre da tenere in considerazine: <b>prendere un QUALSIASI danno ti avvicina pericolosamente alla sconfitta!</b> Gli Hp non sono un astrazione di un insieme di circostanze, rappresentano letteralmente il tuo stato di salute fisico e basta. <br>
+Quando scendi sotto -1xHp devi considerarti praticamente fuori dal combattimento, è più un buffer per consentirti di sopravvivere, che un invito a continuare a combattere.
+<br><br>
+
+Ecco le cose di cui devi tenere conto.
+<ul>
+<li><b>Shock :</b>ogni volta che subisci danno usi quel valore come modificatore negativo (fino a un massimo di -4) su tutti i tuoi tiri di DX e QI fino alla fine del tuo turno.</li>
+<li><b>Hp<5 :</b>1/2 movement & dodge</li>
+<li><b>Hp<0 :</b>all'inizio di ogni turno devi fare un HT.roll contro <details class="note"><summary>knockdown</summary>all'inizio di ogni turno devi fare un HT.roll per non svenire;<br> fallimeno di 1-2 invece ti lascia <b>stordito</b>(nessuna azione e -4 alle difese) per l'intero turno.</details></li>
+<li><b>Hp<-(n)xHp :</b>ogni volta che raggiungi un multiplo negativo dei tuoi Hp devi fare un HT.roll per non morire (fallimento di 1-2 ti lascia <details class="note"><summary>ferito gravemente</summary>svieni e farai un HT.roll ogni 30min per non morire, se fai un critico o se vieni adeguatamente curato allora inizierai la normale rigenerazione;<br>se hai almeno 1Hp ti svegli , se sono + di -1xHp hai un tiro ogni ora per provarci, altrimenti è goni 12h.</details>); il tiro è fatto con un modificatore pari alla soglia varcata (-1 a -1xHp, -2 a -2Hp, etc) ed a -5xHp muori direttamente.</li>
+<li><b>dmg in singolo colpo >1/2Hp :</b>Ht.roll vs knockdown se una parte vitale del corpo, su un arto invece diventa <details class="note"><summary>crippled</summary>ne perdi l'uso, gli effetti di questo sono dettati dalla logica, ma se curato a full Hp farai un HT.roll per valutare la gravità della ferita e se guarirà nel tempo (magia e tecnologia aiutano ovviamente.)</details>.</li>
+
+</ul>
+
+<h2 id="wounds-flowchart" ><u>Wounds-Flowchart</u></h2>
+<a href="../../../docs/img/wounds-flowchart.png">
+    <img
+        src="../../../docs/img/wounds-flowchart.png"
+        alt="immagine"
+        width="800"
+        style="display: block; max-width: 95vw; margin-bottom: 10px; margin-top: 10px;">
+</a>
+
+
+<!-- END        -->
+
+<!-- BEGIN EQUIPAGGIAMENTO   -->
+
+<h1 id="equipment" style="margin-left: 15px;"><u>Equipaggiamento</u></h1>
+Nella pagina per la creazione personaggio c'è anche il link all'equipaggiamento completo,
+ma volendo semplificare basta tenere a mente delle linee guida. <br>
+Approssimativamente:
+<b><u>Weapons</u>:</b>
+<ul>
+<li><u>coltello</u>: dmg-1</li>
+<li><u>spada corta</u>: dmg</li>
+<li><u>spada lunga</u>: dmg+1</li>
+<li><u>spada a 2 mani</u>: dmg+2</li>
+</ul>
+scegli la cosa più simile all'arma che vuoi usare ed hai il tuo danno (il tipo di danno cambia in base all'arma, taglio, contundente, etc. ).
+<br><br>
+E le armature?
+<b><u>Armors</u>:</b>
+<ul>
+<li><u>vestiti</u>: dr 1</li>
+<li><u>armatura in pelle</u>: dr 2</li>
+<li><u>cotta di maglia</u>: dr 4/2 (2 contro contundente)</li>
+<li><u>armatura a piastre</u>: dr 6</li>
+</ul>
+Se non precisato tutto è protetto, ma a -8 si può comunque mirare i punti deboli dell'armatura.
+
+<h2 id="encumbrance" style="margin-left: 20px;">Encumbrance</h2>
+Quanto peso puoi trasportare? La risposta breve è valuta in base alla forza se è o meno credibile che il tuo personaggio possa permettersi un intera armtura in acciaio... <br>
+Ogni volta che super un "soglia" di peso trasportato, sali di un lvl di encumbrance e questo si traduce in dei -1 cumulativi sulla schivata e una diminuzione del movimento(50% mov. a -3)):
+<table><thead>
+  <tr>
+    <th>ST</th>
+    <th>+0</th>
+    <th>-1</th>
+    <th>-2</th>
+    <th>-3</th>
+    <th>-4</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>6 (malato)</td>
+    <td>3</td>
+    <td>6</td>
+    <td>9</td>
+    <td>18</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>8 (fuori forma)</td>
+    <td>6</td>
+    <td>12</td>
+    <td>18</td>
+    <td>36</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>10 (standard)</td>
+    <td>10</td>
+    <td>20</td>
+    <td>30</td>
+    <td>60</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>12 (forzuto)</td>
+    <td>15</td>
+    <td>30</td>
+    <td>45</td>
+    <td>90</td>
+    <td>150</td>
+  </tr>
+  <tr>
+    <td>14 (olimpionico)<br></td>
+    <td>22</td>
+    <td>44</td>
+    <td>66</td>
+    <td>132</td>
+    <td>220</td>
+  </tr>
+</tbody>
+</table>
+
+Dai per scontanto che se hai addosso dell'equipaggiamento adatto alla tua classe sarai -1 o -2, iniziando a portarsi dietro anche attrezzatura arriverai a -3; <br>
+il -4 e -5 sono destinati per chi sta portando in spalla un alleato svenuto o si è messo nello zaino un intero scrigno carico di tesori.
+
+
+
+<!-- END   -->
+
+
+<!-- BEGIN  SPELLS      -->
+<h1 id="spells" style="margin-left: 15px;"><u>Spells</u></h1>
+Quindi hai deciso di complicarti la vita? <br>
+Ci sono vari modi di approcciare la magia, il metodo qui proposto è creato appositamente per essere facile da approcciare:
+
+
+<!-- BEGIN  SPELLS as SKILLS    -->
+<h2 id="magic-skills" style="margin-left: 20px;">Magic as SKILLS (revised)</h2>
+Anche qui per semplificare il lavoro è stata creata un amalgama di regole dei vari stili di magia (Skills/Thaumatology/Sorcery) presenti nei vari manuali.
+<br> Per lanciare incantesimi avrai bisogno dei seguenti requisiti:
+<ul>
+<li><b><u>Magery:</u> </b>vantaggio necessario per castare incantesimi.</li>
+<li><b><u>Core Macro Skill:</u> </b>ARCANA!, OCCULTISMO!, scegli che vuoi ma te ne serve una.</li>
+<li><b><u>College:</u> </b>la scuola magica da cui provengono gli incantesimi (partono da ARCANA!-6 e sono skills/difficili).</li>
+</ul>
+Come consigliato dal manuale "Thaumatology" i prezzi di <a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=35">Magery</a> rimangono invariati <em style="font-size: 0.8em;">(5pt per portarlo a 0 e poter "percepire" la magia, poi 10pt per ogni +1 )</em>, ma la sua funzione cambia:
+<details  class="block">
+    <summary style="max-height: min(30px) !important; font-size:15px;">
+    Magery(2.0)</summary>
+<ul>
+<li><b>Max spell level:</b> il livello massimo a cui puoi portare una spell è <u>10 + (Magery x 2)</u>. </li>
+<li><b>Max FP cost:</b> magery indica il livello massimo dei tuoi incantesimi (quanti FP puoi spendere su un  incantesimo.</li>
+</ul>
+</details>
+L'ultimo tassello sono i requisiti della singola spell, usati per rappresentare la DIFFICOLTÀ di un incantesimo; per ogni requisito annotato nell'apposita sezione della spell, vi sarà un malus di -1 sul casting roll (che il requisito sia soddisfatto o no).
+<br>
+Ok, adesso che sai tutti i requisiti, userò un esempio per spiegare come funziona: <br>
+Vuoi castare <a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=216">Fireball</a>? Se hai Magery 2, allora la tua ARCANA! può essere livellata fino al 14 (10+m*2). <br>
+I college possono avere come livello massimo quello di ARCANA!, per questo esempio diremo che il "College del Fuoco" è anche lui al 14. <br>
+Adesso rivolgiamo lo sguardo all'incantesimo, fireball(missile) ha 3 requisiti, e quindi il numero finale sarà di 14(college)-3=11; dovessi riuscire a fare 11 o meno con i tuoi 3d6 l'incantesimo sarà lanciato correttamente.
+<details  class="block">
+    <summary style="max-height: min(30px) !important; font-size:15px;">
+    Migliorare le Spells(ignorabile x ora)</summary>
+Puoi eliminare il malus di una spell pagando 2pt per ogni -1 sulla spell.
+</details>
+<br><br>
+
+<!-- END     -->
+
+
+<!-- BEGIN  SPELLS as POWERS    -->
+<h2 id="magic-powers" style="margin-left: 20px;">Magic as POWERS (revised)</h2>
+
+<details  class="block">
+    <summary style="max-height: min(30px) !important; font-size:15px;">
+    difficult!</summary>
+Per usare questo metodo è necessario acquisire della dimestichezza con i vari vantaggi e modificatori disponibili, quindi nello spirito del progetto lo sconsiglio. <br>
+Lo spiego comunque per completezza e perchè è particolarmente pratico per ricreare alcuni concetti difficili da riprodurre con il materiale altrimenti disponibile.
+
+<h3 id="magic-classic" style="margin-left: 25px;">Classic Magic</h3>
+È possibile crearsi i propri incantesimi con i vantaggi, aggiungendo le limitazioni "<a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=80">Costs Fatigue</a>" e "<u><b>Magical</b></u>", in quel caso come skill di riferimento userà "ARCANA!" o qualcosa di simile, in base alla base della tua magia (fosse magia divina useresti "Divine" e una skill affine).
+<details class="block" style="margin-left: min(200px, 20vw); width: fit-content;">
+    <summary style="max-height: min(30px) !important; font-size:15px;">Magical</summary>
+    <ul>
+        <li>They do not work on a “no-mana” zone.</li>
+        <li>They gain the “Unreliable: 11” limitation, without change to their cost, in a low-mana zone.
+            If they already have “Unreliable”, then the “Unreliable” activation numbered is lowered by 3.</li>
+        <li>They consume ½ of their power points (see below) in a high-mana zone.</li>
+        <li>They consume ¼ of their power points in a very high-mana zone.</li>
+    </ul>
+</details>
+
+<h3 id="magic-alt" style="margin-left: 25px;">Alternative Power</h3>
+Nel caso in cui il tuo personaggio abbia Wuxia-Powers o dei qualche forma di poteri non direttamente Arcani, puoi sempre usare "<a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=80">Costs Fatigue</a>" e invece che ARCANA! associare questi poteri a SWORD-ART! per esempio e sparare lame d'aria dalla tua spada.
+
+
+<h3 id="informations" style="margin-left: 25px;">Informazioni aggiuntive</h3>
+Non andrò troppo nel dettaglio per questo approccio la magia, se stai leggendo questo vuol dire che hai già della dimestichezza con il sistema, fornirò comunque qualche informazione utile:
+<br><br>
+
+<b><u>ACCESSORY:</u></b> se una spell produce l'effetto di un oggetto comune, come una torcia o un accendino, il costo è di 1pt (ma in base al setting potebbe comunque essere corretto aggiungere le limitazioni "costs fatigue" e "magical").
+<br><br>
+
+<b>VANTAGGI:</b> <br>
+<ul>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=30">Innate Attack</a>: per gli attacchi.</li>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=28">Healing</a>: per curare.</li>
+</ul>
+
+<ul> <b>LIMITATIONS:</b>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=80">Costs Fatigue</a>:[-5%*FP]costo in FP.</li>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=81">Inaccurate</a>:[-5%*bonus non utilizzabile(max3)]non benefici da Evaluate.</li>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=79">Accessibility</a>:[variabile]limitazioni sulle condizioni d'uso.</li>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=84">Trigger</a>:[variabile]richiede qualcosa per essere usato.</li>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-ADV-DIS.pdf#page=84">Takes Extra Time</a>:[-10%*lvl] aumenta il casting time.</li>
+</ul>
+
+
+<ul> <b>ENHANCEMENTS:</b>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=71">Area Effect</a>:[+50%] l'attacco diventa ad area.</li>
+<li><a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/markdown/docs/pdf/GURPS4e-ADV-DIS.pdf#page=187">Overhead</a>:[+30%] può essere lanciato con una traiettoria arcuata.</li>
+
+<br>
+<a href="https://raw.githubusercontent.com/PowermonX/Gurps4e-Compendium/refs/heads/fetcher/docs/pdf/GURPS4e-magic-as-powers.pdf">Magic as Powers</a> = questo pdf contiene qualche incantesimo che può essere usato così, modificato, o magari trasformato in dei semplici "poteri" rimuovendo la limitazione "Magical".
+<br>
+Questa dovrebbe essere una buona base d'inizio, ma come ho premesso questa via è una che richiede della dimestichezza con il sistema e per poter ricreare alcuni concetti è conveniente usare vari manuali oltre quello base.
+
+<!-- END   -->
