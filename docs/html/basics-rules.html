@@ -122,6 +122,29 @@ Per limitare la necessità di tabelle e semplificare i calcoli tutte le skill co
 </table>
 
 
+<h2 id="techniques" style="margin-left: 15px;">Tecniche</h2>
+Questa è una componenente non essenziale, ma poichè potrebbe facilmente
+presentarsi durante il gioco vale la pena approfondirla un minimo. <br>
+Le tecniche sono delle sub-skills, sono situazioni specifiche d'uso di una
+determinata skill e il loro scopo è quello di prepararsi a quella situazione
+"comprando" con punti personaggio il malus.
+<details  class="block">
+    <summary style="max-height: min(30px) !important; font-size:15px;"><b>Esempio</b></summary>
+Magari per il tuo mestiere vorresti essere particolarmente bravo a fare nodi sott'acqua, ma questo
+richiede di fare il tiro a -4! Crei la tecnica "underwater knotting" e puoi comprare 4 livelli
+in quella tecnica per poter fare i tiri sott'acqua usando la tua skill senza il malus.
+</details> <br>
+Le tecniche tornano utili anche per "evitare disagio", fai finta di voler evitare di ricarica ogni
+turno il tuo arco, potresti creare una tecnica a -8 per la ricarica+sparo. <br><br>
+
+Le skills cosatano solo <u>2pt</u> per livello e la regola generale è che se non riguardano casi
+estremamente specifici devono avere forti malus o qualcosa a controbilanciare; se una tecnica dovesse sembrare "un po' troppo speciale" allora probabilmente è da creare con dei poteri invece che con una sub-skill...
+
+<details  class="block">
+    <summary style="max-height: min(30px) !important; font-size:15px;"><b>Esempio</b></summary>
+Vuoi girare su te stesso con la spada e colpire i nemici intorno a te? Con i giusti malus (magari consuma stamina) potrebbe anche essere una tecnica; <br>
+Vuoi girare su te stesso, diventare una trottola di morte e distruzione e colpire un poveraccio con effetto motosega? Questo sarebbe un potere.
+</details>
 
 <!-- END   -->
 
@@ -176,7 +199,7 @@ Questi sono i moltiplicatori del danno:
   </tr>
   <tr>
     <td>Piercing<br>
-        <details class="note">
+        <details class="note" style="display: inline-block; border-style: dashed; width: content-fit">
         <summary>tutto il resto</summary>
             <div class="note-content">
             Burning (burn), corrosion (cor), crushing (cr), fatigue (fat), piercing (pi), and toxic (tox)
@@ -207,7 +230,7 @@ I regole per le varie parti del corpo sono state semplificate:
 
 <!-- END   -->
 
-<!-- BEGIN wound-flowchart      -->
+<!-- BEGIN Ferite      -->
 La cosa base da capire è che il gioco è simulativo per natura, quindi anche con tutte le semplificazioni applicabili una nozione rimane sempre da tenere in considerazine: <b>prendere un QUALSIASI danno ti avvicina pericolosamente alla sconfitta!</b> Gli Hp non sono un astrazione di un insieme di circostanze, rappresentano letteralmente il tuo stato di salute fisico e basta. <br>
 Quando scendi sotto -1xHp devi considerarti praticamente fuori dal combattimento, è più un buffer per consentirti di sopravvivere, che un invito a continuare a combattere.
 <br><br>
@@ -215,21 +238,13 @@ Quando scendi sotto -1xHp devi considerarti praticamente fuori dal combattimento
 Ecco le cose di cui devi tenere conto.
 <ul>
 <li><b>Shock :</b>ogni volta che subisci danno usi quel valore come modificatore negativo (fino a un massimo di -4) su tutti i tuoi tiri di DX e QI fino alla fine del tuo turno.</li>
-<li><b>Hp<5 :</b>1/2 movement & dodge</li>
-<li><b>Hp<0 :</b>all'inizio di ogni turno devi fare un HT.roll contro <details class="note"><summary>knockdown</summary>all'inizio di ogni turno devi fare un HT.roll per non svenire;<br> fallimeno di 1-2 invece ti lascia <b>stordito</b>(nessuna azione e -4 alle difese) per l'intero turno.</details></li>
-<li><b>Hp<-(n)xHp :</b>ogni volta che raggiungi un multiplo negativo dei tuoi Hp devi fare un HT.roll per non morire (fallimento di 1-2 ti lascia <details class="note"><summary>ferito gravemente</summary>svieni e farai un HT.roll ogni 30min per non morire, se fai un critico o se vieni adeguatamente curato allora inizierai la normale rigenerazione;<br>se hai almeno 1Hp ti svegli , se sono + di -1xHp hai un tiro ogni ora per provarci, altrimenti è goni 12h.</details>); il tiro è fatto con un modificatore pari alla soglia varcata (-1 a -1xHp, -2 a -2Hp, etc) ed a -5xHp muori direttamente.</li>
-<li><b>dmg in singolo colpo >1/2Hp :</b>Ht.roll vs knockdown se una parte vitale del corpo, su un arto invece diventa <details class="note"><summary>crippled</summary>ne perdi l'uso, gli effetti di questo sono dettati dalla logica, ma se curato a full Hp farai un HT.roll per valutare la gravità della ferita e se guarirà nel tempo (magia e tecnologia aiutano ovviamente.)</details>.</li>
+<li><b>Hp≤5 :</b>1/2 movement & dodge</li>
+<li><b>Hp≤0 :</b>all'inizio di ogni turno devi fare un HT.roll contro <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>knockdown</summary>all'inizio di ogni turno devi fare un HT.roll per non svenire; <br> fallimeno di 1-2 invece ti lascia <b>stordito</b>(nessuna azione e -4 alle difese) per l'intero turno.</details></li>
+<li><b>Hp≤-(n)xHp :</b>ogni volta che raggiungi un multiplo negativo dei tuoi Hp devi fare un HT.roll per non morire (fallimento di 1-2 ti lascia <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>ferito gravemente</summary>svieni e farai un HT.roll ogni 30min per non morire, se fai un critico o se vieni adeguatamente curato allora inizierai la normale rigenerazione;<br>se hai almeno 1Hp ti svegli , se sono + di -1xHp hai un tiro ogni ora per provarci, altrimenti è goni 12h.</details>); il tiro è fatto con un modificatore pari alla soglia varcata (-1 a -1xHp, -2 a -2Hp, etc) ed a -5xHp muori direttamente.</li>
+<li><b>dmg in singolo colpo >1/2Hp :</b>Ht.roll vs knockdown se una parte vitale del corpo, su un arto invece diventa <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>crippled</summary>ne perdi l'uso, gli effetti di questo sono dettati dalla logica, ma se curato a full Hp farai un HT.roll per valutare la gravità della ferita e se guarirà nel tempo (magia e tecnologia aiutano ovviamente.)</details>.</li>
 
 </ul>
 
-<h2 id="wounds-flowchart" ><u>Wounds-Flowchart</u></h2>
-<a href="../../../docs/img/wounds-flowchart.png">
-    <img
-        src="../../../docs/img/wounds-flowchart.png"
-        alt="immagine"
-        width="800"
-        style="display: block; max-width: 95vw; margin-bottom: 10px; margin-top: 10px;">
-</a>
 
 
 <!-- END        -->
