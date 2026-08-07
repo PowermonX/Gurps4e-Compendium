@@ -4,21 +4,24 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GURPS 4e - Stat Calculator</title>
-
 <link rel="stylesheet" href="../../../docs/css/baseStyle-CODE.css">
 <link rel="stylesheet" href="../../../docs/css/tablesStyle-CODE.css">
-
 <!--====================            STYLING DELLA TABELLA            ============================-->
     <style>
-        /* Centra .questa-pagina al centro dello schermo, sempre */
+        /* Centra .questa-pagina al centro dello schermo, sempre.
+           IMPORTANTE: "safe center" invece di "center" evita che il contenuto
+           venga TAGLIATO quando è più grande della viewport (es. cellulari
+           con schermo piccolo, prima che autoscale.js applichi la scala).
+           Con "safe", se il contenuto trabocca il browser torna ad allinearlo
+           dall'inizio (start) invece di centrarlo tagliandolo simmetricamente. */
         html, body {
             margin: 0;
             height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: safe center;
+            justify-content: safe center;
+            overflow: auto; /* rete di sicurezza: permette comunque lo scroll se serve */
         }
-
         /* Contenitore di TUTTO il contenuto: qui imposti la dimensione base
            (font-size) e autoscale.js applica un transform:scale() per farlo
            entrare sempre nel 95vw/95vh disponibile */
@@ -27,7 +30,6 @@
             transform-origin: center center;
             will-change: transform;
         }
-
         /* Le due tabelle: niente allargamento automatico in base al contenuto */
         #attributes-table,
         #derived-table {
@@ -35,7 +37,6 @@
             table-layout: fixed;
             width: auto;
         }
-
         /* Celle: padding/font in em così seguono il font-size di .questa-pagina */
         #attributes-table th,
         #attributes-table td,
@@ -45,7 +46,6 @@
             font-size: 1em;
             line-height: 1.2;
         }
-
         /* Larghezza fissa dei campi numerici (ST/DX/IQ/HT, Costo, Punti Totali) */
         #attributes-table input[type="number"],
         #points-header input[type="number"] {
@@ -55,28 +55,19 @@
             padding: 1px 2px;
         }
     </style>
-
 <!--====================            STYLING DELLA TABELLA    (FINE)        ============================-->
-
-
 <!--Qua vanno i link per i Css ✨✨✨✨✨✨✨✨✨✨-->
 <link rel="stylesheet" href="../../../docs/css/baseStyle-CODE.css">
 <link rel="stylesheet" href="../../../docs/css/outlineStyle-CODE.css">
 <link rel="stylesheet" href="../../../docs/css/detailsStyle-CODE.css">
 <link rel="stylesheet" href="../../../docs/css/tablesStyle-CODE.css">
-
     
 </head>
 <body>
-
 <!-- Wrapper unico: tutto ciò che sta qui dentro scala insieme (font, tabelle,
      input, bordi...) grazie al transform:scale() applicato da autoscale.js -->
 <div class="questa-pagina">
-
     <!-- Link di ritorno alla homepage del sito -->
-    <!-- MODIFICA: rimosso margin-left:200px (valore fisso, causava il problema su mobile) -->
-    <!-- Ora il bottone è su una riga propria, centrato con text-align:center sul div contenitore, -->
-    <!-- come il resto del contenuto — nessun valore fisso che possa "sforare" su schermi piccoli -->
     <div style="text-align: center; margin-bottom: 10px;">
         <a href="../../../index.html" style="
                 display: inline-block; 
@@ -90,9 +81,7 @@
             ▶ HomePage ◀
         </a>
     </div>
-
     <h1><u>Calcolatore Statistiche</u></h1>
-
     <!-- Punti Totali (input editabile) e Punti Rimanenti (calcolato da statsCalculator.js) -->
     <div id="points-header">
         <div id="points-total-wrapper">
@@ -104,9 +93,7 @@
             <div id="points-remaining">100</div>
         </div>
     </div>
-
     <h2><u>Statistiche Primarie</u></h2>
-
     <!-- Tabella ST/DX/IQ/HT: Valore e Costo sono input, Spesa e Totale
          vengono calcolati e scritti da statsCalculator.js -->
     <table id="attributes-table">
@@ -149,9 +136,7 @@
             </tr>
         </tbody>
     </table>
-
     <h2 class="section-title" style="margin-bottom: 20px; margin-top:20px;"><u>Statistiche Derivate</u></h2>
-
     <!-- Tabella read-only: tutte le celle <td id="..."> sono riempite
          da statsCalculator.js in base a ST/DX/IQ/HT -->
     <table id="derived-table">
@@ -196,19 +181,14 @@
             </tr>
         </tbody>
     </table>
-
 </div>
-
 <!-- SCRIPTS!! ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ -->
-
 <!-- statsCalculator.js: legge gli input, scrive Spesa/Punti Rimanenti/statistiche derivate -->
 <script src="../../../docs/java/statsCalculator.js"></script>
-
 <!-- AUTO RESIZER ⭐⭐-->     
 <script>
 (function () {
     "use strict";
-
     var el = document.querySelector(".questa-pagina");
     var naturalWidth = 0;
     var naturalHeight = 0;
@@ -233,11 +213,27 @@
         }
         applyScale();
     });
-
     ro.observe(el);
+
+    // Ricalcola la scala anche al caricamento completo della pagina (font
+    // e layout stabili) e quando la finestra cambia dimensione.
+    window.addEventListener("load", applyScale);
     window.addEventListener("resize", applyScale);
+
+    // Sui cellulari, l'altezza reale della viewport cambia quando la barra
+    // degli indirizzi si nasconde/mostra durante lo scroll: ascoltiamo
+    // anche visualViewport, se il browser lo supporta, per ricalcolare
+    // la scala in modo più affidabile.
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener("resize", applyScale);
+    }
+
+    // Se i font non sono ancora pronti al primo calcolo, ricalcola quando
+    // il caricamento dei font è completato (evita misure sbagliate).
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(applyScale);
+    }
 })();
-    
 </script>
     
 </body>
