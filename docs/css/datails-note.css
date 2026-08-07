@@ -1,5 +1,5 @@
 details.note {
-  display: inline-block;
+  display: inline-block !important;
   cursor: pointer;
   vertical-align: baseline;          /* AGGIUNTA: allinea correttamente rispetto al testo attorno */
 }
@@ -23,7 +23,7 @@ details.note summary::-webkit-details-marker {
 /* AGGIUNTA: freccetta disegnata a mano con ::before, al posto di quella nativa del browser */
 details.note summary::before {
   content: "▶";
-  display: inline-block;
+  display: inline-block !important;
   font-size: 0.5em;                  /* stessa dimensione (50%) che avevi impostato prima */
   margin-right: 4px;
   transition: transform 0.15s ease;  /* piccola animazione quando ruota */
