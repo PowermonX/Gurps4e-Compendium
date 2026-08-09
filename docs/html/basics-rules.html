@@ -231,13 +231,18 @@ I regole per le varie parti del corpo sono state semplificate:
 <!-- END   -->
 
 <!-- BEGIN Ferite      -->
+
+<h2 id="wounds" style="margin-left: 20px;">Ferite</h2>
+
 La cosa base da capire è che il gioco è simulativo per natura, quindi anche con tutte le semplificazioni applicabili una nozione rimane sempre da tenere in considerazine: <b>prendere un QUALSIASI danno ti avvicina pericolosamente alla sconfitta!</b> Gli Hp non sono un astrazione di un insieme di circostanze, rappresentano letteralmente il tuo stato di salute fisico e basta. <br>
 Quando scendi sotto -1xHp devi considerarti praticamente fuori dal combattimento, è più un buffer per consentirti di sopravvivere, che un invito a continuare a combattere.
 <br><br>
 
 Ecco le cose di cui devi tenere conto.
 <ul>
+    <!-- disattivato
 <li><b>Shock :</b>ogni volta che subisci danno usi quel valore come modificatore negativo (fino a un massimo di -4) su tutti i tuoi tiri di DX e QI fino alla fine del tuo turno.</li>
+    -->
 <li><b>Hp≤5 :</b>1/2 movement & dodge</li>
 <li><b>Hp≤0 :</b>all'inizio di ogni turno devi fare un HT.roll contro <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>knockdown</summary>all'inizio di ogni turno devi fare un HT.roll per non svenire; <br> fallimeno di 1-2 invece ti lascia <b>stordito</b>(nessuna azione e -4 alle difese) per l'intero turno.</details></li>
 <li><b>Hp≤-(n)xHp :</b>ogni volta che raggiungi un multiplo negativo dei tuoi Hp devi fare un HT.roll per non morire (fallimento di 1-2 ti lascia <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>ferito gravemente</summary>svieni e farai un HT.roll ogni 30min per non morire, se fai un critico o se vieni adeguatamente curato allora inizierai la normale rigenerazione;<br>se hai almeno 1Hp ti svegli , se sono + di -1xHp hai un tiro ogni ora per provarci, altrimenti è goni 12h.</details>); il tiro è fatto con un modificatore pari alla soglia varcata (-1 a -1xHp, -2 a -2Hp, etc) ed a -5xHp muori direttamente.</li>
