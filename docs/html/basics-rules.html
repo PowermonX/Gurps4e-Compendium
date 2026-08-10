@@ -232,13 +232,27 @@ I regole per le varie parti del corpo sono state semplificate:
 
 <!-- BEGIN Ferite      -->
 
-<h2 id="wounds" style="margin-left: 20px;">Ferite</h2>
+<h2 id="wounds" style="margin-left: 20px;">Cuori e Ferite</h2>
 
 La cosa base da capire è che il gioco è simulativo per natura, quindi anche con tutte le semplificazioni applicabili una nozione rimane sempre da tenere in considerazine: <b>prendere un QUALSIASI danno ti avvicina pericolosamente alla sconfitta!</b> Gli Hp non sono un astrazione di un insieme di circostanze, rappresentano letteralmente il tuo stato di salute fisico e basta. <br>
-Quando scendi sotto -1xHp devi considerarti praticamente fuori dal combattimento, è più un buffer per consentirti di sopravvivere, che un invito a continuare a combattere.
+
 <br><br>
 
-Ecco le cose di cui devi tenere conto.
+Per semplificare e rendere più veloce l'annotazione gli hp sono stati trasformati in "💚". <br>
+Tutti partono con 4 💚 diponibili, quando il danno supera una certa soglia si perde un 💚. <br>
+Persi tutti i 💚 hai a diposizione 4 "Ferite", quando viene superata la soglia e i 💚 non bastano,
+inizi ad accumulare ferite, queste non si rigenerano semplicemente curando gli Hp. <br>
+Ecco i dati da tenere a mente:
+
+<li><b>Hp/4(per eccesso ogni 0.5): </b>Soglia perdita 💚.</li>
+<li><b>n° di ferite subite: </b>si applica come malus a Schivata e Movimento.</li>
+<li><b>💚≤0 :</b>all'inizio di ogni turno devi fare un HT.roll contro <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>knockdown</summary>all'inizio di ogni turno devi fare un HT.roll per non svenire; <br> fallimeno di 1-2 invece ti lascia <b>stordito</b>(nessuna azione e -4 alle difese) per l'intero turno.</details></li>
+<li><b>Ferite :</b>ogni volta che ricevi una ferita devi fare un HT.roll per non morire (fallimento di 1-2 ti lascia <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>ferito gravemente</summary>svieni e farai un HT.roll ogni 30min per non morire, se fai un critico o se vieni adeguatamente curato allora inizierai la normale rigenerazione;<br>se hai almeno 1💚 ti svegli , se sei a terra con una ferita puoi cercare di svegliarti ogni ora, altrimenti ogni 12.</details>); il tiro è fatto con un modificatore pari al numero di ferite subite, <u>a 5 ferite muori direttamente</u>.</li>
+<li><b>dmg in singolo colpo >2💚 :</b>Ht.roll vs knockdown se una parte vitale del corpo, su un arto invece diventa <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>crippled</summary>ne perdi l'uso, gli effetti di questo sono dettati dalla logica, ma se curato a full Hp farai un HT.roll per valutare la gravità della ferita e se guarirà nel tempo (magia e tecnologia aiutano ovviamente.)</details>.</li>
+
+ <details  class="block">
+    <summary style="max-height: min(30px) !important; font-size:15px;"><b>Hp Classici</b></summary>
+Queste sono più vicine alle regole classiche, comunque semplificate, ma gli Hp sono contati singolarmente.
 <ul>
     <!-- disattivato
 <li><b>Shock :</b>ogni volta che subisci danno usi quel valore come modificatore negativo (fino a un massimo di -4) su tutti i tuoi tiri di DX e QI fino alla fine del tuo turno.</li>
@@ -249,6 +263,8 @@ Ecco le cose di cui devi tenere conto.
 <li><b>dmg in singolo colpo >1/2Hp :</b>Ht.roll vs knockdown se una parte vitale del corpo, su un arto invece diventa <details class="note" style="display: inline-block; border-style: dashed; width: content-fit"><summary>crippled</summary>ne perdi l'uso, gli effetti di questo sono dettati dalla logica, ma se curato a full Hp farai un HT.roll per valutare la gravità della ferita e se guarirà nel tempo (magia e tecnologia aiutano ovviamente.)</details>.</li>
 
 </ul>
+ </details>
+
 
 
 
