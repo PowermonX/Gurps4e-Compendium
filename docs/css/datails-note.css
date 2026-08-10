@@ -1,0 +1,54 @@
+details.note {
+  display: inline-block !important;
+  cursor: pointer;
+  vertical-align: baseline;          /* AGGIUNTA: allinea correttamente rispetto al testo attorno */
+}
+
+details.note summary {
+  display: inline;                   /* MODIFICA: era "list-item" (blocco), ora è vero inline, scorre col testo */
+  list-style: none;                  /* nessun marker nativo residuo */
+  font-weight: bold;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: underline dashed;
+  text-underline-offset: 3px;
+}
+
+/* Nasconde il marker nativo residuo su Chrome/Safari (che usa una pseudo-classe diversa da list-style) */
+details.note summary::-webkit-details-marker {
+  display: none;
+}
+
+/* AGGIUNTA: freccetta disegnata a mano con ::before, al posto di quella nativa del browser */
+details.note summary::before {
+  content: "▶";
+  display: inline-block !important;
+  font-size: 0.5em;                  /* stessa dimensione (50%) che avevi impostato prima */
+  margin-right: 4px;
+  transition: transform 0.15s ease;  /* piccola animazione quando ruota */
+}
+
+/* Quando il details è aperto, la freccetta ruota di 90° invece di essere sostituita da un altro simbolo */
+details.note[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details.note[open] {
+  border: 1px dashed #1f8a4c;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+details.note[open] summary {
+  display: inline;                   /* resta inline anche da aperto */
+  margin-bottom: 6px;
+}
+
+details.note div.note-content {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  max-width: min(500px, 90vw);
+  width: fit-content;
+}

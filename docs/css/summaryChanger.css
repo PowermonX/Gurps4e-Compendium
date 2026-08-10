@@ -1,0 +1,10 @@
+/* Si applica SOLO ai loader che hanno un attributo data-summary definito */
+.html-loader[data-summary] summary {
+  font-size: 0;
+}
+
+.html-loader[data-summary] summary::after {
+  content: attr(data-summary); /* Legge direttamente il valore dall'HTML */
+  font-size: 1rem;
+  margin-left: 0.4rem;
+}

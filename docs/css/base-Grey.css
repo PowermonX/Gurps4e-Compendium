@@ -1,0 +1,10 @@
+/* CSS che modifica gli elementi base della pagina */
+body {
+  background-color: rgb(140,140,140);
+}
+
+/* permette al testo di andare a capo quando raggiunge il bordo dello schermo */
+div {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}

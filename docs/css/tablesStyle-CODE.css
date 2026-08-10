@@ -1,0 +1,48 @@
+table {
+  border-collapse: collapse;         /* unisce i bordi delle celle in un unico bordo pulito, niente doppi bordi */
+  width: 100%;                       /* la tabella occupa tutta la larghezza disponibile del contenitore */
+  max-width: 90vw;                   /* stesso limite di larghezza usato per i details, coerenza col resto della pagina */
+  margin-bottom: 0.5em;              /* stesso spazio sotto usato per i details */
+  font-family: inherit;              /* eredita il font (coerente col resto del sito) */
+  color: inherit;                    /* eredita il colore testo dal body */
+  background-color: transparent;     /* sfondo trasparente, coerente coi details */
+}
+
+caption {
+  font-weight: bold;
+  font-size: 20px;                   /* stessa dimensione usata per il summary dei details */
+  text-align: left;
+  margin-bottom: 0.5em;
+  color: inherit;
+}
+
+th, td {
+  border: 1px solid #1f8a4c;         /* stesso verde usato per il bordo dei details, per coerenza visiva */
+  padding: 10px;                     /* stesso spaziamento fisso in px usato nel summary (10px sopra/sotto) */
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background-color: rgba(0, 0, 0, 0.1);  /* stesso "scurimento" al 10% usato nello sfondo del summary */
+  font-weight: bold;
+  color: inherit;
+  border-radius: 0;                       /* niente arrotondamento sulle singole celle: l'arrotondamento va sul contenitore, vedi nota sotto */
+}
+
+/* Riga alternata leggermente più scura, per leggibilità su tabelle lunghe */
+tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);  /* metà opacità rispetto all'header, così resta distinguibile ma più leggero */
+}
+
+/* Effetto hover sulla riga, per dare feedback visivo passando il mouse (coerente col cursor:pointer dei summary) */
+tbody tr:hover {
+  background-color: rgba(31, 138, 76, 0.15); /* stesso verde del bordo (#1f8a4c), ma con opacità 15% -> effetto "glow" leggero */
+  transition: background-color 0.15s ease;    /* transizione morbida sull'hover, niente scatti */
+}
+
+/* Arrotondamento agli angoli ESTERNI della tabella, coerente col border-radius:4px dei details */
+table {
+  border-radius: 4px;
+  overflow: hidden;                  /* necessario perché border-radius funzioni anche con celle interne quadrate */
+}

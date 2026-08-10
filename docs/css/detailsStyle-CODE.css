@@ -1,0 +1,33 @@
+/* Si applica a QUALSIASI elemento con class="block": div, details, section, ecc. */
+.block {
+  border: 1px solid #1f8a4c;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  box-sizing: border-box;
+  width: min(800px, 90vw);
+  display: block;
+  overflow: hidden;
+}
+
+/* Si applica SOLO se .block è su un <details> con un <summary> figlio diretto: */
+/* su un div, questa regola non trova nulla a cui applicarsi, quindi viene ignorata */
+details.block > summary {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  padding: 0.4em 0.8em;
+  margin: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: inherit;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

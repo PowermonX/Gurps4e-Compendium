@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GURPS 4e - Stat Calculator</title>
+<link rel="stylesheet" href="../../../docs/css/baseStyle-CODE.css">
+<link rel="stylesheet" href="../../../docs/css/tablesStyle-CODE.css">
+<!--====================            STYLING DELLA TABELLA            ============================-->
+    <style>
+        /* Centra .questa-pagina al centro dello schermo, sempre */
+        html, body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Contenitore di TUTTO il contenuto: qui imposti la dimensione base
+           (font-size) e autoscale.js applica un transform:scale() per farlo
+           entrare sempre nel 95vw/95vh disponibile */
+        .questa-pagina {
+            font-size: 25px !important;   /* <-- cambia qui la dimensione base */
+            transform-origin: center center;
+            will-change: transform;
+        }
+        /* Le due tabelle: niente allargamento automatico in base al contenuto */
+        #attributes-table,
+        #derived-table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: auto;
+        }
+        /* Celle: padding/font in em così seguono il font-size di .questa-pagina */
+        #attributes-table th,
+        #attributes-table td,
+        #derived-table th,
+        #derived-table td {
+            padding: 2px 6px;
+            font-size: 1em;
+            line-height: 1.2;
+        }
+        /* Larghezza fissa dei campi numerici (ST/DX/IQ/HT, Costo, Punti Totali) */
+        #attributes-table input[type="number"],
+        #points-header input[type="number"] {
+            width: 150px;
+            box-sizing: border-box;
+            font-size: inherit;
+            padding: 1px 2px;
+        }
+    </style>
+<!--====================            STYLING DELLA TABELLA    (FINE)        ============================-->
+<!--Qua vanno i link per i Css ✨✨✨✨✨✨✨✨✨✨-->
+<link rel="stylesheet" href="../../../docs/css/baseStyle-CODE.css">
+<link rel="stylesheet" href="../../../docs/css/outlineStyle-CODE.css">
+<link rel="stylesheet" href="../../../docs/css/detailsStyle-CODE.css">
+<link rel="stylesheet" href="../../../docs/css/tablesStyle-CODE.css">
+    
+</head>
+<body>
+<!-- Wrapper unico: tutto ciò che sta qui dentro scala insieme (font, tabelle,
+     input, bordi...) grazie al transform:scale() applicato da autoscale.js -->
+<div class="questa-pagina">
+    <h2><u>Calcolatore Statistiche</u></h2>
+    <!-- Punti Totali (input editabile) e Punti Rimanenti (calcolato da statsCalculator.js) -->
+    <div id="points-header">
+        <div id="points-total-wrapper">
+            <span class="section-title">Punti Totali</span>
+            <input type="number" id="total-points" value="100">
+        </div>
+        <div id="points-remaining-wrapper">
+            <span class="section-title">Punti Rimanenti</span>
+            <div id="points-remaining" style="display: inline-block">100</div>
+        </div>
+    </div>
+    <h2><u>Statistiche Primarie</u></h2>
+    <!-- Tabella ST/DX/IQ/HT: Valore e Costo sono input, Spesa e Totale
+         vengono calcolati e scritti da statsCalculator.js -->
+    <table id="attributes-table">
+        <thead>
+            <tr>
+                <th>Stat</th>
+                <th>Valore</th>
+                <th>Spesa</th>
+                <th>Costo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>ST</strong></td>
+                <td><input type="number" id="st-value" value="10"></td>
+                <td><span id="st-spesa">0</span></td>
+                <td><input type="number" id="st-costo" value="10"></td>
+            </tr>
+            <tr>
+                <td><strong>DX</strong></td>
+                <td><input type="number" id="dx-value" value="10"></td>
+                <td><span id="dx-spesa">0</span></td>
+                <td><input type="number" id="dx-costo" value="20"></td>
+            </tr>
+            <tr>
+                <td><strong>IQ</strong></td>
+                <td><input type="number" id="iq-value" value="10"></td>
+                <td><span id="iq-spesa">0</span></td>
+                <td><input type="number" id="iq-costo" value="20"></td>
+            </tr>
+            <tr>
+                <td><strong>HT</strong></td>
+                <td><input type="number" id="ht-value" value="10"></td>
+                <td><span id="ht-spesa">0</span></td>
+                <td><input type="number" id="ht-costo" value="10"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right"><strong>Spesa Totale:</strong></td>
+                <td colspan="2"><strong id="total-attributi">0</strong> punti</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 class="section-title" style="margin-bottom: 20px; margin-top:20px;"><u>Statistiche Derivate</u></h2>
+    <!-- Tabella read-only: tutte le celle <td id="..."> sono riempite
+         da statsCalculator.js in base a ST/DX/IQ/HT -->
+    <table id="derived-table">
+        <thead>
+            <tr>
+                <th>Statistica</th>
+                <th>Valore</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>HP</strong></td>
+                <td id="hp"></td>
+            </tr>
+            <tr>
+                <td><strong>Basic Lift</strong></td>
+                <td id="bl"></td>
+            </tr>
+            <tr>
+                <td><strong>Dmg (Thr/Sw)</strong></td>
+                <td id="dmg"></td>
+            </tr>
+            <tr>
+                <td><strong>FP</strong></td>
+                <td id="fp"></td>
+            </tr>
+            <tr>
+                <td><strong>Will</strong></td>
+                <td id="will"></td>
+            </tr>
+            <tr>
+                <td><strong>Basic Speed</strong></td>
+                <td id="basic-speed"></td>
+            </tr>
+            <tr>
+                <td><strong>Basic Move</strong></td>
+                <td id="basic-move"></td>
+            </tr>
+            <tr>
+                <td><strong>Dodge</strong></td>
+                <td id="dodge"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- SCRIPTS!! ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ -->
+<!-- statsCalculator.js: legge gli input, scrive Spesa/Punti Rimanenti/statistiche derivate -->
+<script src="../../../docs/java/statsCalculator.js"></script>
+<!-- AUTO RESIZER ⭐⭐-->     
+<script>
+(function () {
+    "use strict";
+    var el = document.querySelector(".questa-pagina");
+    var naturalWidth = 0;
+    var naturalHeight = 0;
+    function applyScale() {
+        if (!naturalWidth || !naturalHeight) return;
+        var maxWidth = window.innerWidth * 0.95;
+        var maxHeight = window.innerHeight * 0.95;
+        var scale = Math.min(maxWidth / naturalWidth, maxHeight / naturalHeight);
+        el.style.transform = "scale(" + scale + ")";
+    }
+    var ro = new ResizeObserver(function (entries) {
+        var entry = entries[0];
+        var box = entry.borderBoxSize && entry.borderBoxSize[0];
+        if (box) {
+            naturalWidth = box.inlineSize;
+            naturalHeight = box.blockSize;
+        } else {
+            naturalWidth = entry.contentRect.width;
+            naturalHeight = entry.contentRect.height;
+        }
+        applyScale();
+    });
+    ro.observe(el);
+    window.addEventListener("resize", applyScale);
+})();
+    
+</script>
+    
+</body>
+</html>
